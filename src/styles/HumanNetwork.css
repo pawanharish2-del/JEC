@@ -1,0 +1,103 @@
+/* src/styles/HumanNetwork.css */
+
+/* 1. Hero Container - Needs relative positioning to hold the absolute image */
+.faculty-hero {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as you prefer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  background-color: #003366; /* Fallback color */
+  margin-bottom: 2rem;
+}
+
+/* 2. The Background Image */
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers the area without stretching */
+  z-index: 1;
+}
+
+/* 3. The Dark Overlay - Makes text readable over the image */
+.faculty-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Darkens the image by 60% */
+  z-index: 2;
+}
+
+/* 4. The Content (Text) */
+.hero-overlay {
+  position: relative;
+  z-index: 3; /* Places text above the image and overlay */
+  width: 100%;
+  height: fit-content
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+
+/* Helper for the max-width container inside the hero */
+.max-width-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* --- Existing Styles for Cards below (ensure these exist) --- */
+.human-network-page {
+  background-color: #f4f7f6;
+  min-height: 100vh;
+}
+
+/* Add to src/styles/HumanNetwork.css */
+
+.faculty-card {
+    position: relative; /* Needed for the absolute badge */
+    overflow: hidden; /* Ensures the badge doesn't spill out */
+}
+
+    /* Optional: Slight gold border for HOD card */
+    .faculty-card.hod-card {
+        border: 2px solid #FCA311;
+        box-shadow: 0 5px 15px rgba(252, 163, 17, 0.15);
+    }
+
+.hod-badge {
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    background-color: #FCA311; /* JEC Gold */
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    transform: rotate(45deg); /* Diagonal Badge */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 10;
+    letter-spacing: 1px;
+}

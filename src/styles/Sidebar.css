@@ -1,0 +1,106 @@
+/* ==========================================================================
+   SIDEBAR COMPONENT STYLES
+   ========================================================================== */
+
+.college-side-bar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Keeps items anchored to the right edge */
+    z-index: 10005;
+    /* Removed overflow: hidden so items can slide out */
+}
+
+    .college-side-bar a {
+        display: flex !important;
+        align-items: center;
+        color: #FFFFFF !important;
+        text-decoration: none !important;
+        width: 50px; /* Collapsed width */
+        height: 50px;
+        margin-bottom: 2px; /* Small gap to separate the icons */
+        transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow: hidden;
+        white-space: nowrap;
+        /* Individual rounded corners and shadow make it look like a separate piece */
+        border-radius: 25px 0 0 25px;
+        box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+        /* Expand only the item with the 'active' class */
+        .college-side-bar a.active {
+            width: 160px;
+        }
+
+        /* Icon Styling */
+        .college-side-bar a i {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            flex-shrink: 0;
+        }
+
+        /* Text Styling */
+        .college-side-bar a span {
+            opacity: 0;
+            font-weight: 700;
+            font-size: 14px;
+            margin-left: 10px;
+            transition: opacity 0.2s ease-in;
+        }
+
+        /* Show text only for the active item */
+        .college-side-bar a.active span {
+            opacity: 1;
+        }
+
+        /* --- Brand Colors --- */
+        .college-side-bar a.helpline {
+            background-color: #008080 !important;
+        }
+
+        .college-side-bar a.brochure {
+            background-color: #FF8C00 !important;
+        }
+
+        .college-side-bar a.admissions {
+            background-color: #0056b3 !important;
+        }
+
+        .college-side-bar a.events {
+            background-color: #c2185b !important;
+        }
+
+        .college-side-bar a.whatsapp {
+            background-color: #25D366 !important;
+        }
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .college-side-bar a {
+        width: 45px;
+        height: 45px;
+        border-radius: 22px 0 0 22px;
+    }
+
+        .college-side-bar a i {
+            width: 45px;
+            height: 45px;
+            font-size: 18px;
+        }
+
+        /* Disable expansion on mobile to prevent layout issues */
+        .college-side-bar a.active {
+            width: 45px;
+        }
+
+        .college-side-bar a span {
+            display: none;
+        }
+}

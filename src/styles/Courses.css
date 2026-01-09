@@ -1,0 +1,366 @@
+/* ========================================
+   COURSES OFFERED PAGE STYLES
+   ========================================
+*/
+
+:root {
+    /* Brand Palette Scoped */
+    --courses-red: #D62828; 
+    --courses-blue: #0072C6; 
+    --courses-gold: #FCA311; 
+    --courses-black: #1D1D1D; 
+    --courses-white: #FFFFFF; 
+
+    /* Functional Colors */
+    --courses-bg-light: #FFFFFF;
+    --courses-bg-medium: #f7f7f7;
+    --courses-text-main: #333;
+    --courses-text-light: #555;
+    --courses-border: #e0e0e0;
+
+    /* Effects */
+    --courses-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    --courses-shadow-hover: 0 10px 25px rgba(0,0,0,0.12);
+
+    /* Alignment Variables (Matching Header/Subheader) */
+    --courses-container-width: 1300px;
+    --courses-container-padding: 40px;
+}
+
+.courses-page {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: var(--courses-text-main);
+    line-height: 1.65;
+    background-color: var(--courses-bg-light);
+    width: 100%;
+}
+
+.courses-page a { text-decoration: none; color: inherit; transition: color 0.3s ease; }
+
+/* --- Reusable Container for Perfect Alignment --- */
+.courses-page .max-width-container {
+    max-width: var(--courses-container-width);
+    margin: 0 auto;
+    padding: 0 var(--courses-container-padding);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* --- Hero Section --- */
+.courses-hero {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax Effect */
+    padding: 120px 20px 160px; /* Increased bottom padding for stats overlap */
+    text-align: center;
+    color: var(--courses-white);
+    z-index: 1;
+}
+
+.courses-hero h1 { 
+    font-size: clamp(2.5rem, 5vw, 3.5rem); 
+    margin-bottom: 1rem; 
+    font-weight: 800; 
+    letter-spacing: 1px; 
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.courses-hero p { 
+    font-size: clamp(1.1rem, 2vw, 1.4rem); 
+    font-weight: 300; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    color: var(--courses-gold); 
+}
+
+/* --- Stats Banner (Floating) --- */
+.courses-stats-bar {
+    margin-top: -80px;
+    background: var(--courses-white);
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    position: relative;
+    z-index: 10;
+    border-bottom: 5px solid var(--courses-blue);
+}
+
+.courses-stat-item { 
+    text-align: center; 
+    position: relative;
+}
+
+/* Vertical dividers on desktop */
+@media (min-width: 992px) {
+    .courses-stat-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        right: -15px;
+        top: 20%;
+        height: 60%;
+        width: 1px;
+        background: #eee;
+    }
+}
+
+.courses-stat-item h3 { 
+    font-size: 2.5rem; 
+    color: var(--courses-red); 
+    margin-bottom: 5px; 
+    font-weight: 800;
+}
+
+.courses-stat-item p { 
+    font-size: 0.9rem; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    color: #666; 
+    letter-spacing: 1px;
+}
+
+/* --- Main Content Styling --- */
+.courses-content-section { padding: 80px 0; }
+
+.courses-section-title { 
+    font-size: 2.2rem; 
+    color: var(--courses-blue); 
+    margin-bottom: 2rem; 
+    position: relative; 
+    padding-left: 20px;
+    border-left: 6px solid var(--courses-gold);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.courses-text-block { 
+    font-size: 1.05rem; 
+    color: #444; 
+    text-align: justify; 
+    margin-bottom: 30px; 
+    line-height: 1.8;
+}
+
+.courses-highlight-box {
+    background: #f8fbff;
+    border-left: 6px solid var(--courses-blue);
+    padding: 30px;
+    margin: 30px 0;
+    font-size: 1.05rem;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+/* --- Course Cards --- */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.courses-card {
+    background: var(--courses-white);
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: var(--courses-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 6px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.courses-card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: var(--courses-shadow-hover); 
+}
+
+.courses-card.courses-btech { border-top-color: var(--courses-red); }
+.courses-card.courses-mtech { border-top-color: var(--courses-blue); }
+.courses-card.courses-bvoc { border-top-color: var(--courses-gold); }
+
+.courses-card h3 { 
+    font-size: 1.5rem; 
+    margin-bottom: 15px; 
+    color: var(--courses-black); 
+    font-weight: 700;
+}
+
+.courses-card .courses-duration { 
+    font-size: 0.9rem; 
+    color: var(--courses-text-light); 
+    margin-bottom: 20px; 
+    display: inline-block; 
+    font-weight: 600; 
+    background: #f0f0f0;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.courses-card p { 
+    font-size: 1rem; 
+    color: #555; 
+    line-height: 1.6; 
+}
+
+/* --- Tables Styling --- */
+.courses-table-container { 
+    overflow-x: auto; 
+    margin: 40px 0; 
+    box-shadow: var(--courses-shadow); 
+    border-radius: 12px; 
+    border: 1px solid #eee;
+    background: white;
+}
+
+.courses-data-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    min-width: 700px; 
+}
+
+.courses-data-table th, 
+.courses-data-table td { 
+    padding: 18px 20px; 
+    text-align: left; 
+    border-bottom: 1px solid #eee; 
+    font-size: 0.95rem;
+}
+
+.courses-data-table th { 
+    background: var(--courses-blue); 
+    color: white; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    font-size: 0.85rem; 
+    letter-spacing: 1px;
+}
+
+.courses-data-table tr:nth-child(even) { background: #f8fbff; }
+.courses-data-table tr:hover { background: #eef6ff; }
+
+.courses-data-table tr:last-child td { 
+    border-bottom: none; 
+    font-weight: 700; 
+    color: var(--courses-red); 
+    background: #fff0f0;
+}
+
+/* --- Karma Section --- */
+.courses-karma-section {
+    background: linear-gradient(135deg, #ffffff 0%, #f4f7fa 100%);
+    padding: 60px;
+    border-radius: 20px;
+    margin-top: 80px;
+    border: 1px solid #e0e0e0;
+    box-shadow: var(--courses-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.courses-karma-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 6px; height: 100%;
+    background: var(--courses-gold);
+}
+
+.courses-karma-section h3 { 
+    font-size: 2rem; 
+    color: var(--courses-red); 
+    margin-bottom: 25px; 
+    font-weight: 700;
+}
+
+.courses-karma-list { padding-left: 20px; }
+
+.courses-karma-list li { 
+    margin-bottom: 12px; 
+    font-size: 1.05rem; 
+    color: #444; 
+    list-style-type: disc;
+}
+
+.courses-karma-section a {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--courses-blue);
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-bottom: 2px solid transparent;
+}
+
+.courses-karma-section a:hover {
+    border-bottom-color: var(--courses-blue);
+    transform: translateX(5px);
+}
+
+/* --- Contact Bar --- */
+.courses-contact-bar {
+    background: var(--courses-black);
+    color: var(--courses-white);
+    padding: 80px 0;
+    text-align: center;
+    margin-top: 0; /* Remove margin as it's a separate section */
+}
+
+.courses-contact-bar h3 { 
+    font-size: 2.2rem; 
+    margin-bottom: 15px; 
+    color: var(--courses-gold); 
+}
+
+.courses-contact-bar p { 
+    font-size: 1.1rem; 
+    opacity: 0.9; 
+    margin-bottom: 10px;
+}
+
+.courses-contact-bar a { 
+    color: var(--courses-gold); 
+    font-weight: 700; 
+    margin-left: 5px; 
+    border-bottom: 1px dotted var(--courses-gold);
+}
+
+.courses-contact-bar a:hover {
+    color: white;
+    border-bottom-style: solid;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    /* Reset Container Padding for Mobile */
+    .courses-page .max-width-container {
+        padding: 0 20px;
+    }
+    
+    .courses-hero {
+        padding: 100px 20px 140px;
+    }
+    
+    .courses-karma-section {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .courses-hero h1 { font-size: 2.5rem; }
+    
+    .courses-stats-bar { 
+        padding: 30px 20px; 
+        margin-top: -60px;
+        gap: 30px;
+    }
+    
+    .courses-stat-item p { font-size: 0.8rem; }
+    
+    .courses-content-section, 
+    .courses-contact-bar { 
+        padding: 60px 0; 
+    }
+}
