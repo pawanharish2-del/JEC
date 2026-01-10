@@ -6371,7 +6371,7 @@ body {
 .admissions-experts-section { background: var(--admissions-color-background-medium); }
 .admissions-expert-card { background: var(--admissions-logo-white); border-radius: 20px; overflow: hidden; box-shadow: var(--admissions-shadow-card); display: grid; grid-template-columns: 350px 1fr; margin-bottom: 50px; transition: transform 0.3s ease; }
 .admissions-expert-card:hover { transform: translateY(-5px); box-shadow: var(--admissions-shadow-hover); }
-.admissions-expert-img-wrapper { width: 100%; height: 100%; position: relative; overflow: hidden; }
+.admissions-expert-img-wrapper { width: 100%;  position: relative; overflow: hidden; contain: size;}
 .admissions-expert-img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
 .admissions-expert-card:hover .admissions-expert-img-wrapper img { transform: scale(1.05); }
 .admissions-expert-content { padding: 50px; display: flex; flex-direction: column; justify-content: center; }

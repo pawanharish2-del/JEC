@@ -75,7 +75,9 @@ const GutsNGlory = lazy(() => import('./pages/GutsNGlory'));
 // Blog
 const Blog = lazy(() => import('./pages/Blog'));
 const SinglePost = lazy(() => import('./pages/SinglePost'));
-
+const TermsAndConditions = lazy(() => import('./pages/TermsAndConditions'));
+const Disclaimer = lazy(() => import('./pages/Disclaimer'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 // --- ADMIN PAGES ---
 const Login = lazy(() => import('./admin/pages/Login'));
 const Overview = lazy(() => import('./admin/pages/Overview'));
@@ -139,6 +141,10 @@ function App() {
               <Route path="Our-Society/Other-Institutes-Agrasen-College" element={<AgrasenCollege />} />
               <Route path="Our-Society/Other-Institutes-Jaipur-College-of-Education-and-Science" element={<JCES />} />
               <Route path="Our-Society/Key-Teams-Functions" element={<KeyTeamsFunctions />} />
+
+<Route path="terms" element={<TermsAndConditions />} />
+<Route path="disclaimer" element={<Disclaimer />} />
+<Route path="privacy-policy" element={<PrivacyPolicy />} />
 
               {/* Campus Life Dropdown (Updated paths) */}
               <Route path="Gallery" element={<Gallery />} />
