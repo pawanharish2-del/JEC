@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { useNavigate, useParams } from 'react-router-dom'; // Added for routing
+import { useNavigate, useParams } from 'react-router-dom';
 import './Gallery.css';
 import { db } from '../firebase';
 import { collection, getDocs } from 'firebase/firestore';
@@ -31,7 +31,7 @@ function Gallery() {
         fetchGallery();
     }, []);
 
-    // NEW: Effect to sync the modal state with the URL parameter
+    // Effect to sync the modal state with the URL parameter
     useEffect(() => {
         if (albumId && galleryData.length > 0) {
             // Find the album matching the ID in the URL
@@ -97,7 +97,12 @@ function Gallery() {
                     <h1>Capturing<br /><span>Excellence</span> & Life</h1>
                     <p>Explore our visual journey. From vibrant cultural fests to state-of-the-art labs, experience the JEC spirit through our lens.</p>
                 </div>
-                {/* ... existing hero-collage code ... */}
+                 {/* Hero Collage / Blob elements (Assuming CSS handles the visuals) */}
+                 <div className="hero-collage">
+                    <div className="blob blob-1"></div>
+                    <div className="blob blob-2"></div>
+                    {/* Add your hero images here if they aren't purely CSS background */}
+                 </div>
             </header>
 
             <div className="container">
@@ -107,7 +112,6 @@ function Gallery() {
 
                 <div className="album-grid">
                     {galleryData.map((item) => (
-                        // Use the new navigation click handler
                         <div className="album-card" key={item.id} onClick={() => handleAlbumClick(item)}>
                             <div className="album-cover">
                                 <img src={item.cover} alt={item.coverAlt || item.title} />
@@ -129,9 +133,16 @@ function Gallery() {
             {selectedAlbum && (
                 <div className="modal">
                     <div className="modal-header">
+                        {/* --- NEW BACK BUTTON ADDED HERE --- */}
+                        <button className="back-btn" onClick={closeModal}>
+                            Back to Albums
+                        </button>
+                        {/* ---------------------------------- */}
+
                         <h2 className="modal-title">{selectedAlbum.title}</h2>
                         <span className="close-btn" onClick={closeModal}>&times;</span>
                     </div>
+                    
                     <div className="modal-grid">
                         {albumImages.map((imgObj, index) => (
                             <div className="modal-img-wrapper" key={index} onClick={() => openImageViewer(index)}>
