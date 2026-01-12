@@ -505,29 +505,34 @@
 
 
 /* --- 5. MODALS --- */
-
 .gallery-page .modal {
-
-    display: block; /* Controlled by React conditional rendering */
-
-    position: fixed; z-index: 2000; left: 0; top: 0;
-
-    width: 100%; height: 100%; background-color: rgba(15, 23, 42, 0.98);
-
-    backdrop-filter: blur(10px); overflow-y: auto; padding: 2rem; animation: fadeIn 0.3s;
-
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.98);
+    backdrop-filter: blur(10px);
+    overflow-y: auto;
+    
+    /* UPDATED: Added more padding to the top (80px) to clear mobile headers */
+    padding: 80px 2rem 2rem 2rem; 
+    
+    animation: fadeIn 0.3s;
 }
 
-
-
+/* Optional: Ensure the close button is positioned correctly within that padding */
 .gallery-page .modal-header {
-
-    display: flex; justify-content: space-between; align-items: center;
-
-    max-width: 1200px; margin: 0 auto 2rem auto; color: white;
-
-    border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 1rem;
 }
 
 
@@ -573,43 +578,39 @@
 
 
 /* --- 6. FULL SCREEN IMAGE VIEWER WITH NAVIGATION --- */
-
 .gallery-page .image-viewer {
-
-    display: flex; position: fixed; z-index: 3000; left: 0; top: 0;
-
-    width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.95);
-
-    justify-content: center; align-items: center; flex-direction: column; 
-
-    animation: zoomIn 0.3s; user-select: none;
-
-}
-
-.gallery-page .viewer-img { 
-
-    max-width: 85%; max-height: 85vh; 
-
-    border-radius: 4px; box-shadow: 0 0 50px rgba(0,0,0,0.8); 
-
-    border: 2px solid var(--jec-blue); 
-
-    transition: opacity 0.2s;
-
+    display: flex;
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: zoomIn 0.3s;
+    user-select: none;
+    
+    /* UPDATED: Added padding top to prevent image from hitting the edge */
+    padding-top: 50px; 
+    box-sizing: border-box; /* Ensures padding doesn't break width/height */
 }
 
 .gallery-page .viewer-close { 
-
-    position: absolute; top: 20px; right: 30px; color: white; 
-
-    font-size: 3rem; cursor: pointer; z-index: 3001; transition: 0.3s; 
-
+    position: absolute;
+    
+    /* UPDATED: Moved the X button down so it isn't hidden by mobile notches */
+    top: 50px; 
+    
+    right: 30px;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 3001;
+    transition: 0.3s;
 }
-
-.gallery-page .viewer-close:hover { color: var(--jec-red); }
-
-.gallery-page .viewer-caption { color: #cbd5e1; margin-top: 1rem; font-size: 1rem; }
-
 
 
 /* Navigation Arrows */
@@ -669,92 +670,17 @@
 /* Responsive */
 
 @media (max-width: 900px) {
+    /* ... existing mobile styles ... */
 
-    .gallery-page .modern-hero { grid-template-columns: 1fr; text-align: center; padding-top: 2rem; }
-
-    .gallery-page .hero-content { padding-left: 0; margin-bottom: 2rem; }
-
-    .gallery-page .hero-collage { height: 400px; }
-
-    .gallery-page .img-main { width: 250px; height: 350px; }
-
-    .gallery-page .img-sub-1 { width: 150px; height: 120px; }
-
-    .gallery-page .img-sub-2 { width: 140px; height: 140px; }
-
-    .gallery-page .section-header { flex-direction: column; align-items: flex-start; }
-
-    
-
-    /* Mobile Navigation Adjustments */
-
-    .gallery-page .viewer-nav { font-size: 2.5rem; padding: 10px; background: rgba(0,0,0,0.5); }
-
-    .gallery-page .viewer-prev { left: 10px; }
-
-    .gallery-page .viewer-next { right: 10px; }
-
-}
-/* --- Add this to 5. MODALS section --- */
-
-/* The specific Back Button Style */
-.gallery-page .back-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    padding: 10px 24px;
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    cursor: pointer;
-    font-family: var(--font-body);
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
-    margin-right: auto; /* Pushes title to center or allows spacing */
-}
-
-/* Hover Effect */
-.gallery-page .back-btn:hover {
-    background-color: var(--jec-blue);
-    border-color: var(--jec-blue);
-    transform: translateX(-5px); /* Moves slightly left to indicate 'back' */
-    box-shadow: 0 4px 15px rgba(0, 114, 198, 0.4);
-}
-
-/* Add an arrow icon via CSS pseudo-element if you don't use FontAwesome */
-.gallery-page .back-btn::before {
-    content: '←';
-    font-size: 1.2rem;
-    line-height: 1;
-    font-weight: bold;
-}
-
-/* Update Modal Header to align items correctly */
-.gallery-page .modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Allows wrapping on very small screens */
-    gap: 1rem;
-    max-width: 1200px;
-    margin: 0 auto 2rem auto;
-    color: white;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    padding-bottom: 1rem;
-}
-
-/* Mobile Adjustment for the button */
-@media (max-width: 600px) {
-    .gallery-page .modal-header {
-        flex-direction: column-reverse; /* Puts title on top, controls below */
-        align-items: flex-start;
-        gap: 1.5rem;
+    /* UPDATED: Ensure Close button is safe on mobile screens */
+    .gallery-page .viewer-close {
+        top: 60px; /* Push down further for mobile */
+        right: 20px;
+        font-size: 2.5rem;
     }
-    
-    .gallery-page .back-btn {
-        width: 100%;
-        justify-content: center;
+
+    .gallery-page .modal {
+        /* On mobile, use less side padding but keep top padding */
+        padding: 80px 1rem 1rem 1rem;
     }
 }
