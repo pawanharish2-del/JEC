@@ -95,12 +95,12 @@ const Footer = () => {
                             <div className="contact-row">
                                 <span className="dept-title">Training & Placement</span>
                                 <a href="tel:+918058799027" className="contact-link">+91-80587 99027</a>
-                                <a href="mailto:trainingandplacement@jeckukas.org.in" className="contact-link">Email T&P Cell</a>
+                                <a href="mailto:trainingandplacement@jeckukas.org.in" className="contact-link">trainingandplacement@jeckukas.org.in</a>
                             </div>
                             <div className="contact-row">
                                 <span className="dept-title">Exam & Verification</span>
                                 <a href="tel:+918058799002" className="contact-link">+91-80587 99002</a>
-                                <a href="mailto:examinations.jec@gmail.com" className="contact-link">Email Exam Cell</a>
+                                <a href="mailto:examinations.jec@gmail.com" className="contact-link">examinations.jec@gmail.com</a>
                             </div>
                             <div className="contact-row" style={{ gridColumn: 'span 2', borderTop: '1px solid var(--footer-border)', paddingTop: '8px', marginTop: '5px' }}>
                                 <span className="dept-title">Director's Office</span>
