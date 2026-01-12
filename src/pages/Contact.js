@@ -40,7 +40,7 @@ function Contact() {
             <p className="address-line">401, Akashdeep, Barakhamba road, New Delhi</p>
             
             <div className="contact-detail"><i className="fas fa-phone"></i> <p>+91-9829067091</p></div>
-            <div className="contact-detail"><i className="fas fa-envelope"></i> <a href="mailto:lalitkumasaraogi@jeckukas.org.in">lalitkumasaraogi@jeckukas.org.in</a></div>
+            <div className="contact-detail"><i className="fas fa-envelope"></i> <a href="mailto:lalitkumarsaraogi@jeckukas.org.in">lalitkumarsaraogi@jeckukas.org.in</a></div>
           </div>
         </div>
 
