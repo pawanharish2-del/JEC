@@ -27,11 +27,12 @@ function Contact() {
             <p className="address-line">SP - 43, RIICO Industrial Area, Delhi Road, Kukas, Jaipur - 302028, India</p>
 
             <div className="contact-detail"><i className="fas fa-phone"></i> <p>+91-8875071333 (30 lines Admissions)</p></div>
+     <div className="contact-detail"><i className="fas fa-envelope"></i> <a href="mailto:">info@jeckukas.org.in</a> (General Inquiry)</div>
     
             <div className="contact-detail"><i className="fas fa-phone"></i> <p>+91-8875041333</p></div>
             <div className="contact-detail"><i className="fas fa-phone"></i> <p>+91-9694098821 </p></div>
             
-            <div className="contact-detail"><i className="fas fa-envelope"></i> <a href="mailto:info@jeckukas.org.in">info@jeckukas.org.in</a> (General Inquiry)</div>
+            <div className="contact-detail"><i className="fas fa-envelope"></i> <a href="mailto:admission@jeckukas.org.in">admission@jeckukas.org.in</a></div>
                         <div className="contact-detail"><i className="fas fa-envelope"></i> <a href="mailto:training&placement@jeckukas.org.in">training&placement@jeckukas.org.in</a> (T&P)</div>
           </div>
 
