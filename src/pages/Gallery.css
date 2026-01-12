@@ -1,8 +1,8 @@
 /* --- 1. BRANDING & VARIABLES --- */
 .gallery-page {
-    --jec-blue: #0072C6;       
+    --jec-blue: #0072C6;        
     --jec-red: #D62828;        
-    --jec-gold: #FCA311;       
+    --jec-gold: #FCA311;        
     
     --bg-body: #F8FAFC;
     --bg-surface: #FFFFFF;
@@ -251,21 +251,62 @@
     line-height: 1.4;
 }
 
-/* --- 5. MODALS --- */
+/* --- 5. MODALS (Updated with Back Button) --- */
 .gallery-page .modal {
-    display: block; /* Controlled by React conditional rendering */
+    display: block;
     position: fixed; z-index: 2000; left: 0; top: 0;
     width: 100%; height: 100%; background-color: rgba(15, 23, 42, 0.98);
     backdrop-filter: blur(10px); overflow-y: auto; padding: 2rem; animation: fadeIn 0.3s;
 }
 
+/* Updated Header Layout to allow Back Button on left */
 .gallery-page .modal-header {
-    display: flex; justify-content: space-between; align-items: center;
-    max-width: 1200px; margin: 0 auto 2rem auto; color: white;
-    border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap; /* Allows stacking on very small screens */
 }
 
-.gallery-page .modal-title { font-family: var(--font-head); font-size: 2rem; color: var(--jec-gold); }
+/* NEW BACK BUTTON STYLE */
+.gallery-page .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    margin-right: auto; /* Pushes the Title to the center/right */
+}
+
+.gallery-page .back-btn:hover {
+    background-color: var(--jec-blue);
+    border-color: var(--jec-blue);
+    transform: translateX(-5px); /* Move left effect */
+    box-shadow: 0 4px 15px rgba(0, 114, 198, 0.4);
+}
+
+/* Auto-add arrow icon */
+.gallery-page .back-btn::before {
+    content: '←';
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.gallery-page .modal-title { font-family: var(--font-head); font-size: 2rem; color: var(--jec-gold); text-align: center; }
 
 .gallery-page .close-btn {
     color: white; font-size: 2.5rem; cursor: pointer; transition: 0.3s; line-height: 1;
@@ -346,4 +387,8 @@
     .gallery-page .viewer-nav { font-size: 2.5rem; padding: 10px; background: rgba(0,0,0,0.5); }
     .gallery-page .viewer-prev { left: 10px; }
     .gallery-page .viewer-next { right: 10px; }
+
+    /* Mobile Back Button Stack */
+    .gallery-page .modal-header { flex-direction: column-reverse; gap: 1rem; text-align: center; }
+    .gallery-page .back-btn { width: 100%; justify-content: center; }
 }
