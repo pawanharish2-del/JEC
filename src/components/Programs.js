@@ -37,27 +37,27 @@ const programs = [
     {
         type: 'M.Tech',
         name: 'Computer Science Engineering (18 seats)',
-        path: '/'
+        path: '/JEC-engineering/MTech'
     },
     {
         type: 'M.Tech',
         name: 'Digital communication (18 seats)',
-        path: '/'
+        path: '/JEC-engineering/MTech'
     },
     {
         type: 'M.Tech',
         name: 'Power system (18 seats)',
-        path: '/'
+        path: '/JEC-engineering/MTech'
     },
     {
         type: 'M.Tech',
         name: 'Production engineering (18 seats)',
-        path: '/'
+        path: '/JEC-engineering/MTech'
     },
     {
         type: 'M.Tech',
         name: 'Environmental Engineering (18 seats)',
-        path: '/'
+        path: '/JEC-engineering/MTech'
     },
 ];
 
