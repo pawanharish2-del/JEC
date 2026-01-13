@@ -34,6 +34,7 @@ function MTech() {
                 </div>
 
                 <div className="courses-grid">
+                    {/* Course Card: CSE */}
                     <div className="course-card">
                         <div className="card-header">
                             <div className="card-icon"><i className="fas fa-laptop-code"></i></div>
@@ -56,6 +57,7 @@ function MTech() {
                         </div>
                     </div>
 
+                    {/* Course Card: Digital Comm */}
                     <div className="course-card">
                         <div className="card-header">
                             <div className="card-icon"><i className="fas fa-satellite-dish"></i></div>
@@ -78,6 +80,7 @@ function MTech() {
                         </div>
                     </div>
 
+                    {/* Course Card: Power Systems */}
                     <div className="course-card">
                         <div className="card-header">
                             <div className="card-icon"><i className="fas fa-bolt"></i></div>
@@ -100,6 +103,7 @@ function MTech() {
                         </div>
                     </div>
 
+                    {/* Course Card: Production */}
                     <div className="course-card">
                         <div className="card-header">
                             <div className="card-icon"><i className="fas fa-cogs"></i></div>
@@ -122,6 +126,7 @@ function MTech() {
                         </div>
                     </div>
 
+                    {/* Course Card: Environmental */}
                     <div className="course-card">
                         <div className="card-header">
                             <div className="card-icon"><i className="fas fa-leaf"></i></div>
@@ -151,14 +156,14 @@ function MTech() {
                 </div>
 
                 <div className="alumni-grid">
+                    {/* Alumni: Atul */}
                     <div className="alumni-card">
                         <div className="alumni-img-wrapper">
-                            <img
-                                src="atul-photo.jpg"
-                                alt="Atul Kumar"
-                                onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }}
+                            <img 
+                                src="/atul.jpg" 
+                                alt="Atul Kumar" 
+                                className="alumni-photo" 
                             />
-                            <i className="fas fa-user" style={{ display: 'none' }}></i>
                         </div>
                         <h3 className="alumni-name">Atul Kumar</h3>
                         <div className="alumni-role">Assistant Manager</div>
@@ -169,9 +174,14 @@ function MTech() {
                         </div>
                     </div>
 
+                    {/* Alumni: Himanshu */}
                     <div className="alumni-card">
                         <div className="alumni-img-wrapper">
-                            <i className="fas fa-user-tie"></i>
+                            <img 
+                                src="/himanshu.jpeg" 
+                                alt="Himanshu Gupta" 
+                                className="alumni-photo" 
+                            />
                         </div>
                         <h3 className="alumni-name">Himanshu Gupta</h3>
                         <div className="alumni-role">Sr. Associate Consultant</div>
@@ -182,9 +192,14 @@ function MTech() {
                         </div>
                     </div>
 
+                    {/* Alumni: Akshay */}
                     <div className="alumni-card">
                         <div className="alumni-img-wrapper">
-                            <i className="fas fa-hard-hat"></i>
+                            <img 
+                                src="/akshay.jpeg" 
+                                alt="Akshay Tripathi" 
+                                className="alumni-photo" 
+                            />
                         </div>
                         <h3 className="alumni-name">Akshay Tripathi</h3>
                         <div className="alumni-role">Junior Engineer</div>
@@ -196,7 +211,7 @@ function MTech() {
                     </div>
                 </div>
 
-                {/* NEW SCHOLARSHIP SECTION */}
+                {/* SCHOLARSHIP SECTION */}
                 <div className="scholarship-section">
                     <div className="section-header">
                         <h2>Financial Support</h2>
@@ -208,37 +223,26 @@ function MTech() {
                         </div>
                         <div className="scholarship-text-content">
                             <h3>AICTE GATE Scholarship</h3>
-                            <p>The AICTE GATE Scholarship provides <strong>₹12,400 per month</strong> for up to 24 months (2 years) to full-time M.Tech/ME/M.Arch students with a valid GATE/CEED score admitted to AICTE-approved PG programs, covering living expenses and promoting technical education, with applications handled through the institute via the AICTE PG Scholarship portal.</p>
+                            <p>The AICTE GATE Scholarship provides <strong>₹12,400 per month</strong> for up to 24 months (2 years) to full-time M.Tech/ME/M.Arch students with a valid GATE/CEED score admitted to AICTE-approved PG programs.</p>
                         </div>
                     </div>
                 </div>
 
+                {/* ELIGIBILITY SECTION */}
                 <div className="eligibility-section">
                     <div className="section-header" style={{ marginBottom: '30px' }}>
-                        <h2 style={{ color: 'var(--logo-black)' }}>Common Eligibility Criteria</h2>
-                        <div className="divider" style={{ background: 'var(--logo-gold)' }}></div>
+                        <h2 style={{ color: '#000' }}>Common Eligibility Criteria</h2>
+                        <div className="divider" style={{ background: '#d4af37' }}></div>
                     </div>
 
                     <div className="eligibility-list">
                         <div className="eligibility-item">
                             <i className="fas fa-check-circle"></i>
-                            <p><strong>Relevant Degree:</strong> Bachelor’s degree (B.Tech/B.E.) in a relevant engineering discipline from a recognized university.</p>
+                            <p><strong>Relevant Degree:</strong> Bachelor’s degree (B.Tech/B.E.) in a relevant engineering discipline.</p>
                         </div>
                         <div className="eligibility-item">
                             <i className="fas fa-check-circle"></i>
-                            <p><strong>Minimum Marks:</strong> Must meet minimum aggregate percentage/CGPA in the qualifying exam as prescribed by university norms.</p>
-                        </div>
-                        <div className="eligibility-item">
-                            <i className="fas fa-check-circle"></i>
-                            <p><strong>Entrance Score:</strong> Admission may be based on a valid GATE score and/or merit in the qualifying examination.</p>
-                        </div>
-                        <div className="eligibility-item">
-                            <i className="fas fa-check-circle"></i>
-                            <p><strong>Final Year Students:</strong> Candidates appearing in the final year of their Bachelor’s degree may also apply (subject to completion).</p>
-                        </div>
-                        <div className="eligibility-item">
-                            <i className="fas fa-check-circle"></i>
-                            <p><strong>Reservations:</strong> Relaxation in eligibility criteria applicable as per government and university norms.</p>
+                            <p><strong>Entrance Score:</strong> Admission may be based on a valid GATE score and/or merit.</p>
                         </div>
                     </div>
                 </div>

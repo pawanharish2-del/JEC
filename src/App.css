@@ -4682,6 +4682,7 @@ body {
     position: relative;
 }
 
+
 /* Vertical dividers on desktop */
 @media (min-width: 992px) {
     .fee-stat-item:not(:last-child)::after {
@@ -8276,3 +8277,17 @@ body {
 /* ==========================================================================
    FINAL CONSOLIDATED MOBILE NAVIGATION (Max-Width: 992px)
    ========================================================================== */
+
+
+   main {
+  /* Combined height: 48px (Top Bar) + 76px (Header) = 124px */
+  padding-top: 124px;
+}
+
+/* Adjust for mobile where the Top Bar is hidden */
+@media (max-width: 1024px) {
+  main {
+    /* Only 76px for the mobile Header */
+    padding-top: 76px;
+  }
+}

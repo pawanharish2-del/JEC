@@ -22,14 +22,14 @@
     margin-bottom: 50px;
 }
 
-    .carousel-header h2 {
-        font-size: 2rem;
-        color: var(--logo-blue);
-        margin-bottom: 15px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-weight: 800;
-    }
+.carousel-header h2 {
+    font-size: 2rem;
+    color: var(--logo-blue);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
 
 .carousel-divider {
     height: 4px;
@@ -64,21 +64,11 @@
     padding: 0 30px; /* Spacing between logos */
 }
 
-    .logo-slide img {
-        max-width: 100%;
-        max-height: 100%;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        /* Optional: Add grayscale back if you want it, remove if not */
-        /* filter: grayscale(100%); opacity: 0.7; */
-    }
-
-    /* Color on Hover */
-    .logo-slide:hover img {
-        filter: grayscale(0%);
-        opacity: 1;
-        transform: scale(1.1);
-    }
+.logo-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    /* Hover-related transition and cursor removed */
+}
 
 /* Infinite Scroll Animation */
 @keyframes scroll {
