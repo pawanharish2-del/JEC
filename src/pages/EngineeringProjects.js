@@ -48,7 +48,7 @@ const EngineeringProjects = () => {
                 <p>Engineering projects offer students with a platform to apply engineering to the real world, discover the joy of working in a team and extend the experience to new domains. They are eager to try, experiment and learn from their failures. Excellent projects are completed by students in previous academic sessions.</p>
             </div>
             <div className="img-block">
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000" alt="Students in Lab" />
+                <img src="/images/yulii-shtel-3PJNIvkf-Tw-unsplash.jpg" alt="Students in Lab" />
             </div>
         </div>
 
@@ -105,7 +105,7 @@ const EngineeringProjects = () => {
             {/* Project 4 */}
             <div className="project-card">
                 <div className="project-img-container">
-                    <img src="https://images.unsplash.com/photo-1546173161-c09ed0af96cb?q=80&w=600" alt="Mobile Beverage" />
+                    <img src="/images/Fully Automated Mobile Beverage Serving Unit.png" alt="Mobile Beverage" />
                 </div>
                 <div className="project-content">
                     <div className="proj-title">Fully Automated Mobile Beverage Serving Unit</div>
@@ -119,7 +119,7 @@ const EngineeringProjects = () => {
             {/* Project 5 */}
             <div className="project-card">
                 <div className="project-img-container">
-                    <img src="https://images.unsplash.com/photo-1595246604217-1c258d927c7f?q=80&w=600" alt="Brass Casing" />
+                    <img src="/images/Brass collection.jpg" alt="Brass Casing" />
                 </div>
                 <div className="project-content">
                     <div className="proj-title">Brass Casing Collector</div>
@@ -147,7 +147,7 @@ const EngineeringProjects = () => {
             {/* Project 7 */}
             <div className="project-card">
                 <div className="project-img-container">
-                    <img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?q=80&w=600" alt="Cupcake Production" />
+                    <img src="/images/syed-maaz-pGEGdfNRdG4-unsplash.jpg" alt="Cupcake Production" />
                 </div>
                 <div className="project-content">
                     <div className="proj-title">Fully Automated Multi-layer Cupcake Production</div>
@@ -175,7 +175,7 @@ const EngineeringProjects = () => {
             {/* Project 9 */}
             <div className="project-card">
                 <div className="project-img-container">
-                    <img src="https://images.unsplash.com/photo-1589254065878-42c9da9e2fa6?q=80&w=600" alt="Robotic Gripper" />
+                    <img src="/images/3cbccd01-5de0-48da-9827-1875516d583d.jpg" alt="Robotic Gripper" />
                 </div>
                 <div className="project-content">
                     <div className="proj-title">Robotics with Dexterous Gripper for Fruit Inspection</div>
@@ -189,7 +189,7 @@ const EngineeringProjects = () => {
             {/* Project 10 */}
             <div className="project-card">
                 <div className="project-img-container">
-                    <img src="https://images.unsplash.com/photo-1584036561566-b93a50208c3c?q=80&w=600" alt="Oxygen System" />
+                    <img src="/images/oxygen tank.jpg" alt="Oxygen System" />
                 </div>
                 <div className="project-content">
                     <div className="proj-title">Follow Me Oxygen Tank System</div>
@@ -203,7 +203,7 @@ const EngineeringProjects = () => {
             {/* Project 11 */}
             <div className="project-card">
                 <div className="project-img-container">
-                    <img src="https://images.unsplash.com/photo-1565514020176-02750e6ebf3e?q=80&w=600" alt="Traffic Robot" />
+                    <img src="/images/traffic and mobile.jpg" alt="Traffic Robot" />
                 </div>
                 <div className="project-content">
                     <div className="proj-title">Robot and Mobile Traffic Stop Light</div>
@@ -231,7 +231,7 @@ const EngineeringProjects = () => {
             {/* Project 13 */}
             <div className="project-card">
                 <div className="project-img-container">
-                    <img src="https://images.unsplash.com/photo-1618397940176-9d628eb41334?q=80&w=600" alt="3D Printer" />
+                    <img src="/images/3D Printer.jpg" alt="3D Printer" />
                 </div>
                 <div className="project-content">
                     <div className="proj-title">3D Printer for Fabricating Fiber-Reinforced Materials</div>

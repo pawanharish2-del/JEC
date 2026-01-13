@@ -26,21 +26,22 @@ function Contact() {
             <h3><i className="fas fa-map-marker-alt"></i> JEC Main Campus, Kukas</h3>
             <p className="address-line">SP - 43, RIICO Industrial Area, Delhi Road, Kukas, Jaipur - 302028, India</p>
 
-            <div className="contact-detail"><i className="fas fa-phone"></i> <p>+91-8875071333 (30 lines)</p></div>
+            <div className="contact-detail"><i className="fas fa-phone"></i> <p>+91-8875071333 (30 lines Admissions)</p></div>
+     <div className="contact-detail"><i className="fas fa-envelope"></i> <a href="mailto:">info@jeckukas.org.in</a> (General Inquiry)</div>
+    
             <div className="contact-detail"><i className="fas fa-phone"></i> <p>+91-8875041333</p></div>
-            <div className="contact-detail"><i className="fas fa-phone"></i> <p>+91-9694098821 / +91-9694098823</p></div>
+            <div className="contact-detail"><i className="fas fa-phone"></i> <p>+91-9694098821 </p></div>
             
-            <div className="contact-detail"><i className="fas fa-envelope"></i> <a href="mailto:jeckukas@yahoo.com">jeckukas@yahoo.com</a> (General Inquiry)</div>
-            <div className="contact-detail"><i className="fas fa-envelope"></i> <a href="mailto:admission@jeckukas.org.in">admission@jeckukas.org.in</a> (Admissions)</div>
-            <div className="contact-detail"><i className="fas fa-envelope"></i> <a href="mailto:training.placementsjec@gmail.com">training.placementsjec@gmail.com</a> (T&P)</div>
+            <div className="contact-detail"><i className="fas fa-envelope"></i> <a href="mailto:admission@jeckukas.org.in">admission@jeckukas.org.in</a></div>
+                        <div className="contact-detail"><i className="fas fa-envelope"></i> <a href="mailto:training&placement@jeckukas.org.in">training&placement@jeckukas.org.in</a> (T&P)</div>
           </div>
 
           <div className="location-box delhi-office">
             <h3><i className="fas fa-building"></i> Delhi Liaison Office</h3>
             <p className="address-line">401, Akashdeep, Barakhamba road, New Delhi</p>
             
-            <div className="contact-detail"><i className="fas fa-phone"></i> <p>+91-8058799011</p></div>
-            <div className="contact-detail"><i className="fas fa-envelope"></i> <a href="mailto:directorjecjiet@gmail.com">directorjecjiet@gmail.com</a></div>
+            <div className="contact-detail"><i className="fas fa-phone"></i> <p>+91-9829067091</p></div>
+            <div className="contact-detail"><i className="fas fa-envelope"></i> <a href="mailto:lalitkumarsaraogi@jeckukas.org.in">lalitkumarsaraogi@jeckukas.org.in</a></div>
           </div>
         </div>
 

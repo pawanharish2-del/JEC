@@ -1,3 +1,19 @@
+/* RESET DEFAULT BROWSER MARGINS */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Your existing code continues below... */
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  font-family: 'Segoe UI', sans-serif;
+}
+/* ... rest of your CSS */
+
 .admin-container {
   display: flex;
   min-height: 100vh;

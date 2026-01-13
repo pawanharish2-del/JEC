@@ -134,14 +134,32 @@ function AdmissionOpen() {
             
             <div className="admissions-expert-card">
                 <div className="admissions-expert-img-wrapper">
-                    <img src="/images/Lalitsaraogi.png" alt="Er. Lalit K. Saraogi" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2F1225%20(3)%20(1).png?alt=media&token=fc063e5b-4d0a-48ea-be1e-7ae1da0d3d2a" alt="Er. Lalit K. Saraogi" />
                 </div>
                 <div className="admissions-expert-content">
-                    <div className="admissions-expert-name">Er. Lalit K. Saraogi</div>
+                    <div className="admissions-expert-name">Mr. Lalit K. Saraogi</div>
                     <span className="admissions-expert-role">General Secretary AIATERF & Group Director</span>
                     <p className="admissions-expert-bio">Er. Lalit K. Saraogi plays a key role in defining the vision, mission and strategy for the growth and development of AIATERF and JEC Group of Colleges. He brings in his invaluable experience in managing people at various levels ensuring a smooth and satisfactory relationship.</p>
                 </div>
             </div>
+
+
+            {/* harish sarogi */}
+ <div className="admissions-expert-card">
+                <div className="admissions-expert-img-wrapper">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2FShri.%20Harish%20Saraogi.JPG?alt=media&token=709e24a1-cb3a-463f-aba1-20ea6304c644" alt="Er. Lalit K. Saraogi" />
+                </div>
+                <div className="admissions-expert-content">
+                    <div className="admissions-expert-name">Mr. Harish Saraogi</div>
+                    <span className="admissions-expert-role">Director (Finance) - AIATERF & JEC Group</span>
+                    <p className="admissions-expert-bio">Shri Harish Saraogi holds a degree in commerce and has honed technical and managerial skills through advanced training. The credit for the rapid and meteoric rise of the group goes to his astute skills in planning, budgeting, and managing resources.
+
+An avid lover of global travel, he brings a wealth of information on innovations taking place worldwide. His dedication and dynamic approach have been a guiding force behind the success of the group, elevating it to international standards.</p>
+                </div>
+            </div>
+
+
+
 
             <div className="admissions-expert-card">
                 <div className="admissions-expert-img-wrapper">
@@ -156,7 +174,7 @@ function AdmissionOpen() {
 
             <div className="admissions-expert-card">
                 <div className="admissions-expert-img-wrapper">
-                          <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2F(Dr.)%20Sunita%20Goyal%20Rawat.JPG?alt=media&token=6c8a6b74-1888-465f-a19a-576e420cf876" alt="Prof. (Dr.) Sunita Goyal Rawat" />
+                          <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2F(Dr.)%20Sunita%20Goyal%20Rawat.jpg?alt=media&token=4c2571f6-5711-4c1a-95f8-3885907e22bc" alt="Prof. (Dr.) Sunita Goyal Rawat" />
                 </div>
                 <div className="admissions-expert-content">
                     <div className="admissions-expert-name">Prof. (Dr.) Sunita Goyal Rawat</div>

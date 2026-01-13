@@ -64,10 +64,10 @@
     backdrop-filter: blur(5px);
 }
 
-    .highlight-pill i {
-        color: var(--logo-gold);
-        margin-right: 8px;
-    }
+.highlight-pill i {
+    color: var(--logo-gold);
+    margin-right: 8px;
+}
 
 /* --- Main Container --- */
 .container {
@@ -81,19 +81,19 @@
     margin-bottom: 50px;
 }
 
-    .section-header h2 {
-        font-size: 2rem;
-        color: var(--logo-blue);
-        margin-bottom: 10px;
-    }
+.section-header h2 {
+    font-size: 2rem;
+    color: var(--logo-blue);
+    margin-bottom: 10px;
+}
 
-    .section-header .divider {
-        height: 4px;
-        width: 60px;
-        background: var(--logo-red);
-        margin: 0 auto;
-        border-radius: 2px;
-    }
+.section-header .divider {
+    height: 4px;
+    width: 60px;
+    background: var(--logo-red);
+    margin: 0 auto;
+    border-radius: 2px;
+}
 
 /* --- Course Cards Grid --- */
 .courses-grid {
@@ -114,23 +114,16 @@
     flex-direction: column;
 }
 
-    .course-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-    }
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
 
-    /* Specialized top borders */
-    .course-card:nth-child(2) {
-        border-top-color: var(--logo-red);
-    }
-
-    .course-card:nth-child(3) {
-        border-top-color: var(--logo-gold);
-    }
-
-    .course-card:nth-child(4) {
-        border-top-color: var(--logo-black);
-    }
+/* Specialized top borders */
+.course-card:nth-child(2) { border-top-color: var(--logo-red); }
+.course-card:nth-child(3) { border-top-color: var(--logo-gold); }
+.course-card:nth-child(4) { border-top-color: var(--logo-black); }
+.course-card:nth-child(5) { border-top-color: #2D6A4F; } /* Env Green */
 
 .card-header {
     padding: 25px;
@@ -154,17 +147,9 @@
     flex-shrink: 0;
 }
 
-.course-card:nth-child(2) .card-icon {
-    color: var(--logo-red);
-}
-
-.course-card:nth-child(3) .card-icon {
-    color: var(--logo-gold);
-}
-
-.course-card:nth-child(4) .card-icon {
-    color: var(--logo-black);
-}
+.course-card:nth-child(2) .card-icon { color: var(--logo-red); }
+.course-card:nth-child(3) .card-icon { color: var(--logo-gold); }
+.course-card:nth-child(4) .card-icon { color: var(--logo-black); }
 
 .card-title {
     font-size: 1.25rem;
@@ -195,24 +180,25 @@
 
 .focus-list {
     list-style: none;
+    padding: 0;
     margin-bottom: 20px;
 }
 
-    .focus-list li {
-        position: relative;
-        padding-left: 20px;
-        margin-bottom: 6px;
-        font-size: 0.9rem;
-        color: #555;
-    }
+.focus-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #555;
+}
 
-        .focus-list li::before {
-            content: '�';
-            color: var(--logo-blue);
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
+.focus-list li::before {
+    content: '▹';
+    color: var(--logo-blue);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
 
 .card-footer {
     background: #fcfcfc;
@@ -252,13 +238,13 @@
     transition: var(--transition);
 }
 
-    .alumni-card:hover {
-        transform: translateY(-5px);
-    }
+.alumni-card:hover {
+    transform: translateY(-5px);
+}
 
 .alumni-img-wrapper {
-    width: 100px;
-    height: 100px;
+    width: 120px; /* Consistent circular size */
+    height: 120px;
     margin: 0 auto 20px;
     border-radius: 50%;
     overflow: hidden;
@@ -269,16 +255,18 @@
     justify-content: center;
 }
 
-    .alumni-img-wrapper img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.alumni-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Prevents image stretching */
+    object-position: center; /* Keeps faces centered */
+    display: block;
+}
 
-    .alumni-img-wrapper i {
-        font-size: 40px;
-        color: #ccc;
-    }
+.alumni-img-wrapper i {
+    font-size: 40px;
+    color: #ccc;
+}
 
 .alumni-name {
     font-size: 1.2rem;
@@ -317,6 +305,56 @@
     margin-left: 5px;
 }
 
+/* --- Scholarship Section --- */
+.scholarship-section {
+    margin-bottom: 80px;
+}
+
+.scholarship-highlight-box {
+    background: var(--logo-white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-right: 6px solid var(--logo-blue);
+    transition: var(--transition);
+}
+
+.scholarship-highlight-box:hover {
+    transform: translateY(-5px);
+}
+
+.scholarship-icon-circle {
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 114, 198, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: var(--logo-blue);
+    flex-shrink: 0;
+}
+
+.scholarship-text-content h3 {
+    font-size: 1.5rem;
+    color: var(--logo-black);
+    margin-bottom: 12px;
+}
+
+.scholarship-text-content p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.scholarship-text-content strong {
+    color: var(--logo-red);
+}
+
 /* --- Eligibility Section --- */
 .eligibility-section {
     background: var(--logo-white);
@@ -328,6 +366,7 @@
 
 .eligibility-list {
     list-style: none;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
@@ -339,18 +378,18 @@
     gap: 15px;
 }
 
-    .eligibility-item i {
-        color: var(--logo-blue);
-        font-size: 1.2rem;
-        margin-top: 4px;
-    }
+.eligibility-item i {
+    color: var(--logo-blue);
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
 
-    .eligibility-item p {
-        font-size: 1rem;
-        color: var(--text-main);
-    }
+.eligibility-item p {
+    font-size: 1rem;
+    color: var(--text-main);
+}
 
-/* --- NEW: Contact Footer --- */
+/* --- Contact Footer --- */
 .contact-bar {
     background: var(--logo-blue);
     color: var(--logo-white);
@@ -390,10 +429,10 @@
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
-    .apply-btn:hover {
-        transform: translateY(-3px);
-        background: #e59400; /* Slightly darker gold */
-    }
+.apply-btn:hover {
+    transform: translateY(-3px);
+    background: #e59400; 
+}
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
@@ -408,64 +447,14 @@
     .eligibility-section {
         padding: 30px 20px;
     }
-}
 
-
-/* --- Scholarship Section Styles --- */
-.scholarship-section {
-    margin-bottom: 80px;
-}
-
-.scholarship-highlight-box {
-    background: var(--logo-white);
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: var(--card-shadow);
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    border-right: 6px solid var(--logo-blue); /* Visual balance with Eligibility section */
-    transition: var(--transition);
-}
-
-.scholarship-highlight-box:hover {
-    transform: translateY(-5px);
-}
-
-.scholarship-icon-circle {
-    width: 80px;
-    height: 80px;
-    background: rgba(0, 114, 198, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    color: var(--logo-blue);
-    flex-shrink: 0;
-}
-
-.scholarship-text-content h3 {
-    font-size: 1.5rem;
-    color: var(--logo-black);
-    margin-bottom: 12px;
-}
-
-.scholarship-text-content p {
-    font-size: 1.05rem;
-    color: var(--text-light);
-    line-height: 1.8;
-}
-
-.scholarship-text-content strong {
-    color: var(--logo-red);
-}
-
-/* Responsive adjustments for scholarship box */
-@media (max-width: 768px) {
     .scholarship-highlight-box {
         flex-direction: column;
         text-align: center;
         padding: 30px 20px;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
     }
 }

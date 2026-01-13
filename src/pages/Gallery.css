@@ -33,7 +33,8 @@
     min-height: 80vh;
     background: #fff;
     padding: 4rem 2rem;
-    overflow: hidden;
+    overflow: hidden; 
+    padding-top: 8rem;
 }
 
 .gallery-page .modern-hero::before {
@@ -121,6 +122,7 @@
     opacity: 0.6;
     z-index: -1;
 }
+
 .gallery-page .blob-1 { width: 300px; height: 300px; background: #BFDBFE; top: 10%; right: 10%; }
 .gallery-page .blob-2 { width: 200px; height: 200px; background: #FDE68A; bottom: 10%; left: 20%; }
 
@@ -162,6 +164,7 @@
     justify-content: space-between;
     align-items: end;
 }
+
 .gallery-page .section-header h2 { font-family: var(--font-head); font-size: 2.5rem; color: var(--text-main); line-height: 1; }
 .gallery-page .section-header span { color: var(--jec-blue); }
 .gallery-page .section-header p { color: var(--text-muted); font-size: 1rem; margin-top: 5px; }
@@ -229,8 +232,8 @@
     transform: translateY(20px);
     transition: 0.3s;
 }
-.gallery-page .album-card:hover .view-btn { transform: translateY(0); }
 
+.gallery-page .album-card:hover .view-btn { transform: translateY(0); }
 .gallery-page .album-info { padding: 1.5rem; }
 
 .gallery-page .album-meta {
@@ -253,16 +256,29 @@
 
 /* --- 5. MODALS --- */
 .gallery-page .modal {
-    display: block; /* Controlled by React conditional rendering */
-    position: fixed; z-index: 2000; left: 0; top: 0;
-    width: 100%; height: 100%; background-color: rgba(15, 23, 42, 0.98);
-    backdrop-filter: blur(10px); overflow-y: auto; padding: 2rem; animation: fadeIn 0.3s;
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.98);
+    backdrop-filter: blur(10px);
+    overflow-y: auto;
+    padding: 8rem 2rem 2rem 2rem; 
+    animation: fadeIn 0.3s;
 }
 
 .gallery-page .modal-header {
-    display: flex; justify-content: space-between; align-items: center;
-    max-width: 1200px; margin: 0 auto 2rem auto; color: white;
-    border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 1rem;
 }
 
 .gallery-page .modal-title { font-family: var(--font-head); font-size: 2rem; color: var(--jec-gold); }
@@ -271,6 +287,7 @@
     color: white; font-size: 2.5rem; cursor: pointer; transition: 0.3s; line-height: 1;
     width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%;
 }
+
 .gallery-page .close-btn:hover { background: rgba(255,255,255,0.1); color: var(--jec-red); }
 
 .gallery-page .modal-grid {
@@ -280,32 +297,51 @@
 
 .gallery-page .modal-img-wrapper {
     border-radius: 12px; overflow: hidden; height: 250px;
-    border: 2px solid rgba(255,255,255,0.1); transition: 0.3s; cursor: zoom-in; position: relative;
+    border: 2px solid rgba(255,255,255,0.1); transition: 0.3s; cursor: zoom-in; position: relative; 
 }
+
 .gallery-page .modal-img-wrapper:hover { border-color: var(--jec-gold); transform: scale(1.02); z-index: 2; }
 .gallery-page .modal-img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
 
-/* --- 6. FULL SCREEN IMAGE VIEWER WITH NAVIGATION --- */
+/* --- 6. FULL SCREEN IMAGE VIEWER --- */
 .gallery-page .image-viewer {
-    display: flex; position: fixed; z-index: 3000; left: 0; top: 0;
-    width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.95);
-    justify-content: center; align-items: center; flex-direction: column; 
-    animation: zoomIn 0.3s; user-select: none;
+    display: flex;
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: zoomIn 0.3s;
+    user-select: none;
+    padding: 20px; /* Added padding for safe zone */
+    box-sizing: border-box; 
 }
-.gallery-page .viewer-img { 
-    max-width: 85%; max-height: 85vh; 
-    border-radius: 4px; box-shadow: 0 0 50px rgba(0,0,0,0.8); 
-    border: 2px solid var(--jec-blue); 
-    transition: opacity 0.2s;
-}
-.gallery-page .viewer-close { 
-    position: absolute; top: 20px; right: 30px; color: white; 
-    font-size: 3rem; cursor: pointer; z-index: 3001; transition: 0.3s; 
-}
-.gallery-page .viewer-close:hover { color: var(--jec-red); }
-.gallery-page .viewer-caption { color: #cbd5e1; margin-top: 1rem; font-size: 1rem; }
 
-/* Navigation Arrows */
+/* FIX: This contains the expanded image size for all views */
+.gallery-page .image-viewer img {
+    max-width: 95%;
+    max-height: 80vh; /* Leaves room for navigation and close buttons */
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+.gallery-page .viewer-close { 
+    position: absolute;
+    top: 50px; 
+    right: 30px;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 3001;
+    transition: 0.3s;
+}
+
 .gallery-page .viewer-nav {
     position: absolute;
     top: 50%;
@@ -318,32 +354,62 @@
     transition: 0.3s;
     background: rgba(0,0,0,0.2);
     border-radius: 8px;
+   
 }
+
 .gallery-page .viewer-nav:hover { background: rgba(255,255,255,0.1); color: var(--jec-gold); }
 .gallery-page .viewer-prev { left: 30px; }
 .gallery-page .viewer-next { right: 30px; }
 
 .gallery-page .image-counter {
     color: var(--jec-gold);
-    margin-top: 5px;
+    margin-top: 15px; /* Increased margin for visibility */
     font-weight: 600;
+    font-size: 1.1rem;
 }
 
 @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
 @keyframes zoomIn { from {transform: scale(0.9); opacity: 0;} to {transform: scale(1); opacity: 1;} }
 
-/* Responsive */
+/* --- 7. RESPONSIVE & OVERFLOW FIXES --- */
+
 @media (max-width: 900px) {
-    .gallery-page .modern-hero { grid-template-columns: 1fr; text-align: center; padding-top: 2rem; }
-    .gallery-page .hero-content { padding-left: 0; margin-bottom: 2rem; }
-    .gallery-page .hero-collage { height: 400px; }
-    .gallery-page .img-main { width: 250px; height: 350px; }
-    .gallery-page .img-sub-1 { width: 150px; height: 120px; }
-    .gallery-page .img-sub-2 { width: 140px; height: 140px; }
-    .gallery-page .section-header { flex-direction: column; align-items: flex-start; }
-    
-    /* Mobile Navigation Adjustments */
-    .gallery-page .viewer-nav { font-size: 2.5rem; padding: 10px; background: rgba(0,0,0,0.5); }
-    .gallery-page .viewer-prev { left: 10px; }
-    .gallery-page .viewer-next { right: 10px; }
+    .gallery-page .modern-hero {
+        grid-template-columns: 1fr;
+        padding: 5rem 1rem 3rem 1rem;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .gallery-page .hero-content {
+        padding-left: 0;
+        order: 2;
+    }
+
+    .gallery-page .modern-hero h1 { font-size: 2.5rem; }
+
+    .gallery-page .hero-collage {
+        order: 1;
+        height: 400px;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .gallery-page .img-main { width: 240px; height: 320px; }
+    .gallery-page .img-sub-1 { width: 140px; height: 100px; right: 5%; }
+    .gallery-page .img-sub-2 { width: 130px; height: 130px; left: 5%; }
+
+    .gallery-page .viewer-close {
+        top: 20px;
+        right: 20px;
+        font-size: 2.5rem;
+    }
+
+    .gallery-page .image-viewer img {
+        max-width: 100%;
+        max-height: 70vh; /* More restrictive on mobile to prevent overlapping buttons */
+    }
+
+    .gallery-page .modal { padding: 80px 1rem 1rem 1rem; }
+    .gallery-page .viewer-nav { font-size: 2.5rem; padding: 5px 15px; }
 }

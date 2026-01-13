@@ -42,7 +42,7 @@ const AdmissionEnquiry = () => {
       {/* Header Section */}
       <section className="enquiry-header-section">
         <div className="max-width-container">
-          <h1>Admission Enquiry 2025</h1>
+          <h1>Admission Enquiry 2026</h1>
           <p>Take the first step towards a bright future at JEC. Fill out the form below and our counselors will guide you through the process.</p>
         </div>
       </section>
