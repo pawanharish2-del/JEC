@@ -13,10 +13,12 @@ import Outcomes from '../components/Outcomes';
 import VideoTestimonials from '../components/VideoTestimonials'; // NEW IMPORT
 import CampusLife from '../components/CampusLife';
 import VirtualTour from '../components/VirtualTour';
+import AdmissionPopup from '../components/AdmissionPopup';
 
 function Home() {
     return (
         <>
+            <AdmissionPopup />
             <Helmet>
                 <title>Jaipur Engineering College (JEC) | Top Engineering College in Jaipur, Rajasthan</title>
                 <meta
