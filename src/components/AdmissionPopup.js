@@ -30,7 +30,7 @@ const AdmissionPopup = () => {
                     &times;
                 </button>
                 {/* Your NoPaperForms Widget Div */}
-                <div className="npf_wgts" data-height="400px" data-w="c1073fe2350d112d90b129addc24e9ff"></div>
+                <div className="npf_wgts" data-height="580px" data-w="c1073fe2350d112d90b129addc24e9ff"></div>
             </div>
         </div>
     );
