@@ -24,7 +24,7 @@ const AcademicAchievers = () => {
           <div className="intro-text">
             <h2>Excellence is a habit.</h2>
             <p>At Jaipur Engineering College, we take immense pride in celebrating the academic achievements of our students. The list below recognizes the top performers from each year and branch, who have demonstrated exceptional dedication and secured the highest marks.</p>
-            <p>Their success is a testament to the hard work they put into their studies and the quality of education provided by our faculty. They are the true role models for the entire JEC community. **Congratulations to all our bright stars!**</p>
+            <p>Their success is a testament to the hard work they put into their studies and the quality of education provided by our faculty. They are the true role models for the entire JEC community. Congratulations to all our bright stars!</p>
           </div>
         </div>
       </section>

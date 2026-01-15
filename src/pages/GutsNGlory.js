@@ -256,7 +256,7 @@ const GutsNGlory = () => {
         {/* Story 7 */}
         <div className="story-card">
           <div className="story-img">
-            <img src="https://images.unsplash.com/photo-1598550874175-4d7112ee7f38?q=80&w=600" alt="Harshita Bhat" />
+            <img src="/Harshita.jpg" alt="Harshita Bhat" />
           </div>
           <div className="story-content">
             <div className="story-header">

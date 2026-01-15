@@ -1,3 +1,5 @@
+/* src/pages/Gallery.css */
+
 /* --- 1. BRANDING & VARIABLES --- */
 .gallery-page {
     --jec-blue: #0072C6;       
@@ -68,7 +70,7 @@
 
 .gallery-page .modern-hero h1 {
     font-family: var(--font-head);
-    font-size: 4.2rem;
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
     line-height: 1.1;
     color: var(--text-main);
     margin-bottom: 1.5rem;
@@ -106,6 +108,7 @@
     animation: bounce 2s infinite;
 }
 
+/* --- MOTION COLLAGE --- */
 .gallery-page .hero-collage {
     position: relative;
     height: 600px;
@@ -147,11 +150,11 @@
 @keyframes floatReverse { 0%, 100% {transform: translateY(0) rotate(-5deg);} 50% {transform: translateY(15px) rotate(-5deg);} }
 @keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 40% {transform: translateY(-10px);} 60% {transform: translateY(-5px);} }
 
-/* --- 3. GALLERY CONTAINER --- */
+/* --- 3. GALLERY CONTAINER & ALBUMS --- */
 .gallery-page .container {
     max-width: 1280px;
-    margin: 0 auto 5rem auto;
-    padding: 0 2rem;
+    margin: 0 auto 0 auto;
+    padding: 0 2rem 4rem 2rem;
 }
 
 .gallery-page .section-header { 
@@ -169,7 +172,6 @@
 .gallery-page .section-header span { color: var(--jec-blue); }
 .gallery-page .section-header p { color: var(--text-muted); font-size: 1rem; margin-top: 5px; }
 
-/* --- 4. ALBUM GRID --- */
 .gallery-page .album-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -254,7 +256,7 @@
     line-height: 1.4;
 }
 
-/* --- 5. MODALS --- */
+/* --- 4. MODALS & VIEWER --- */
 .gallery-page .modal {
     display: block;
     position: fixed;
@@ -303,7 +305,6 @@
 .gallery-page .modal-img-wrapper:hover { border-color: var(--jec-gold); transform: scale(1.02); z-index: 2; }
 .gallery-page .modal-img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
 
-/* --- 6. FULL SCREEN IMAGE VIEWER --- */
 .gallery-page .image-viewer {
     display: flex;
     position: fixed;
@@ -318,17 +319,17 @@
     flex-direction: column;
     animation: zoomIn 0.3s;
     user-select: none;
-    padding: 20px; /* Added padding for safe zone */
+    padding: 20px;
     box-sizing: border-box; 
 }
 
-/* FIX: This contains the expanded image size for all views */
-.gallery-page .image-viewer img {
+.gallery-page .viewer-img {
     max-width: 95%;
-    max-height: 80vh; /* Leaves room for navigation and close buttons */
+    max-height: 80vh; 
     object-fit: contain;
     border-radius: 8px;
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    border: 2px solid var(--jec-blue); 
 }
 
 .gallery-page .viewer-close { 
@@ -354,7 +355,6 @@
     transition: 0.3s;
     background: rgba(0,0,0,0.2);
     border-radius: 8px;
-   
 }
 
 .gallery-page .viewer-nav:hover { background: rgba(255,255,255,0.1); color: var(--jec-gold); }
@@ -363,16 +363,20 @@
 
 .gallery-page .image-counter {
     color: var(--jec-gold);
-    margin-top: 15px; /* Increased margin for visibility */
+    margin-top: 15px; 
     font-weight: 600;
     font-size: 1.1rem;
+}
+
+.gallery-page .viewer-caption {
+    color: #cbd5e1;
+    margin-top: 10px;
 }
 
 @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
 @keyframes zoomIn { from {transform: scale(0.9); opacity: 0;} to {transform: scale(1); opacity: 1;} }
 
-/* --- 7. RESPONSIVE & OVERFLOW FIXES --- */
-
+/* --- 5. RESPONSIVE FIXES --- */
 @media (max-width: 900px) {
     .gallery-page .modern-hero {
         grid-template-columns: 1fr;
@@ -407,7 +411,7 @@
 
     .gallery-page .image-viewer img {
         max-width: 100%;
-        max-height: 70vh; /* More restrictive on mobile to prevent overlapping buttons */
+        max-height: 70vh; 
     }
 
     .gallery-page .modal { padding: 80px 1rem 1rem 1rem; }

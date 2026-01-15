@@ -31,10 +31,10 @@ function Management() {
               />
             </div>
             <div className="leader-content">
-              <div className="leader-name">Shri L.C. Saraogi</div>
+              <div className="leader-name">Mr. L.C. Saraogi</div>
               <span className="leader-position">Chairman - AIATERF & JEC Group</span>
               <div className="bio-text">
-                <p>Shri L. C. Saraogi is a well-known personality in the field of education for the last 4 decades in northern India. He believes in hard work and lives by the motto: "Success is measured not by what you create for yourself but by what you leave behind."</p>
+                <p>Mr. L. C. Saraogi is a well-known personality in the field of education for the last 4 decades in northern India. He believes in hard work and lives by the motto: "Success is measured not by what you create for yourself but by what you leave behind."</p>
                 <p>A Chartered Accountant by profession, he is a passionate leader with accurate communication skills and a long track record of successfully managing organizations. As a man of honesty and integrity, he sets an example for all and loves to stay connected with students, motivating and molding them into ideal citizens. His vision and commitment have elevated the group to international standards.</p>
               </div>
             </div>
@@ -49,10 +49,10 @@ function Management() {
               />
             </div>
             <div className="leader-content">
-              <div className="leader-name">Lalit K. Saraogi</div>
+              <div className="leader-name">Mr. Lalit K. Saraogi</div>
               <span className="leader-position">Secretary - AIATERF & JEC Group Director</span>
               <div className="bio-text">
-                <p>Lalit K. Saraogi plays a key role in defining the vision, mission, and strategy for the growth and development of AIATERF and JEC Group of Colleges. An engineering graduate in Electronics & Telecommunication from Bangalore University, he brings invaluable experience in managing people and executing student activities.</p>
+                <p>Mr. Lalit K. Saraogi plays a key role in defining the vision, mission, and strategy for the growth and development of AIATERF and JEC Group of Colleges. An engineering graduate in Electronics & Telecommunication from Bangalore University, he brings invaluable experience in managing people and executing student activities.</p>
                 <p>He is the most energetic member of the management team, actively managing educational institutions with full dedication. He believes that our nation needs not just engineers and managers but virtuous men and women who can be trendsetting professionals armed with integrity and discipline.</p>
               </div>
             </div>
@@ -67,10 +67,10 @@ function Management() {
               />
             </div>
             <div className="leader-content">
-              <div className="leader-name">Shri Harish Saraogi</div>
+              <div className="leader-name">Mr. Harish Saraogi</div>
               <span className="leader-position">Director (Finance) - AIATERF & JEC Group</span>
               <div className="bio-text">
-                <p>Shri Harish Saraogi holds a degree in commerce and has honed technical and managerial skills through advanced training. The credit for the rapid and meteoric rise of the group goes to his astute skills in planning, budgeting, and managing resources.</p>
+                <p>Mr. Harish Saraogi holds a degree in commerce and has honed technical and managerial skills through advanced training. The credit for the rapid and meteoric rise of the group goes to his astute skills in planning, budgeting, and managing resources.</p>
                 <p>An avid lover of global travel, he brings a wealth of information on innovations taking place worldwide. His dedication and dynamic approach have been a guiding force behind the success of the group, elevating it to international standards.</p>
               </div>
             </div>
@@ -116,7 +116,7 @@ function Management() {
           <div className="leader-card">
             <div className="leader-img-container">
               <img
-                src="/images/1574843703_Dalgobind Mahto.png"
+                src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2Fmahto.png?alt=media&token=4ab52ad2-45c2-4fcc-8833-2e6a4774788f"
                 alt="Prof. Dr. D.G. Mahto"
                 className="leader-img"
               />

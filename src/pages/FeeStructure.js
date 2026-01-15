@@ -123,7 +123,7 @@ function FeeStructure() {
 
             <div className="fee-qr-box">
                 {/* Using existing QR placeholder since local file is not available */}
-                <img src="/images/logo.png" alt="Scan to Pay - Indian Overseas Bank JEC" style={{maxWidth: '200px'}} />
+                <img src="/QR.jpg" alt="Scan to Pay - Indian Overseas Bank JEC" style={{maxWidth: '200px'}} />
                 <div className="fee-qr-caption">Scan to Pay via UPI</div>
                 <div style={{ marginTop: '10px', fontWeight: 'bold', color: '#333' }}>UPI ID: 8058799029@IOB</div>
             </div>

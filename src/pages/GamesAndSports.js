@@ -49,7 +49,7 @@ const GamesAndSports = () => {
                 <p>It isn't about winning or losing. What matters is the competitive spirit that should never die out because you are not a failure unless you believed that you have failed. At JEC, it has been a constant endeavor to create sporting spirit fervor and the sports fever only seems to be growing with each passing academic session. Hard sweat, high energy, tons of cheering and complete fun, despite the rain and scorching heat, shows the spirit in the players for the game.</p>
             </div>
             <div className="img-block">
-                <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1000" alt="JEC Sports Team" />
+                <img src="/Cycle.png" alt="JEC Sports Team" />
             </div>
         </div>
 
@@ -112,17 +112,17 @@ const GamesAndSports = () => {
 
         <div className="trophy-grid">
             <div className="trophy-frame">
-                <img src="https://images.unsplash.com/photo-1565514020176-02750e6ebf3e?q=80&w=600" alt="Trophy 1" />
+                <img src="/Champions.jpg" alt="Trophy 1" />
                 <div className="trophy-label">Champions</div>
             </div>
             
             <div className="trophy-frame">
-                <img src="https://images.unsplash.com/photo-1621689736025-a64f33169d30?q=80&w=600" alt="Trophy 2" />
+                <img src="/JECCup.JPG" alt="Trophy 2" />
                 <div className="trophy-label">RTU Cup</div>
             </div>
 
             <div className="trophy-frame">
-                <img src="https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?q=80&w=600" alt="Trophy 3" />
+                <img src="/Volleyball Winners.JPG" alt="Trophy 3" />
                 <div className="trophy-label">Volleyball Winners</div>
             </div>
         </div>

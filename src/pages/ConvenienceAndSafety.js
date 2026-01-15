@@ -51,14 +51,14 @@ function ConvenienceAndSafety() {
                 <p>The college provides transportation for students to visit camps and industry events organized outside the campus.</p>
             </div>
             <div className="cs-image-wrapper">
-                <img src="https://images.unsplash.com/photo-1570126618953-d437176e8c79?q=80&w=1000&auto=format&fit=crop" alt="JEC Transport Bus" />
+                <img src="/Bus.jpeg" alt="JEC Transport Bus" />
             </div>
         </div>
 
         {/* 2. Health Care (Image First) */}
         <div className="cs-content-grid cs-image-first">
             <div className="cs-image-wrapper">
-                <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1000&auto=format&fit=crop" alt="Health Care Facility" />
+                <img src="/medical.png" alt="Health Care Facility" />
             </div>
             <div className="cs-text-content">
                 <h2><i className="fas fa-heartbeat" style={{color: 'var(--cs-accent)'}}></i> Health Care</h2>
@@ -75,14 +75,14 @@ function ConvenienceAndSafety() {
                 <p>They maintain a high-visibility presence to deter illegal and inappropriate actions by looking (either directly, through patrols, or indirectly, by monitoring alarm systems or video surveillance cameras) for signs of hazards.</p>
             </div>
             <div className="cs-image-wrapper">
-                <img src="https://images.unsplash.com/photo-1631049307264-b3f46f3b0c6b?q=80&w=1000&auto=format&fit=crop" alt="Campus Security" />
+                <img src="/Security.png" alt="Campus Security" />
             </div>
         </div>
         
         {/* 4. ATM & Banking (Image First) */}
         <div className="cs-content-grid cs-image-first">
             <div className="cs-image-wrapper">
-                <img src="https://images.unsplash.com/photo-1583512603805-3d0046f874f6?q=80&w=1000&auto=format&fit=crop" alt="ATM & Banking" />
+                <img src="/ATM.jpg" alt="ATM & Banking" />
             </div>
             <div className="cs-text-content">
                 <h2><i className="fas fa-credit-card" style={{color: 'var(--cs-accent)'}}></i> ATM & Banking</h2>

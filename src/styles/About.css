@@ -9,6 +9,11 @@
     overflow-x: hidden; /* Safety net to prevent horizontal scroll */
 }
 
+.max-width-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
     /* --- Hero Section --- */
     .about-page-new .hero {
         height: 500px;

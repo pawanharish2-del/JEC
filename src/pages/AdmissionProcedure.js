@@ -9,7 +9,7 @@ function AdmissionProcedure() {
         <div className="max-width-container">
             <h1>Admission Procedure</h1>
             <p>Join a dynamic community of learners. We combine rigorous academics with a learning-by-doing approach.</p>
-            <a href="http://www.jeckukas.org.in/apply/" className="ap-hero-btn">Apply Online</a>
+            <a href="http://www.jeckukas.org.in/admission-enquiry" className="ap-hero-btn">Apply Online</a>
         </div>
       </section>
 

@@ -1,235 +1,259 @@
-/* ==========================================================================
-   CONTACT US PAGE STYLES (Modular & Beautified)
-   ========================================================================== */
+/* src/styles/Contact.css */
 
 .contact-page-v4 {
-  background-color: var(--logo-white);
-  color: var(--color-text-primary);
-  line-height: 1.6;
+    background-color: var(--color-background-light);
+    width: 100%;
 }
 
-/* --- 1. Header Section --- */
-.contact-page-v4 .contact-header-section {
-  background: var(--color-background-medium);
-  padding: 100px 20px;
-  text-align: center;
-  border-bottom: 5px solid var(--logo-red);
+/* --- Hero Section --- */
+.contact-header-section {
+    background: var(--color-background-medium);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.contact-page-v4 .contact-header-section h1 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  color: var(--logo-blue);
-  margin-bottom: 20px;
-  font-weight: 800;
-  letter-spacing: -1px;
+.contact-header-section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: var(--logo-red);
 }
 
-.contact-page-v4 .contact-header-section p {
-  font-size: 1.1rem;
-  color: var(--color-text-secondary);
-  max-width: 700px;
-  margin: 0 auto;
+.contact-header-section h1 { 
+    font-size: 48px; 
+    color: var(--color-primary); 
+    margin-bottom: 15px; 
+    font-weight: 700;
 }
 
-/* --- 2. Floating Address Bar --- */
-.contact-page-v4 .address-bar {
-  background: var(--logo-black);
-  color: var(--logo-gold);
-  padding: 15px 30px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 0.9rem;
-  max-width: 1000px;
-  margin: -25px auto 0;
-  border-radius: 50px;
-  box-shadow: var(--shadow-medium);
-  position: relative;
-  z-index: 5;
+.contact-header-section p { 
+    font-size: 18px; 
+    color: var(--color-text-secondary); 
+    max-width: 900px; 
+    margin: 0 auto; 
 }
 
-/* --- 3. Main Grid Layout --- */
-.contact-page-v4 .main-contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 60px;
-  padding: 100px 0;
-  align-items: flex-start;
+.address-bar {
+    background: var(--logo-blue);
+    color: var(--logo-white);
+    padding: 20px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-top: 5px solid var(--logo-gold);
 }
 
-/* --- 4. Information Cards (Left side) --- */
-.contact-page-v4 .info-card-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+/* --- Grid Layout --- */
+.main-contact-grid {
+    padding: 60px 20px 80px;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 50px;
+    align-items: flex-start;
 }
 
-.contact-page-v4 .location-box {
-  padding: 40px;
-  border-radius: 20px;
-  background: var(--logo-white);
-  box-shadow: var(--shadow-subtle);
-  border-right: 6px solid var(--logo-gold);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* --- Directory Box Styling --- */
+.directory-box {
+    background: var(--logo-white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-medium);
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
 }
 
-.contact-page-v4 .location-box:hover {
-  transform: translateX(-10px);
-  box-shadow: var(--shadow-medium);
+.directory-address {
+    background: var(--color-background-medium);
+    padding: 25px 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 2px solid var(--logo-gold);
 }
 
-.contact-page-v4 .location-box.main-campus {
-  border-right-color: var(--logo-red);
+.directory-address i {
+    color: var(--logo-red);
+    font-size: 28px;
 }
 
-.contact-page-v4 .location-box h3 {
-  font-size: 1.6rem;
-  color: var(--logo-blue);
-  margin-bottom: 25px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
+.directory-address h3 {
+    font-size: 20px;
+    color: var(--logo-black);
+    margin-bottom: 5px;
 }
 
-.contact-page-v4 .location-box h3 i {
-  color: var(--logo-red);
+.directory-address p {
+    color: var(--color-text-secondary);
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
 }
 
-.contact-page-v4 .address-line {
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: var(--logo-black);
+.directory-list {
+    padding: 10px 30px 30px 30px;
 }
 
-.contact-page-v4 .contact-detail {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 12px;
-  font-size: 1rem;
+.directory-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
 }
 
-.contact-page-v4 .contact-detail i {
-  color: var(--logo-blue);
-  width: 20px;
-  text-align: center;
+.directory-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
-.contact-page-v4 .contact-detail a {
-  color: var(--color-text-primary);
-  text-decoration: none;
-  transition: color 0.2s;
+.dept-title {
+    color: var(--logo-blue); 
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    display: block;
 }
 
-.contact-page-v4 .contact-detail a:hover {
-  color: var(--logo-blue);
+.dept-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-/* --- 5. Inquiry Form (Right side) --- */
-.contact-page-v4 .form-card {
-  background: var(--logo-white);
-  padding: 50px;
-  border-radius: 24px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.05);
-  border-top: 8px solid var(--logo-blue);
+.dept-phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    font-size: 15px;
 }
 
-.contact-page-v4 .form-card h3 {
-  font-size: 2rem;
-  margin-bottom: 35px;
-  color: var(--logo-black);
-  font-weight: 700;
+.dept-phone i {
+    color: var(--logo-gold);
+    font-size: 16px;
 }
 
-.contact-page-v4 .form-group {
-  margin-bottom: 20px;
+.dept-email {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.contact-page-v4 .form-group input,
-.contact-page-v4 .form-group textarea {
-  width: 100%;
-  padding: 18px;
-  border: 2px solid #f0f0f0;
-  border-radius: 12px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-  background: #fcfcfc;
+.dept-email:hover {
+    color: var(--logo-red);
+    text-decoration: underline;
 }
 
-.contact-page-v4 .form-group input:focus,
-.contact-page-v4 .form-group textarea:focus {
-  outline: none;
-  border-color: var(--logo-blue);
-  background: #fff;
+.dept-email i {
+    color: var(--logo-gold);
 }
 
-.contact-page-v4 .send-btn {
-  width: 100%;
-  background: var(--logo-blue);
-  color: white;
-  padding: 20px;
-  border: none;
-  border-radius: 12px;
-  font-weight: 800;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  letter-spacing: 1px;
+.dept-address-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    margin-bottom: 10px;
 }
 
-.contact-page-v4 .send-btn:hover {
-  background: var(--logo-red);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(214, 40, 40, 0.2);
+/* --- Form Card Styling --- */
+.form-card {
+    background: var(--logo-white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-medium);
+    border-left: 5px solid var(--logo-blue);
 }
 
-.contact-page-v4 .disclaimer {
-  font-size: 0.8rem;
-  color: #999;
-  margin-top: 25px;
-  text-align: center;
-  line-height: 1.4;
+.form-card h3 { 
+    font-size: 28px; 
+    color: var(--color-secondary); 
+    margin-bottom: 25px; 
 }
 
-/* --- 6. Map Section --- */
-.contact-page-v4 .map-section {
-  padding-bottom: 100px;
+.form-group input, .form-group textarea {
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 20px;
+    border: 1px solid var(--color-background-dark);
+    border-radius: 5px; 
+    font-size: 16px;
 }
 
-.contact-page-v4 .map-section h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: var(--logo-blue);
-  font-weight: 800;
+.form-group input:focus, .form-group textarea:focus {
+    border-color: var(--logo-gold); 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(252, 163, 17, 0.5);
 }
 
-.contact-page-v4 .google-map {
-  border-radius: 30px;
-  overflow: hidden;
-  box-shadow: var(--shadow-medium);
-  border: 10px solid var(--logo-white);
+.send-btn {
+    background: var(--logo-red); 
+    color: var(--logo-white); 
+    padding: 12px 30px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-weight: 700;
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+    width: 100%;
 }
 
-/* --- Responsive Adjustments --- */
+.send-btn:hover { background: #A52121; }
+
+.disclaimer {
+    font-size: 13px; 
+    color: var(--color-text-secondary); 
+    margin-top: 20px;
+    line-height: 1.4; 
+    padding-left: 15px; 
+    border-left: 3px solid var(--logo-gold);
+}
+
+/* --- Map Section --- */
+.map-section h2 { 
+    font-size: 36px; 
+    color: var(--color-secondary); 
+    text-align: center; 
+    margin-bottom: 30px; 
+    font-weight: 700;
+}
+
+.google-map { 
+    width: 100%; 
+    height: 450px; 
+    border-radius: 12px; 
+    box-shadow: var(--shadow-medium); 
+    overflow: hidden; 
+}
+
+/* --- Responsive --- */
 @media (max-width: 992px) {
-  .contact-page-v4 .main-contact-grid {
-    grid-template-columns: 1fr;
-    padding: 60px 20px;
-    gap: 40px;
-  }
-  
-  .contact-page-v4 .address-bar {
-    width: 90%;
-    border-radius: 15px;
-    font-size: 0.8rem;
-  }
+    .main-contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .form-card { order: 2; }
+    .directory-box { order: 1; }
 }
 
 @media (max-width: 768px) {
-  .contact-page-v4 .form-card {
-    padding: 30px;
-  }
-  
-  .contact-page-v4 .location-box {
-    padding: 25px;
-  }
+    .contact-header-section h1 { font-size: 32px; }
+    .form-card { padding: 30px; }
+    .google-map { height: 300px; }
+    .dept-details { flex-direction: column; align-items: flex-start; gap: 5px; }
+}
+
+
+.max-width-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }

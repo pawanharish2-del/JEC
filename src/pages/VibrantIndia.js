@@ -80,7 +80,7 @@ const VibrantIndia = () => {
                 <p>We try to follow his saying <strong>"Truth can be stated in a thousand different ways, yet each one can be true.”</strong></p>
             </div>
             <div className="img-block">
-                <img src="https://images.unsplash.com/photo-1599557474472-7306236b2d35?q=80&w=800" alt="Swami Vivekananda" />
+                <img src="/Vivekananda.png" alt="Swami Vivekananda" />
             </div>
         </div>
 
@@ -92,7 +92,7 @@ const VibrantIndia = () => {
                 <p>Swami Keshvanand, born in a Jat Hindu family of Dhaka clan, and a renunciate belonging to the Udasi sect which was propagated by Srichandji, son of guru Nanakdevji, the founder of the Sikh faith, was a unique example of communal harmony. He organised celebrations in honour of Sikh, Bishnoi, Namdhari and Jain gurus. During the partition of India in 1947, he looked after wounded Muslims admitted to hospitals and arranged food and shelter for them. To be true engineering professionals his teachings of equality ought to be inherited by engineers.</p>
             </div>
             <div className="img-block">
-                <img src="https://images.unsplash.com/photo-1593526613712-7b4b9a707330?q=80&w=800" alt="Community Service" />
+                <img src="/Keshwanand.png" alt="Community Service" />
             </div>
         </div>
 
@@ -105,7 +105,7 @@ const VibrantIndia = () => {
                 <p><strong>The Diya with four wicks of Arya Samaj points in each direction represent N-North, W-West, S- South and E-East. This has some kind of resemblance with Vastu-Shastra and Engineering.</strong></p>
             </div>
             <div className="img-block">
-                <img src="https://images.unsplash.com/photo-1604313885834-453723362489?q=80&w=800" alt="Havan Ritual" />
+                <img src="/Arya.png" alt="Havan Ritual" />
             </div>
         </div>
 

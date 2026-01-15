@@ -7,7 +7,7 @@ function AntiRagging() {
 
       <section className="anti-ragging-hero">
         {/* Make sure 'anti-ragging-banner.png' is in /public/images/ */}
-        <img src="https://jeckukas.org.in/assets/images/AntiRaggingBanner.png" alt="Anti-Ragging Banner" /> 
+        <img src="https://images.unsplash.com/photo-1649389969653-5f46996ac5d0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Anti-Ragging Banner" /> 
         <div className="hero-content">
           <h1>Anti-Ragging Committee</h1>
           <p>Committed to a Safe and Secure Environment for All Students at JEC Jaipur.</p>
@@ -32,7 +32,7 @@ function AntiRagging() {
 
           <div className="committee-member-card">
             {/* Make sure 'prof-sunita-rawat.jpg' is in /public/images/ */}
-            <img src="https://jeckukas.org.in/managepro/uploads/Img/sunitagoyal.jpg" alt="Prof. Sunita Rawat" className="member-photo" /> 
+            <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2F(Dr.)%20Sunita%20Goyal%20Rawat.jpg?alt=media&token=4c2571f6-5711-4c1a-95f8-3885907e22bc" alt="Prof. Sunita Rawat" className="member-photo" /> 
             <h4 className="member-name">Prof. Sunita Rawat</h4>
             <p className="member-title">Head, Anti-Ragging Committee</p>
             <div className="contact-item">

@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for routing
 
 function AdmissionOpen() {
+  const navigate = useNavigate(); // Initialize the navigate function
+
   return (
     <div className="admissions-page">
       
@@ -12,7 +15,8 @@ function AdmissionOpen() {
             <span className="admissions-hero-badge">Admissions Open 2026</span>
             <h1>Shape Your Destiny<br/>With JEC</h1>
             <h2>Empowering Future Engineers & Leaders</h2>
-            <button className="admissions-hero-cta">Apply Now</button>
+            {/* Added onClick functionality to navigate to /admission-enquiry */}
+            <button className="admissions-hero-cta" onClick={() => navigate('/admission-enquiry')}>Apply Now</button>
         </div>
       </section>
 
@@ -145,7 +149,7 @@ function AdmissionOpen() {
 
 
             {/* harish sarogi */}
- <div className="admissions-expert-card">
+            <div className="admissions-expert-card">
                 <div className="admissions-expert-img-wrapper">
                     <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2FShri.%20Harish%20Saraogi.JPG?alt=media&token=709e24a1-cb3a-463f-aba1-20ea6304c644" alt="Er. Lalit K. Saraogi" />
                 </div>
@@ -185,7 +189,7 @@ An avid lover of global travel, he brings a wealth of information on innovations
 
             <div className="admissions-expert-card">
                 <div className="admissions-expert-img-wrapper">
-                    <img src="/images/1574843703_Dalgobind Mahto.png" alt="Prof. Dalgobind Mahto" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2Fmahto.png?alt=media&token=4ab52ad2-45c2-4fcc-8833-2e6a4774788f" alt="Prof. Dalgobind Mahto" />
                 </div>
                 <div className="admissions-expert-content">
                     <div className="admissions-expert-name">Prof. Dalgobind Mahto</div>
@@ -247,7 +251,8 @@ An avid lover of global travel, he brings a wealth of information on innovations
         <div className="max-width-container">
             <h2>Secure Your Future Today</h2>
             <p>Join the ranks of successful engineers at JEC.</p>
-            <button className="admissions-hero-cta" style={{ background: 'var(--admissions-logo-gold)', color: 'black', border: 'none' }}>APPLY NOW</button>
+            {/* Added onClick functionality to navigate to /admission-enquiry */}
+            <button className="admissions-hero-cta" style={{ background: 'var(--admissions-logo-gold)', color: 'black', border: 'none' }} onClick={() => navigate('/admission-enquiry')}>APPLY NOW</button>
         </div>
       </section>
 

@@ -44,7 +44,7 @@ function JCES() {
             </div>
             <div className="jces-img-block">
                 {/* Using a placeholder from your uploaded images since the specific local file isn't available */}
-                <img src="https://jeckukas.org.in/managepro/uploads/Photos/2019-12-23_16:09:17DSC_4317.jpeg" alt="JCES Campus View" />
+                <img src="/JECbuilding.jpg" alt="JCES Campus View" />
             </div>
         </div>
 
@@ -87,7 +87,7 @@ function JCES() {
         <div className="jces-cta-card">
             
             {/* Using existing image as placeholder */}
-            <img src="https://jeckukas.org.in/managepro/uploads/Photos/2019-12-23_16:09:52DSC_4311.jpeg" alt="JCES Campus" style={{width:'100%', height:'300px', objectFit:'cover', borderRadius:'12px', marginBottom:'2rem'}} />
+            
             
             <h2 style={{fontFamily:'var(--jces-font-head)', color:'var(--jces-text-main)'}}>Join the Future of Teaching</h2>
             <p style={{color:'var(--jces-text-muted)', maxWidth:'800px', margin:'1rem auto'}}>Prospective students are welcome to visit the College. Please contact us to make an appointment. We shall be delighted to show you round our College and discuss with you and our pedagogy to upbring you to be a knowledge driven teacher of the future!</p>
