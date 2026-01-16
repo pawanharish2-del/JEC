@@ -61,10 +61,6 @@ const AdmissionEnquiry = () => {
             data-w="c1073fe2350d112d90b129addc24e9ff"
           ></div>
 
-          {/* FIX: Set marginTop to 0.5rem to keep the text close to the form button */}
-          <div className="privacy-note full-width" style={{ marginTop: '0.5rem' }}>
-            By submitting this form, you consent to receive communication from JEC regarding your admission enquiry via Email/SMS/Call.
-          </div>
         </div>
       </div>
     </div>
