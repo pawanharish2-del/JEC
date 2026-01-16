@@ -97,9 +97,9 @@ function Gallery() {
                 <div className="hero-collage">
                     <div className="blob blob-1"></div>
                     <div className="blob blob-2"></div>
-                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=600" className="collage-img img-main" alt="Campus Life" />
-                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=400" className="collage-img img-sub-1" alt="Labs" />
-                    <img src="https://cdn.pixabay.com/photo/2023/08/18/07/04/business-8197902_1280.jpg?q=80&w=400" className="collage-img img-sub-2" alt="Culture" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2FBimg1.JPG?alt=media&token=bb203ee8-435d-447b-8fc9-c0049cbdc72f" className="collage-img img-main" alt="Campus Life" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2FBimg2.JPG?alt=media&token=d93ec6c5-5618-499a-b1d3-dc91716c6bd0" className="collage-img img-sub-1" alt="Labs" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2FBimg3.jpg?alt=media&token=127580d4-7463-49df-a65f-6ad0d6ef532e" className="collage-img img-sub-2" alt="Culture" />
                 </div>
             </header>
 

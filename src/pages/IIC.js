@@ -116,7 +116,7 @@ function IIC() {
             <p>SP-43, RIICO Industrial Area, Kukas, Jaipur: 302028</p>
             <p style={{ marginTop: '15px' }}>
               <i className="fas fa-envelope"></i> 
-              <a href="mailto:directorjecjiet@gmail.com" style={{ color: 'white' }}>directorjecjiet@gmail.com</a>
+              <a href="mailto:Director@jeckukas.org.in" style={{ color: 'white' }}>Director@jeckukas.org.in</a>
             </p>
           </div>
         </div>

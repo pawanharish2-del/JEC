@@ -64,8 +64,8 @@
 /* CONTAINER */
 .dept-container {
     max-width: 1200px;
-    margin: -3rem auto 3rem auto;
-    padding: 0 1.5rem;
+    margin: -3rem auto 4rem auto;
+    padding: 0 1.5rem 1rem 1.5rem;
     position: relative;
     z-index: 10;
 }

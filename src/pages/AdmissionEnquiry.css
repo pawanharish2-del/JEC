@@ -1,6 +1,5 @@
 /* src/pages/AdmissionEnquiry.css */
 
-/* Reuse the container styling from Contact page logic */
 .enquiry-page-wrapper {
     background-color: var(--bg-body, #F8FAFC);
     min-height: 100vh;
@@ -31,7 +30,7 @@
 
 /* Centered Form Container */
 .enquiry-form-container {
-    max-width: 800px; /* Slightly wider for the 2-column layout */
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -39,12 +38,21 @@
 .enquiry-card {
     background: white;
     padding: 3rem;
-    border-radius: 20px; /* Matching --radius-lg */
-    box-shadow: 0 10px 30px -5px rgba(0,0,0,0.1); /* Matching --shadow-card */
-    border: 1px solid #E2E8F0; /* Matching --border */
-    /* Fix for dropdown going above subheader: Establishes a correct stacking context */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px -5px rgba(0,0,0,0.1);
+    border: 1px solid #E2E8F0;
     position: relative;
     z-index: 10;
+    /* Ensure the card can expand with the widget */
+    height: auto;
+    overflow: visible;
+}
+
+/* Ensure the NPF widget container doesn't force a scrollbar */
+.npf_wgts {
+    width: 100% !important;
+    min-height: 500px;
+    height: auto !important;
 }
 
 .enquiry-card h3 {
@@ -69,14 +77,13 @@
     border-radius: 2px;
 }
 
-/* Grid for Form Fields */
+/* Form Layout Styles (Retained for functionality consistency) */
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-/* Full width for certain fields */
 .full-width {
     grid-column: 1 / -1;
 }
@@ -89,23 +96,21 @@
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #0F172A; /* --text-main */
+    color: #0F172A;
     font-size: 0.95rem;
 }
 
-/* Input & Select Styling - Matches Contact.js inputs */
 .form-group input,
 .form-group select {
     width: 100%; 
     padding: 12px 15px;
     border: 2px solid #E2E8F0;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: 'Inter', sans-serif;
     transition: all 0.3s ease;
     background-color: #F8FAFC;
     color: #334155;
-    /* FIX: Ensures padding/border is included in the 100% width, fixing overflow on mobile. */
     box-sizing: border-box; 
 }
 
@@ -117,7 +122,6 @@
     box-shadow: 0 0 0 4px rgba(0, 114, 198, 0.1);
 }
 
-/* Button Styling - Matches Contact.js send-btn */
 .submit-btn {
     width: 100%;
     padding: 15px;
@@ -125,7 +129,7 @@
     color: white;
     border: none;
     border-radius: 50px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -145,13 +149,12 @@
     font-size: 0.85rem;
     color: #64748B;
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 1rem; /* Reduced gap as requested */
     line-height: 1.5;
 }
 
-/* Responsive */
+/* Responsive Adjustments */
 
-/* Tablet/Medium Screen adjustments for header */
 @media (max-width: 992px) {
     .enquiry-header-section {
         padding: 3rem 1.5rem;
@@ -159,26 +162,29 @@
 }
 
 @media (max-width: 768px) {
-    /* Changes 2-column grid to a single column for mobile */
     .form-grid {
         grid-template-columns: 1fr;
     }
     
     .enquiry-card {
-        padding: 2rem 1.5rem;
+        padding: 2rem 1rem; /* Reduced padding for better mobile fit */
+        margin: 0 10px;
     }
 
-    /* Smaller header padding for mobile view */
     .enquiry-header-section {
-        padding: 2rem 1rem;
+        padding: 2.5rem 1rem;
         margin-bottom: 2rem;
     }
 
     .enquiry-header-section h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .enquiry-header-section p {
-        font-size: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .npf_wgts {
+        min-height: 600px; /* Some NPF forms expand more on mobile */
     }
 }

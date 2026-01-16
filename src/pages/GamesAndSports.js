@@ -112,7 +112,7 @@ const GamesAndSports = () => {
 
         <div className="trophy-grid">
             <div className="trophy-frame">
-                <img src="/Champions.jpg" alt="Trophy 1" />
+                <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/hardcode%20images%2FChampions.JPG?alt=media&token=1f9eb873-66f1-46ff-9405-1b595933c1d1" alt="Trophy 1" />
                 <div className="trophy-label">Champions</div>
             </div>
             

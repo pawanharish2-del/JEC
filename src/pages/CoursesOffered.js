@@ -58,7 +58,7 @@ function CoursesOffered() {
                 </thead>
                 <tbody>
                     <tr><td>Computer Science Engineering</td><td>90</td></tr>
-                    <tr><td>Information Technology</td><td>30</td></tr>
+                  
                     <tr><td>Computer Science Engineering (AI)</td><td>30</td></tr>
                     <tr><td>Electronics & Comm. Engineering</td><td>30</td></tr>
                     <tr><td>Electrical Engineering</td><td>60</td></tr>
@@ -101,6 +101,12 @@ function CoursesOffered() {
                 <h3>Power System</h3>
                 <span className="courses-duration">18 Seats</span>
                 <p>In-depth analysis of power generation, transmission, and distribution.</p>
+            </div>
+
+              <div className="courses-card courses-mtech">
+                <h3>Environmental Engineering</h3>
+                <span className="courses-duration">18 Seats</span>
+                <p>Focuses on sustainable development and managing natural resources. Addresses water, air, and waste management challenges.</p>
             </div>
         </div>
 

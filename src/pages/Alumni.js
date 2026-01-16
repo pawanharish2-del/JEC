@@ -22,7 +22,7 @@ function Alumni() {
             <p>Continents Presence</p>
           </div>
           <div className="stat-item">
-            <h3>7300+</h3>
+            <h3>12K+</h3>
             <p>Successful Alumni</p>
           </div>
           <div className="stat-item">

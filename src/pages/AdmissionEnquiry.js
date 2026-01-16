@@ -33,7 +33,7 @@ const AdmissionEnquiry = () => {
     loadNpfWidget();
 
     return () => {
-      // Optional: Cleanup if needed, though NPF scripts often manage their own state
+      // Cleanup logic if NPF provides specific unmount methods
     };
   }, []);
 
@@ -52,16 +52,17 @@ const AdmissionEnquiry = () => {
         <div className="enquiry-card">
           <h3>Enquiry Form</h3>
           
-          {/* The NPF Widget Container. 
-              Note: data-height and data-w must remain exactly as provided by the vendor.
+          {/* FIX: Increased data-height to 950px to ensure the full form is visible 
+              without internal scrolling on mobile and desktop views.
           */}
           <div 
             className="npf_wgts" 
-            data-height="400px" 
+            data-height="950px" 
             data-w="c1073fe2350d112d90b129addc24e9ff"
           ></div>
 
-          <div className="privacy-note full-width" style={{ marginTop: '2rem' }}>
+          {/* FIX: Set marginTop to 0.5rem to keep the text close to the form button */}
+          <div className="privacy-note full-width" style={{ marginTop: '0.5rem' }}>
             By submitting this form, you consent to receive communication from JEC regarding your admission enquiry via Email/SMS/Call.
           </div>
         </div>

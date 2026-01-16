@@ -131,7 +131,7 @@ function Placements() {
                         <p style={{ fontSize: '0.95rem', color: 'var(--pg-text-muted)', marginBottom: '1rem' }}>
                             Presently, 300+ JEC students are also working on ‘Live Projects’...
                         </p>
-                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }} alt="Corporate Meeting" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/hardcode%20images%2Fcc.JPG?alt=media&token=ee1d7672-6df9-4921-91bb-dde21c680090" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }} alt="Corporate Meeting" />
                     </div>
                 </div>
 

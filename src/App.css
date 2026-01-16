@@ -8291,3 +8291,36 @@ body {
     padding-top: 76px;
   }
 }
+
+
+
+.career-apply-btn {
+  display: inline-block;
+  margin-top: 2.5rem;
+  padding: 15px 45px;
+  background: var(--logo-red, #D62828);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(214, 40, 40, 0.3);
+}
+
+.career-apply-btn:hover {
+  background: #B91C1C;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(214, 40, 40, 0.2);
+}
+
+@media (max-width: 768px) {
+  .career-apply-btn {
+    width: 100%;
+    padding: 15px 20px;
+    margin-top: 2rem;
+  }
+}

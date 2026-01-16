@@ -1,3 +1,4 @@
+// src/pages/KarmaCourses.js
 import React from 'react';
 import '../styles/Karma.css';
 
@@ -19,7 +20,8 @@ function KarmaCourses() {
       {/* --- KARMA SECTION --- */}
       <section id="karma" className="karma-section-wrapper">
         <div className="max-width-container">
-          <h2 className="karma-section-title">KARMA (AICTE Initiative)</h2>
+          {/* Explicitly centered section title as per original HTML */}
+          <h2 className="karma-section-title text-center">KARMA (AICTE Initiative)</h2>
           <p className="karma-intro-text-center">
             <strong>Kaushal Augmentation and Restructuring Mission of AICTE (KARMA)</strong> is an initiative to overcome the dual challenge of scarcity of skilled manpower and low skill levels in the workforce.
           </p>
@@ -55,7 +57,7 @@ function KarmaCourses() {
               <ul>
                 <li>Create a skilled and certified workforce to drive India towards becoming a global skills capital.</li>
                 <li>Utilize higher education infrastructure during off-hours for skill training.</li>
-                <li>Offer domain-specific, demand-led skill training in core engineering sectors.</li>
+                <li>Offer domain-specific, demand-led skill training in core engineering sectors leading to employment.</li>
               </ul>
             </div>
             <div className="karma-info-box">
@@ -73,12 +75,12 @@ function KarmaCourses() {
                 <li>Any 10th pass and above may join. No age bar.</li>
                 <li>Preference to learners from the local community.</li>
                 <li>Admissions open round the year depending on course duration.</li>
-                <li>Modes: 100% Contact-based or Blended Approach.</li>
+                <li><strong>Training Modes:</strong> 100% Contact-based (Physical) or Blended Approach.</li>
               </ul>
             </div>
           </div>
 
-          <h3 className="karma-sub-title text-center">Approved Certificate / Diploma / B.Voc Courses</h3>
+          <h3 className="karma-sub-title text-center" style={{ marginTop: '40px' }}>Approved Certificate / Diploma / B.Voc Courses</h3>
           <div className="karma-table-container">
             <table className="karma-course-table">
               <thead>
@@ -100,10 +102,25 @@ function KarmaCourses() {
                 <tr><td>6</td><td>KARMA 1</td><td>CSE</td><td>Web Designing & Multimedia</td><td>10th</td><td>288 Hrs</td></tr>
                 <tr><td>7</td><td>KARMA 1</td><td>CSE</td><td>CRM Domestic Voice</td><td>10th</td><td>518 Hrs</td></tr>
                 <tr><td>8</td><td>KARMA 1</td><td>CSE</td><td>IT Network Support</td><td>10+2</td><td>120 Hrs</td></tr>
+                <tr><td>9</td><td>KARMA 1</td><td>CSE</td><td>Certified Audio Visual Designer</td><td>10+2</td><td>80 Hrs</td></tr>
+                <tr><td>10</td><td>KARMA 1</td><td>CSE</td><td>3D Animation & Special Effects</td><td>10th</td><td>500 Hrs</td></tr>
+                <tr><td>11</td><td>KARMA 1</td><td>Mechanical</td><td>CNC Operator-Training</td><td>10th</td><td>300 Hrs</td></tr>
+                <tr><td>12</td><td>KARMA 1</td><td>Mechanical</td><td>Fitter-Mechanical Assembly</td><td>10th</td><td>400 Hrs</td></tr>
+                <tr><td>13</td><td>KARMA 1</td><td>Electronics</td><td>Installation Tech-Computing</td><td>10th</td><td>200 Hrs</td></tr>
                 <tr><td>14</td><td>KARMA 2</td><td>CSE</td><td>Adv Diploma - PLC/SCADA/DCS</td><td>B.E./B.Tech/Dip</td><td>480 Hrs</td></tr>
                 <tr><td>15</td><td>KARMA 2</td><td>CSE</td><td>App Developer - Web & Mobile</td><td>Graduate</td><td>440 Hrs</td></tr>
+                <tr><td>16</td><td>KARMA 2</td><td>Mechanical</td><td>Adv Cert. Inspection & QC</td><td>10+2</td><td>780 Hrs</td></tr>
+                <tr><td>17</td><td>KARMA 2</td><td>Electrical</td><td>Elec Assembly Operator</td><td>10th + ITI</td><td>200 Hrs</td></tr>
+                <tr><td>18</td><td>KARMA 2</td><td>CSE</td><td>Associate - DTP</td><td>Graduate</td><td>400 Hrs</td></tr>
+                <tr><td>19</td><td>KARMA 2</td><td>Electronics</td><td>Cert. Course in VLSI Design</td><td>Pursuing Degree</td><td>80 Hrs</td></tr>
+                <tr><td>20</td><td>KARMA 2</td><td>Electrical</td><td>System Admin Using Linux</td><td>B.Sc/BCA/Dip</td><td>80 Hrs</td></tr>
+                <tr><td>21</td><td>KARMA 2</td><td>CSE</td><td>Auto CAD Designer</td><td>10+2</td><td>120 Hrs</td></tr>
+                <tr><td>22</td><td>KARMA 2</td><td>CSE</td><td>Web Developer</td><td>Grad / Diploma</td><td>400 Hrs</td></tr>
+                <tr><td>23</td><td>KARMA 2</td><td>Electrical</td><td>DSP Using MATLAB</td><td>Pursuing Degree</td><td>80 Hrs</td></tr>
+                <tr><td>24</td><td>KARMA 2</td><td>Electronics</td><td>CAD Using CREO</td><td>Pursuing Degree</td><td>100 Hrs</td></tr>
+                <tr><td>25</td><td>KARMA 2</td><td>CSE</td><td>iOS Programming</td><td>Engg/Sci Grad</td><td>320 Hrs</td></tr>
+                <tr><td>26</td><td>KARMA 2</td><td>CSE</td><td>Network Administration</td><td>Engg/Sci Grad</td><td>320 Hrs</td></tr>
                 <tr><td>27</td><td>KARMA 2</td><td>CSE</td><td>IoT Applications</td><td>B.E./B.Tech/Dip</td><td>360 Hrs</td></tr>
-                {/* Add other rows as needed from the HTML source */}
               </tbody>
             </table>
           </div>
@@ -119,13 +136,13 @@ function KarmaCourses() {
       {/* --- SURYAMITRA SECTION --- */}
       <section id="suryamitra" className="karma-section-wrapper bg-light-gray">
         <div className="max-width-container">
-          <h2 className="karma-section-title">"SURYAMITRA" Skill Development Programme</h2>
+          <h2 className="karma-section-title text-center">"SURYAMITRA" Skill Development Programme</h2>
           
           <div className="program-card">
             <div className="program-header">
               <span className="program-tag">Solar Energy</span>
               <h3>Solar PV Technician Course</h3>
-              <p>Sponsored by MNRE, Govt. of India in collaboration with NISE.</p>
+              <p>Sponsored by MNRE (Ministry of New and Renewable Energy), Govt. of India in collaboration with NISE.</p>
             </div>
             <div className="program-body">
               <div className="program-content-wrapper">
@@ -136,7 +153,7 @@ function KarmaCourses() {
                   <div className="program-details">
                     <div className="detail-item">
                       <strong>Overview</strong>
-                      <p>Covers solar PV feasibility studies, design, Installation, O&M of solar power plants.</p>
+                      <p>Covers solar PV feasibility studies, basics of design, Installation, operation, and Maintenance of solar power plants. Prepares candidates to become new entrepreneurs in the Solar Sector.</p>
                     </div>
                     <div className="detail-item">
                       <strong>Essential Qualification</strong>
@@ -150,6 +167,10 @@ function KarmaCourses() {
                       <strong>Duration</strong>
                       <p>Residential programme of THREE MONTHS (600 HOURS).</p>
                     </div>
+                    <div className="detail-item">
+                      <strong>Medium</strong>
+                      <p>Hindi and English Language.</p>
+                    </div>
                   </div>
 
                   <div className="program-action-box">
@@ -158,9 +179,9 @@ function KarmaCourses() {
                     </div>
                     <div className="program-contact-box">
                       <h5>For Admission Contact:</h5>
-                      <p><strong>"Suryamitra" Skill Development Center</strong></p>
-                      <p>JEC Group, SP-43 RIICO Industrial Area, Kukas, Jaipur</p>
-                      <p><i className="fas fa-phone"></i> +91 94148 57536, +91 84400 44825</p>
+                      <p><strong>"Suryamitra" Skill Development Center, JEC Group of Colleges</strong></p>
+                      <p>SP-43 RIICO Industrial Area, Kukas- Jaipur (Rajasthan) - 302 028</p>
+                      <p><i className="fas fa-phone"></i> +91 94148 57536, +91 84400 44825, +91 94132 06287</p>
                     </div>
                   </div>
                 </div>
@@ -173,13 +194,13 @@ function KarmaCourses() {
       {/* --- VAYUMITRA SECTION --- */}
       <section id="vayumitra" className="karma-section-wrapper">
         <div className="max-width-container">
-          <h2 className="karma-section-title">"VAYUMITRA" Skill Development Program (VSDP)</h2>
+          <h2 className="karma-section-title text-center">"VAYUMITRA" Skill Development Program (VSDP)</h2>
 
           <div className="program-card blue-border">
             <div className="program-header">
               <span className="program-tag blue-tag">Wind Energy</span>
               <h3>Wind Farm Engineer</h3>
-              <p>Sponsored by MNRE in collaboration with NIWE & NCVET.</p>
+              <p>Sponsored by MNRE, Govt. of India in collaboration with NIWE (National Institute of Wind Energy) & NCVET.</p>
             </div>
             <div className="program-body">
               <div className="program-content-wrapper">
@@ -190,11 +211,15 @@ function KarmaCourses() {
                   <div className="program-details">
                     <div className="detail-item">
                       <strong>Overview</strong>
-                      <p>Complete overview of Wind Power: resource assessment, installation, commissioning, and O&M.</p>
+                      <p>Complete overview of Wind Power: resource assessment, installation, commissioning, O&M of wind farms, financial and policy aspects. Covers mechanical, electrical, and hydraulic components.</p>
                     </div>
                     <div className="detail-item">
                       <strong>Essential Qualification</strong>
-                      <p>ITI + Exp. / Diploma + Exp. / B.E./B. Tech (Electrical / Mechanical / Civil / E&I).</p>
+                      <p>ITI + Exp. / Diploma + Exp. / B.E./B. Tech (Electrical / Mechanical / Civil / Electronics & Instrumentation).</p>
+                    </div>
+                    <div className="detail-item">
+                      <strong>Age Limit</strong>
+                      <p>Minimum 22 Years.</p>
                     </div>
                     <div className="detail-item">
                       <strong>Duration</strong>
@@ -212,9 +237,9 @@ function KarmaCourses() {
                     </div>
                     <div className="program-contact-box">
                       <h5>For Admission Contact:</h5>
-                      <p><strong>"Vayumitra" Skill Development Center</strong></p>
-                      <p>JEC Campus, SP-43 RIICO Industrial Area, Kukas, Jaipur</p>
-                      <p><i className="fas fa-phone"></i> 9414857536, 8440044825, 7891188636</p>
+                      <p><strong>"Vayumitra" Skill Development Center, All India Agrasen Technical Education & Research Foundation</strong></p>
+                      <p>Jaipur Engineering College Campus, SP-43 RIICO Industrial Area, Kukas, Jaipur</p>
+                      <p><i className="fas fa-phone"></i> 9414857536, 8440044825, 7891188636, 9116160495</p>
                     </div>
                   </div>
                 </div>

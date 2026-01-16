@@ -77,12 +77,14 @@ function FinancialAids() {
                         <tr>
                             <td>Chief Minister Scholarship Scheme (Samajik Nyay Vibhag)</td>
                             <td>Jaipur (Rajasthan)</td>
-                            <td>Advertisement in leading dailies at academic year start. Visit <a href="www.collegeeducation.rajasthan.gov.in/">Dept Website</a></td>
+                            {/* FIX: Added https:// to ensure external redirection */}
+                            <td>Advertisement in leading dailies at academic year start. Visit <a href="https://www.collegeeducation.rajasthan.gov.in/" target="_blank" rel="noreferrer">Dept Website</a></td>
                         </tr>
                         <tr>
                             <td>District Minority Welfare Officer</td>
                             <td>All Districts, Rajasthan</td>
-                            <td>Contact relevant office. Visit <a href="www.sje.rajasthan.gov.in/About%20Deptt/Phone.htm">SJE Website</a></td>
+                            {/* FIX: Added https:// to ensure external redirection */}
+                            <td>Contact relevant office. Visit <a href="https://www.sje.rajasthan.gov.in/About%20Deptt/Phone.htm" target="_blank" rel="noreferrer">SJE Website</a></td>
                         </tr>
                         <tr>
                             <td>Jharkhand State Tribal Coop. Dev. Corp.</td>
@@ -92,23 +94,22 @@ function FinancialAids() {
                         <tr>
                             <td>District Welfare Officers (Zila Kalyan)</td>
                             <td>All Bihar Districts</td>
-                            <td>Contact relevant office. Visit <a href="http://www.educationbihar.gov.in/">Education Bihar</a></td>
+                            <td>Contact relevant office. Visit <a href="http://www.educationbihar.gov.in/" target="_blank" rel="noreferrer">Education Bihar</a></td>
                         </tr>
                         <tr>
                             <td>District Backward Class Welfare Officer</td>
                             <td>Rajkot (Gujarat)</td>
-                            <td>Contact relevant office. Visit <a href="http://www.sje.gujarat.gov.in/">SJE Gujarat</a></td>
+                            <td>Contact relevant office. Visit <a href="http://www.sje.gujarat.gov.in/" target="_blank" rel="noreferrer">SJE Gujarat</a></td>
                         </tr>
                         <tr>
                             <td>Teachers Welfare Fund Trust (Board of Secondary Ed.)</td>
                             <td>Ajmer (Rajasthan)</td>
-                            <td>Contact relevant office. Visit <a href="http://rajeduboard.rajasthan.gov.in/">Raj Edu Board</a></td>
+                            <td>Contact relevant office. Visit <a href="http://rajeduboard.rajasthan.gov.in/" target="_blank" rel="noreferrer">Raj Edu Board</a></td>
                         </tr>
                         <tr>
                             <td>Minority Welfare Scholarship System</td>
                             <td>All Over India</td>
-                            <td>National Portal. Visit <a href="	
-http://minoritywelfare.bih.nic.in/">MOMA Scholarship</a></td>
+                            <td>National Portal. Visit <a href="http://minoritywelfare.bih.nic.in/" target="_blank" rel="noreferrer">MOMA Scholarship</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -154,7 +155,7 @@ http://minoritywelfare.bih.nic.in/">MOMA Scholarship</a></td>
                         </tr>
                         <tr>
                             <td>State Bank of India (SBI)</td>
-                            <td><a href="https://www.sbi.co.in" target="_blank" rel="noreferrer">www.sbi.co.in</a></td>
+                            <td><a href="https://onlinesbi.sbi.bank.in/" target="_blank" rel="noreferrer">www.sbi.co.in</a></td>
                             <td>Visit nearest branch for details</td>
                         </tr>
                         <tr>

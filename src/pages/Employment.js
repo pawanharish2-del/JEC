@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import { useNavigate } from 'react-router-dom'; 
 
 function Employment() {
+  const navigate = useNavigate();
+
   return (
     // This wrapper class will scope all the new CSS
     <div className="employment-page">
@@ -10,6 +12,14 @@ function Employment() {
         <div className="max-width-container">
           <h1>Employment @ JEC</h1>
           <p>Bringing People and Opportunities Together to Build a Better World.</p>
+          
+          {/* New Apply Now Button */}
+          <button 
+            className="career-apply-btn" 
+            onClick={() => navigate('/admission-enquiry')}
+          >
+            Apply Now
+          </button>
         </div>
       </section>
 
@@ -47,7 +57,6 @@ function Employment() {
             <p>The Institute values experienced Faculty Members & Technical Experts and invites them to be a part of its family.</p>
           </div>
           <div className="philosophy-img">
-            {/* Make sure 'faculty-team.jpg' is in your /public/images/ folder */}
             <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/hardcode%20images%2FUntitled%20(Instagram%20Post).png?alt=media&token=627013a7-9295-431b-8cf3-917588dcf875" alt="Our Mission" />
           </div>
         </div>
@@ -101,18 +110,6 @@ function Employment() {
           </ul>
         </div>
       </section>
-
-      {/* <section className="apply-cta">
-        <div className="max-width-container">
-          <h2>Ready to Make an Impact?</h2>
-          <p>Join a community of innovative thinkers who are making an impact every day. It would be a genuine contentment to discuss with you soon in person. JEC endeavors to provide job satisfaction, benefits, and opportunities you'd expect from a respected employer.</p>
-          <div className="cta-buttons">
-            <a href="mailto:jeckukas@yahoo.com" className="btn-primary"><i className="fas fa-envelope"></i> Email Your Resume</a>
-            <Link to="/contact" className="btn-outline">Search Open Positions</Link>
-          </div>
-          <p style={{ fontSize: '14px', marginTop: '20px', opacity: 0.8 }}>Send resume to: jeckukas@yahoo.com</p>
-        </div>
-      </section> */}
 
     </div>
   );

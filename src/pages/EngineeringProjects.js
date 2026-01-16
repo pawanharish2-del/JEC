@@ -231,7 +231,7 @@ const EngineeringProjects = () => {
             {/* Project 13 */}
             <div className="project-card">
                 <div className="project-img-container">
-                    <img src="/images/3D Printer.jpg" alt="3D Printer" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/hardcode%20images%2F3D%20printer.jpg?alt=media&token=ce1f3deb-aa9d-4aa8-9aa3-2f2b4b3915c4" alt="3D Printer" />
                 </div>
                 <div className="project-content">
                     <div className="proj-title">3D Printer for Fabricating Fiber-Reinforced Materials</div>

@@ -1,3 +1,4 @@
+/* src/styles/Karma.css */
 :root {
     --karma-logo-red: #D62828; 
     --karma-logo-blue: #0072C6; 
@@ -11,6 +12,7 @@
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     color: #333;
     line-height: 1.6;
+    background-color: var(--karma-logo-white);
 }
 
 .max-width-container {
@@ -50,6 +52,7 @@
     width: 80px; height: 4px; background: var(--karma-logo-gold); 
 }
 
+.karma-intro-text-center { text-align: center; max-width: 800px; margin: 0 auto 30px; }
 .karma-sub-title { font-size: 22px; color: var(--karma-logo-red); margin-bottom: 15px; font-weight: 700; }
 .text-center { text-align: center; }
 
@@ -71,6 +74,7 @@
 
 .k-stat-card h3 { font-size: 36px; color: var(--karma-logo-red); margin-bottom: 5px; }
 .k-stat-card .b-voc-text { font-size: 24px; padding-top: 10px; }
+.k-stat-card p { font-size: 14px; font-weight: 700; color: #555; text-transform: uppercase; }
 
 .karma-info-grid {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -82,7 +86,7 @@
     border-left: 4px solid var(--karma-logo-gold); box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.karma-info-box ul { padding-left: 20px; }
+.karma-info-box ul { padding-left: 20px; margin-top: 10px; }
 .karma-info-box li { margin-bottom: 8px; font-size: 15px; }
 
 /* --- Program Cards (Suryamitra/Vayumitra) --- */
@@ -90,11 +94,13 @@
     background: white; border-radius: 12px; overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 40px;
     border-top: 5px solid var(--karma-logo-red);
+    display: flex; flex-direction: column;
 }
 
 .blue-border { border-top-color: var(--karma-logo-blue); }
 
-.program-header { padding: 25px; border-bottom: 1px solid #eee; }
+.program-header { padding: 25px; border-bottom: 1px solid #eee; background: #fff; }
+.program-header h3 { font-size: 28px; color: var(--karma-logo-black); margin-bottom: 10px; }
 .program-tag { 
     display: inline-block; background: var(--karma-logo-gold); color: black; 
     padding: 5px 15px; border-radius: 50px; font-size: 12px; font-weight: bold; margin-bottom: 10px;
@@ -107,26 +113,30 @@
 
 .program-img-col img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; min-height: 300px; }
 
-.detail-item { margin-bottom: 15px; }
-.detail-item strong { display: block; color: var(--karma-logo-blue); font-size: 14px; text-transform: uppercase; }
+.program-details { display: grid; grid-template-columns: 1fr; gap: 20px; }
+.detail-item strong { display: block; color: var(--karma-logo-blue); font-size: 14px; text-transform: uppercase; margin-bottom: 5px; }
 
 /* --- Badges and Contact --- */
-.program-action-box { display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-top: 20px; }
+.program-action-box { 
+    display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-top: 30px; 
+}
 
 .free-badge {
-    padding: 15px; text-align: center; font-weight: bold; font-size: 18px;
+    padding: 15px; text-align: center; font-weight: bold; font-size: 20px;
     border-radius: 8px; color: white; transform: rotate(-2deg);
     box-shadow: 3px 3px 0px var(--karma-logo-black);
+    display: inline-block;
 }
 .red-badge { background: var(--karma-logo-red); }
 .blue-badge { background: var(--karma-logo-blue); }
-.badge-subtext { font-size: 12px; font-weight: normal; }
+.badge-subtext { font-size: 14px; font-weight: normal; }
 
 .program-contact-box {
     background: var(--karma-logo-black); color: white; padding: 20px;
-    border-radius: 8px; flex: 1; min-width: 250px;
+    border-radius: 8px; flex: 1; min-width: 300px;
 }
-.program-contact-box h5 { color: var(--karma-logo-gold); margin-bottom: 10px; }
+.program-contact-box h5 { color: var(--karma-logo-gold); margin-bottom: 10px; font-size: 18px; }
+.program-contact-box p { margin-bottom: 5px; font-size: 14px; }
 
 .karma-journey-footer {
     margin-top: 30px; background: #fdf6e6; padding: 25px; 
@@ -134,12 +144,65 @@
 }
 
 /* --- Table --- */
-.karma-table-container { overflow-x: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+.karma-table-container { 
+    overflow-x: auto; margin-top: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.05); border-radius: 8px; 
+}
 .karma-course-table { width: 100%; border-collapse: collapse; min-width: 800px; background: white; }
-.karma-course-table th { background: var(--karma-logo-blue); color: white; padding: 15px; text-align: left; }
-.karma-course-table td { padding: 12px 15px; border-bottom: 1px solid #eee; font-size: 14px; }
+.karma-course-table th { background: var(--karma-logo-blue); color: white; padding: 15px; text-align: left; font-size: 14px; }
+.karma-course-table td { padding: 12px 15px; border-bottom: 1px solid #eee; font-size: 14px; color: #444; }
 .karma-course-table tr:nth-child(even) { background-color: #f9f9f9; }
+.karma-course-table tr:hover { background-color: #f1f8ff; }
 
 @media (max-width: 768px) {
+    .karma-hero h1 { font-size: 32px; }
     .program-content-wrapper { flex-direction: column-reverse; }
+}
+
+/* src/styles/Karma.css */
+/* ... existing root variables ... */
+
+.karma-page .text-center {
+    text-align: center !important;
+    display: block;
+    width: 100%;
+}
+
+.karma-section-title { 
+    font-size: 32px; 
+    color: var(--karma-logo-blue); 
+    text-align: center; /* Ensures centering */
+    margin-bottom: 40px; 
+    position: relative; 
+    padding-bottom: 15px;
+}
+
+/* Forces the gold underline to stay centered even if the title wraps */
+.karma-section-title::after { 
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 80px; 
+    height: 4px; 
+    background: var(--karma-logo-gold); 
+}
+
+.karma-sub-title { 
+    font-size: 22px; 
+    color: var(--karma-logo-red); 
+    margin-bottom: 15px; 
+    font-weight: 700; 
+    text-align: center; /* Standardize centering for subtitles as well */
+}
+
+/* ... existing styles for stats, cards, and table ... */
+
+@media (max-width: 768px) {
+    .karma-section-title {
+        font-size: 28px;
+    }
+    .program-content-wrapper { 
+        flex-direction: column-reverse; 
+    }
 }

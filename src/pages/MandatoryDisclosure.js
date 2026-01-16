@@ -115,12 +115,7 @@ function MandatoryDisclosure() {
                             <td>4 Years</td>
                             <td>120</td>
                         </tr>
-                        <tr>
-                            <td>Information Technology</td>
-                            <td>B.Tech</td>
-                            <td>4 Years</td>
-                            <td>60</td>
-                        </tr>
+                       
                         <tr>
                             <td>Electronics & Comm. Engineering</td>
                             <td>B.Tech</td>
