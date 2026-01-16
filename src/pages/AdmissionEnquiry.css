@@ -1,190 +1,86 @@
 /* src/pages/AdmissionEnquiry.css */
 
 .enquiry-page-wrapper {
-    background-color: var(--bg-body, #F8FAFC);
+    background-color: #F8FAFC;
     min-height: 100vh;
-    padding-bottom: 4rem;
+    padding-bottom: 20px;
 }
 
 .enquiry-header-section {
-    background: var(--jec-blue, #0072C6);
+    background: #0072C6;
     color: white;
-    padding: 4rem 2rem;
+    padding: 3rem 1.5rem;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .enquiry-header-section h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
-    margin-bottom: 1rem;
-    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0.5rem;
 }
 
 .enquiry-header-section p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     opacity: 0.9;
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
-/* Centered Form Container */
+/* Centered Form Container using Popup-style constraints */
 .enquiry-form-container {
-    max-width: 800px;
+    width: 90%;
+    max-width: 650px; /* Matched to AdmissionPopup.css */
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .enquiry-card {
-    background: white;
-    padding: 3rem;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px -5px rgba(0,0,0,0.1);
-    border: 1px solid #E2E8F0;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 20px 20px 0px 20px; /* Zero bottom padding like the popup */
+    border-radius: 8px;
     position: relative;
-    z-index: 10;
-    /* Ensure the card can expand with the widget */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     height: auto;
-    overflow: visible;
+    overflow: visible; /* Allows the card to grow with the widget */
 }
 
-/* Ensure the NPF widget container doesn't force a scrollbar */
+.enquiry-card-title {
+    color: #0072C6;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Desktop Fix: Increased height and strict overflow control */
 .npf_wgts {
     width: 100% !important;
-    min-height: 500px;
-    height: auto !important;
+    height: 600px !important; /* Increased from 580px to stop desktop scroll */
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important; 
 }
 
-.enquiry-card h3 {
-    color: var(--jec-blue, #0072C6);
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    position: relative;
-    padding-bottom: 15px;
+.npf_wgts iframe {
+    height: 650px !important; /* Must match the container height */
+    width: 100% !important;
+    border: none !important;
+    overflow: hidden !important; /* Kills the internal scrollbar */
 }
 
-.enquiry-card h3::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background: var(--jec-gold, #FCA311);
-    border-radius: 2px;
-}
-
-/* Form Layout Styles (Retained for functionality consistency) */
-.form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.full-width {
-    grid-column: 1 / -1;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #0F172A;
-    font-size: 0.95rem;
-}
-
-.form-group input,
-.form-group select {
-    width: 100%; 
-    padding: 12px 15px;
-    border: 2px solid #E2E8F0;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    font-family: 'Inter', sans-serif;
-    transition: all 0.3s ease;
-    background-color: #F8FAFC;
-    color: #334155;
-    box-sizing: border-box; 
-}
-
-.form-group input:focus,
-.form-group select:focus {
-    outline: none;
-    border-color: var(--jec-blue, #0072C6);
-    background-color: white;
-    box-shadow: 0 0 0 4px rgba(0, 114, 198, 0.1);
-}
-
-.submit-btn {
-    width: 100%;
-    padding: 15px;
-    background: var(--jec-red, #D62828);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-top: 1rem;
-}
-
-.submit-btn:hover {
-    background: #B91C1C;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(214, 40, 40, 0.2);
-}
-
-/* Disclaimer text */
-.privacy-note {
-    font-size: 0.85rem;
-    color: #64748B;
-    text-align: center;
-    margin-top: 1rem; /* Reduced gap as requested */
-    line-height: 1.5;
-}
-
-/* Responsive Adjustments */
-
-@media (max-width: 992px) {
-    .enquiry-header-section {
-        padding: 3rem 1.5rem;
-    }
-}
-
+/* Mobile View Fix - Preserving the "perfect" mobile layout */
 @media (max-width: 768px) {
-    .form-grid {
-        grid-template-columns: 1fr;
+    .enquiry-header-section {
+        padding: 2rem 1rem;
+    }
+
+    .enquiry-card {
+        padding: 15px 15px 0px 15px;
+        width: 100%;
     }
     
-    .enquiry-card {
-        padding: 2rem 1rem; /* Reduced padding for better mobile fit */
-        margin: 0 10px;
-    }
-
-    .enquiry-header-section {
-        padding: 2.5rem 1rem;
-        margin-bottom: 2rem;
-    }
-
-    .enquiry-header-section h1 {
-        font-size: 1.8rem;
-    }
-
-    .enquiry-header-section p {
-        font-size: 0.95rem;
-    }
-
-    .npf_wgts {
-        min-height: 600px; /* Some NPF forms expand more on mobile */
+    .npf_wgts, .npf_wgts iframe {
+        height: 620px !important; /* The height you confirmed works for mobile */
     }
 }
