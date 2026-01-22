@@ -2,36 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/logo192.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description"
-          content="Web site created using create-react-app" />
+          content="Jaipur Engineering College (JEC) - Best Engineering College in Jaipur, Rajasthan" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>JEC | Jaipur Engineering College</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+          rel="stylesheet" />
+
+    <title>Jaipur Engineering College (JEC)</title>
 
     <style>
+        /* This ensures the loader is centered immediately */
         body {
             margin: 0;
             padding: 0;
         }
-        /* Center the loader */
-        .loader-container {
+
+        .pre-loader-container {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             width: 100%;
-            background-color: #ffffff; /* Match your app background */
+            background-color: #ffffff;
         }
-        /* The Loader Animation */
+
         .lds-dual-ring {
             display: inline-block;
             width: 80px;
             height: 80px;
-            /* I used your JEC Blue here since CSS variables aren't loaded yet */
-            color: #0072C6;
+            color: #0072C6; /* JEC Blue */
         }
 
             .lds-dual-ring:after {
@@ -61,7 +66,7 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <div id="root">
-        <div class="loader-container">
+        <div class="pre-loader-container">
             <div class="lds-dual-ring"></div>
         </div>
     </div>
