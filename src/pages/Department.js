@@ -36,7 +36,12 @@ function Department() {
         fetchDepartmentData();
     }, [location]);
 
-    if (loading) return <div style={{ padding: "100px", textAlign: "center" }}>Loading...</div>;
+    // --- UPDATED LOADER HERE ---
+    if (loading) return (
+        <div className="loader-container">
+            <div className="lds-dual-ring"></div>
+        </div>
+    );
 
     if (!data) return (
         <div style={{ padding: "100px", textAlign: "center" }}>
