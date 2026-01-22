@@ -96,7 +96,7 @@ const ManageVideoTestimonials = lazy(() => import('./admin/pages/ManageVideoTest
 function App() {
   return (
     <HelmetProvider>
-      <BrowserRouter>
+          <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
               <Suspense fallback={
                   <div className="loader-container">
                       <div className="lds-dual-ring"></div>
