@@ -1,34 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/logo192.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  
-  <meta
-    name="description"
-    content="Jaipur Engineering College (JEC) - Best Engineering College in Jaipur, Rajasthan"
-  />
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+          content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>JEC | Jaipur Engineering College</title>
 
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  
-  <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
-  
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" 
-    rel="stylesheet"
-  />
-  
-  <title>Jaipur Engineering College (JEC)</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        /* Center the loader */
+        .loader-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-color: #ffffff; /* Match your app background */
+        }
+        /* The Loader Animation */
+        .lds-dual-ring {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            /* I used your JEC Blue here since CSS variables aren't loaded yet */
+            color: #0072C6;
+        }
+
+            .lds-dual-ring:after {
+                content: " ";
+                display: block;
+                width: 64px;
+                height: 64px;
+                margin: 8px;
+                border-radius: 50%;
+                border: 6.4px solid currentColor;
+                border-color: currentColor transparent currentColor transparent;
+                animation: lds-dual-ring 1.2s linear infinite;
+            }
+
+        @keyframes lds-dual-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
-  <body>
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    </body>
+
+    <div id="root">
+        <div class="loader-container">
+            <div class="lds-dual-ring"></div>
+        </div>
+    </div>
+
+</body>
 </html>

@@ -5,6 +5,22 @@ import './Gallery.css';
 import { db } from '../firebase';
 import { collection, getDocs } from 'firebase/firestore';
 
+// --- DEFINED ORDER CONSTANT ---
+const ALBUM_ORDER = [
+    "Classrooms",
+    "Labs",
+    "Library",
+    "Seminar Hall",
+    "Auditorium",
+    "Skill Development Centre (SDC)",
+    "All Sports Grounds",
+    "Hostel",
+    "Mess",
+    "Canteen",
+    "Counseling Room",
+    "Events"
+];
+
 function Gallery() {
     const [galleryData, setGalleryData] = useState([]);
     const [selectedAlbum, setSelectedAlbum] = useState(null);
@@ -19,10 +35,23 @@ function Gallery() {
         const fetchGallery = async () => {
             try {
                 const querySnapshot = await getDocs(collection(db, "albums"));
-                const albums = querySnapshot.docs.map(doc => ({
+                let albums = querySnapshot.docs.map(doc => ({
                     id: doc.id,
                     ...doc.data()
                 }));
+
+                // --- SORTING LOGIC ---
+                albums.sort((a, b) => {
+                    let indexA = ALBUM_ORDER.indexOf(a.title);
+                    let indexB = ALBUM_ORDER.indexOf(b.title);
+
+                    // If title isn't in our list, put it at the end (999)
+                    if (indexA === -1) indexA = 999;
+                    if (indexB === -1) indexB = 999;
+
+                    return indexA - indexB;
+                });
+
                 setGalleryData(albums);
             } catch (error) {
                 console.error("Error fetching gallery:", error);
@@ -93,7 +122,7 @@ function Gallery() {
                         <i className="fas fa-arrow-down"></i> Scroll to Albums
                     </div>
                 </div>
-                
+
                 <div className="hero-collage">
                     <div className="blob blob-1"></div>
                     <div className="blob blob-2"></div>
