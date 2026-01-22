@@ -97,7 +97,11 @@ function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
-        <Suspense fallback={<div className="loading-spinner">Loading...</div>}>
+              <Suspense fallback={
+                  <div className="loader-container">
+                      <div className="lds-dual-ring"></div>
+                  </div>
+              }>
           <Routes>
             {/* --- PUBLIC ROUTES --- */}
             <Route path="/" element={<Layout />}>
