@@ -109,7 +109,7 @@ h2.brand-name {
 
 h3.widget-title {
     font-family: var(--font-head);
-    color: var(--text-white);
+    color: var(--footer-bg-dark);
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
     font-weight: 600;
