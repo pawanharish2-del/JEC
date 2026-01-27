@@ -51,7 +51,7 @@ const Footer = () => {
                 <div className="footer-section">
                     <h3 className="widget-title">Quick Links</h3>
                     <ul className="footer-list">
-                        <li><a href="https://jeckukas.in4.nopaperforms.com/application-form-2025-2026" style={{ color: 'var(--jec-gold)', fontWeight: '600' }}>Apply Now</a></li>
+                        <li><a href="https://admission.jeckukas.org.in/" style={{ color: 'var(--jec-gold)', fontWeight: '600' }}>Apply Now</a></li>
                         <li><a href="/Gallery">Campus Life</a></li>
                         <li><a href="/Infrastructure/Learning-By-Doing">Infrastructure</a></li>
                         <li><a href="/placement">Training & Placements</a></li>

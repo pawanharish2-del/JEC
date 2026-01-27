@@ -7,7 +7,7 @@ function AdmissionOpen() {
 
     // Helper function to open external link
     const openAdmissionForm = () => {
-        window.open('https://jeckukas.in4.nopaperforms.com/application-form-2025-2026', '_blank');
+        window.open('https://admission.jeckukas.org.in/', '_blank');
     };
 
     return (
