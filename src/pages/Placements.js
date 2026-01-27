@@ -106,7 +106,7 @@ function Placements() {
                         <div className="pg-stat-label">Total Placements</div>
                     </div>
                     <div className="pg-stat-card">
-                        <div className="pg-stat-value">550+</div>
+                        <div className="pg-stat-value">500+</div>
                         <div className="pg-stat-label">Active Recruiters</div>
                     </div>
                 </div>
@@ -118,18 +118,18 @@ function Placements() {
                 <div className="pg-content-grid">
                     <div className="pg-narrative-text">
                         <h2>Catapulting Careers</h2>
-                        <p>As hard as it might be to imagine sometimes, there is life after JEC, as shown by the <strong>~10,000+ JEC alumni</strong> living around the world...</p>
-                        <p>For the last three years, JEC has set the highest placement record...</p>
+                        <p>As hard as it might be to imagine sometimes, there is life after JEC, as shown by the <strong>~12,000+ JEC alumni</strong> living around the world.</p>
+                        <p>For the last three years, JEC has set the highest placement record.</p>
                         <div className="pg-chairman-quote">
                             <i className="fas fa-quote-left" style={{ fontSize: '1.5rem', marginBottom: '10px', display: 'block' }}></i>
-                            "We know that great universities world over are known by their successful alumni..."
+                            "We know that great universities world over are known by their successful alumni."
                             <div style={{ marginTop: '10px', fontWeight: '700' }}>— Shri L C Saraogi, Chairman</div>
                         </div>
                     </div>
                     <div>
                         <h3 style={{ marginBottom: '1.5rem' }}>Top Placements, Recruiters & Outreach</h3>
                         <p style={{ fontSize: '0.95rem', color: 'var(--pg-text-muted)', marginBottom: '1rem' }}>
-                            Presently, 300+ JEC students are also working on ‘Live Projects’...
+                            Presently, 300+ JEC students are also working on ‘Live Projects’.
                         </p>
                         <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/hardcode%20images%2Fcc.JPG?alt=media&token=ee1d7672-6df9-4921-91bb-dde21c680090" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }} alt="Corporate Meeting" />
                     </div>
