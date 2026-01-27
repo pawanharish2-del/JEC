@@ -178,7 +178,7 @@ function DocumentsRequired() {
                     </a>
                     <a href="mailto:admissions.jec@gmail.com" className="contact-pill">
                         <i className="fas fa-envelope"></i>
-                        <span>admissions.jec@gmail.com</span>
+                        <span>admission@jeckukas.org.in</span>
                     </a>
                 </div>
             </div>

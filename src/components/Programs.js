@@ -21,7 +21,7 @@ const programs = [
     },
     {
         type: 'B.Tech',
-        name: 'Electrical Engineering (60 seats)',
+        name: 'Electrical Engineeringss (60 seats)',
         path: '/JEC-engineering/Electrical-Engineering'
     },
     {
@@ -56,7 +56,7 @@ const programs = [
     },
     {
         type: 'M.Tech',
-        name: 'Environmental Engineering (18 seats)',
+        name: 'Environmental Engineering* (18 seats)',
         path: '/JEC-engineering/MTech'
     },
 ];

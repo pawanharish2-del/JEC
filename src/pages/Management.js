@@ -50,7 +50,7 @@ function Management() {
             </div>
             <div className="leader-content">
               <div className="leader-name">Mr. Lalit K. Saraogi</div>
-              <span className="leader-position">Secretary - AIATERF & JEC Group Director</span>
+              <span className="leader-position">Director - AIATERF & JEC Group </span>
               <div className="bio-text">
                 <p>Mr. Lalit K. Saraogi plays a key role in defining the vision, mission, and strategy for the growth and development of AIATERF and JEC Group of Colleges. An engineering graduate in Electronics & Telecommunication from Bangalore University, he brings invaluable experience in managing people and executing student activities.</p>
                 <p>He is the most energetic member of the management team, actively managing educational institutions with full dedication. He believes that our nation needs not just engineers and managers but virtuous men and women who can be trendsetting professionals armed with integrity and discipline.</p>

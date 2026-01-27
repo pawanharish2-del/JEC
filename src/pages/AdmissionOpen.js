@@ -30,12 +30,12 @@ function AdmissionOpen() {
             
             <div className="admissions-stats-container">
                 <div className="admissions-stat-card">
-                    <span className="admissions-stat-number">10k+</span>
+                    <span className="admissions-stat-number">12k+</span>
                     <span className="admissions-stat-label">Alumni</span>
                     <span className="admissions-stat-desc">Glorious and successful</span>
                 </div>
                 <div className="admissions-stat-card">
-                    <span className="admissions-stat-number">15+</span>
+                    <span className="admissions-stat-number">13</span>
                     <span className="admissions-stat-label">Courses</span>
                     <span className="admissions-stat-desc">Career Centric</span>
                 </div>
@@ -142,7 +142,7 @@ function AdmissionOpen() {
                 </div>
                 <div className="admissions-expert-content">
                     <div className="admissions-expert-name">Mr. Lalit K. Saraogi</div>
-                    <span className="admissions-expert-role">General Secretary AIATERF & Group Director</span>
+                    <span className="admissions-expert-role">Managing Director – AIATERF & JEC Group</span>
                     <p className="admissions-expert-bio">Er. Lalit K. Saraogi plays a key role in defining the vision, mission and strategy for the growth and development of AIATERF and JEC Group of Colleges. He brings in his invaluable experience in managing people at various levels ensuring a smooth and satisfactory relationship.</p>
                 </div>
             </div>
@@ -220,7 +220,7 @@ An avid lover of global travel, he brings a wealth of information on innovations
 
                 <div className="admissions-t-card">
                     <i className="fas fa-quote-right admissions-t-quote-icon"></i>
-                    <p className="admissions-t-text">"JEC has always believed in helping and guiding its students and it was no different during the placement season. Regular classes held at our college to help us with our aptitude and employability skills were of great help."</p>
+                    <p className="admissions-t-text">"JEC has always believed in helping and guiding its students and it was no different during the placement season. Regular classes held at our college to help us with our aptitude and employability skills were of great help in securing my dream career path."</p>
                     <div className="admissions-t-author">
                         <img src="/images/f1.png" alt="Puneet Mudgal" className="admissions-t-avatar" />
                         <div className="admissions-t-info">
@@ -232,7 +232,7 @@ An avid lover of global travel, he brings a wealth of information on innovations
 
                 <div className="admissions-t-card">
                     <i className="fas fa-quote-right admissions-t-quote-icon"></i>
-                    <p className="admissions-t-text">"Jaipur Engineering College has got one of the best infrastructural facilities and brilliant faculty. Having a placement policy in order makes thing even more transparent. I am really lucky and proud to have been a part of this institution."</p>
+                    <p className="admissions-t-text">"Jaipur Engineering College provides exceptional infrastructural facilities and a brilliant faculty. The clear, structured placement policy ensures total transparency for all students. I feel truly lucky and incredibly proud to have been a part of this prestigious institution."</p>
                     <div className="admissions-t-author">
                         <img src="/images/f2.png" alt="Shelly" className="admissions-t-avatar" />
                         <div className="admissions-t-info">

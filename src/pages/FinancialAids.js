@@ -97,20 +97,17 @@ function FinancialAids() {
                             <td>Contact relevant office. Visit <a href="http://www.educationbihar.gov.in/" target="_blank" rel="noreferrer">Education Bihar</a></td>
                         </tr>
                         <tr>
-                            <td>District Backward Class Welfare Officer</td>
-                            <td>Rajkot (Gujarat)</td>
-                            <td>Contact relevant office. Visit <a href="http://www.sje.gujarat.gov.in/" target="_blank" rel="noreferrer">SJE Gujarat</a></td>
+                            <td>NSP</td>
+                            <td>All Districts</td>
+                            <td>Contact relevant office. Visit <a href="https://scholarships.gov.in/" target="_blank" rel="noreferrer">NSP</a></td>
                         </tr>
                         <tr>
-                            <td>Teachers Welfare Fund Trust (Board of Secondary Ed.)</td>
-                            <td>Ajmer (Rajasthan)</td>
-                            <td>Contact relevant office. Visit <a href="http://rajeduboard.rajasthan.gov.in/" target="_blank" rel="noreferrer">Raj Edu Board</a></td>
+                            <td>Buddy4study</td>
+                            <td>All Districts</td>
+                            <td>Contact relevant office. Visit <a href="https://www.buddy4study.com/" target="_blank" rel="noreferrer">Buddy4study</a></td>
                         </tr>
-                        <tr>
-                            <td>Minority Welfare Scholarship System</td>
-                            <td>All Over India</td>
-                            <td>National Portal. Visit <a href="http://minoritywelfare.bih.nic.in/" target="_blank" rel="noreferrer">MOMA Scholarship</a></td>
-                        </tr>
+
+                        
                     </tbody>
                 </table>
             </div>
