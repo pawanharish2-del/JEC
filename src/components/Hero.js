@@ -92,7 +92,14 @@ function Hero() {
                         <h1>{banner.heading}</h1>
                         <div className="hero-underline"></div>
                         {banner.subheading && <p>{banner.subheading}</p>}
-                        <a href="/admission-enquiry" className="apply-btn">
+
+                        {/* UPDATED BUTTON */}
+                        <a
+                            href="https://jeckukas.in4.nopaperforms.com/application-form-2025-2026"
+                            className="apply-btn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             Apply for Admission
                         </a>
                     </div>

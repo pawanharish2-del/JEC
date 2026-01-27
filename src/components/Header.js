@@ -20,21 +20,26 @@ function Header() {
 
                 {/* RIGHT SIDE: Action Links */}
                 <div className="jec-top-right">
-                    <a href="/admission-enquiry">
+                    {/* UPDATED LINK */}
+                    <a
+                        href="https://jeckukas.in4.nopaperforms.com/application-form-2025-2026"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <i className="fas fa-edit"></i> Admission Enquiry 2026
                     </a>
-                  
+
                     <a href="#!">
                         <i className="fas fa-map-marked-alt"></i> Virtual Tour
                     </a>
                     <a href="/grievance">
                         <i className="fas fa-clipboard-list"></i> Grievance Form
                     </a>
-                    {/* Replaced 'ri-blogger-fill' with 'fas fa-blog' */}
+
                     <a href="/blog" className="jec-nav-link">
                         <i className="fas fa-blog"></i> Blog
                     </a>
-                    {/* MOVED FROM SUBHEADER */}
+
                     <a href="/contact-us" className="jec-top-cta">
                         Contact Us
                     </a>

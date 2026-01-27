@@ -7,22 +7,22 @@ import Sidebar from './Sidebar';
 import Header from './Header';
 import Subheader from './Subheader';
 import Footer from './Footer';
-import LogoCarousel from './LogoCarousel'; // IMPORT THE CAROUSEL
+import LogoCarousel from './LogoCarousel';
+import Chatbot from './Chatbot'; // <--- 1. IMPORT THE CHATBOT
 
 function Layout() {
     const location = useLocation();
 
-    // LOGIC: Check if the current path indicates a specific Album View.
-    // The main gallery is "/Gallery", but an album view is "/Gallery/some-id".
-    // We check if the path starts with "/Gallery/" to catch the album views.
+    // Logic to hide header on Album View
     const isAlbumView = location.pathname.startsWith('/Gallery/');
 
     return (
         <>
+            {/* 2. RENDER IT HERE - It will float on top of everything */}
+            <Chatbot />
+
             <Sidebar />
 
-            {/* Conditionally render the sticky header.
-                If we are in an Album View, this entire block is skipped. */}
             {!isAlbumView && (
                 <div className="sticky-header">
                     <Header />
@@ -31,11 +31,9 @@ function Layout() {
             )}
 
             <main>
-                {/* This Outlet is the placeholder for your pages */}
                 <Outlet />
             </main>
 
-            {/* Added Just Above Footer */}
             <LogoCarousel />
 
             <Footer />
