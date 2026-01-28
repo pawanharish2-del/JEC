@@ -17,7 +17,6 @@
     <title>Jaipur Engineering College (JEC)</title>
 
     <style>
-        /* This ensures the loader is centered immediately */
         body {
             margin: 0;
             padding: 0;
@@ -36,7 +35,7 @@
             display: inline-block;
             width: 80px;
             height: 80px;
-            color: #0072C6; /* JEC Blue */
+            color: #0072C6;
         }
 
             .lds-dual-ring:after {
@@ -71,5 +70,92 @@
         </div>
     </div>
 
+    <script type="text/javascript">
+        (function () {
+            // 1. PAGE CHECK: Only run if on Home Page ('/' or '/index.html')
+            if (window.location.pathname !== "/" && window.location.pathname !== "/index.html") {
+                return; // Stop here if not on home page
+            }
+
+            // 2. Create the Wrapper Div
+            var overlayDiv = document.createElement('div');
+            overlayDiv.id = "admission-overlay";
+            overlayDiv.className = "static-popup-overlay";
+
+            overlayDiv.innerHTML = `
+                    <div class="static-popup-content">
+                        <button class="static-close-btn" onclick="document.getElementById('admission-overlay').style.display='none'">
+                            &times;
+                        </button>
+                        <div class="npf_wgts" data-height="550px" data-w="c1073fe2350d112d90b129addc24e9ff"></div>
+                    </div>
+                `;
+            document.body.appendChild(overlayDiv);
+
+            // 3. Load the Script
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://widgets.in4.nopaperforms.com/emwgts.js";
+            document.body.appendChild(s);
+        })();
+    </script>
+
+    <style>
+        .static-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 10000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .static-popup-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            position: relative;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            animation: popupFadeIn 0.3s ease-out;
+        }
+
+        .static-close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: transparent;
+            border: none;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            z-index: 10;
+            line-height: 1;
+        }
+
+            .static-close-btn:hover {
+                color: #D62828;
+            }
+
+        @keyframes popupFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
 </body>
 </html>

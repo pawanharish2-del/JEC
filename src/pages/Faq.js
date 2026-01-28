@@ -58,7 +58,7 @@ function Faq() {
             <p>Placements</p>
           </div>
           <div className="stat-item">
-            <h3>36</h3>
+            <h3>13</h3>
             <p>Courses on Offer</p>
           </div>
           <div className="stat-item">
@@ -103,7 +103,7 @@ function Faq() {
         </AccordionItem>
         
         <AccordionItem title="What is the Branch-wise Cut-Off?">
-          There is no strict branch-wise cut-off. Admission is done based on the merit list. If you have a high score, you have a good chance. If your rank is lower, you can apply for the waiting list by depositing Rs. 11,000. Vacant seats will be filled from the waiting list.
+          There is no strict branch-wise cut-off. Admission is done based on the merit list. If you have a high score, you have a good chance. If your rank is lower, you can apply for the waiting list by depositing Rs. 15,000. Vacant seats will be filled from the waiting list.
         </AccordionItem>
 
         <AccordionItem title="What is the procedure for Management Quota?">
@@ -131,16 +131,15 @@ function Faq() {
         <h2 className="faq-category-title">Fees, Refunds & Scholarships</h2>
 
         <AccordionItem title="Should I bring all fees at the time of counseling?">
-          You may reserve your seat by paying a minimum of Rs. 11,000 via bank draft drawn in favor of "Jaipur Engineering College", Kukas Jaipur. The remaining first-semester fee must be deposited by 30th July.
+          You may reserve your seat by paying a minimum of Rs. 15,000 via Cash, UPI & Net Banking drawn in favor of "Jaipur Engineering College", Kukas Jaipur. The remaining first-semester fee must be deposited by within 15 Days.
         </AccordionItem>
 
         <AccordionItem title="Can I confirm hostel admission on the same day?">
-          Yes. You can confirm hostel accommodation by depositing Rs. 41,000 via bank draft drawn in favor of "Jaipur Engineering College", Kukas Jaipur.
+          Yes. You can confirm hostel accommodation by depositing Rs. 45,000 via via Cash, UPI & Net Banking drawn in favor of "Jaipur Engineering College", Kukas Jaipur.
         </AccordionItem>
 
         <AccordionItem title="What is the refund policy if I withdraw?">
-          Refunds follow JEC regulations. Usually, processing charges are deducted, and the rest is refunded subject to written intimation well in advance. The refund process normally occurs after the admission process concludes.
-        </AccordionItem>
+                  Refunds follow AICTE regulations. Before Last Date of cancellation. </AccordionItem>
 
         <AccordionItem title="How can I avail scholarships?">
           Merit-based scholarships are available for limited students (details at www.asetmax.com). For government scholarships, details and advice will be provided by faculty coordinators once you are admitted.
