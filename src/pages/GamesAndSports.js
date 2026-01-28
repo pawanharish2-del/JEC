@@ -118,12 +118,12 @@ const GamesAndSports = () => {
             
             <div className="trophy-frame">
                 <img src="/JECCup.JPG" alt="Trophy 2" />
-                <div className="trophy-label">RTU Cup</div>
+                <div className="trophy-label">JEC Cup</div>
             </div>
 
             <div className="trophy-frame">
                 <img src="/Volleyball Winners.JPG" alt="Trophy 3" />
-                <div className="trophy-label">Volleyball Winners</div>
+                <div className="trophy-label">Basketball Winners</div>
             </div>
         </div>
 

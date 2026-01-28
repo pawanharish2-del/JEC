@@ -132,13 +132,7 @@ const CommitteesZone = () => {
                 </div>
 
                 {/* CTA SECTION */}
-                <div className="cta-section">
-                    <div className="cta-content">
-                        <h2>Ready to Step Up?</h2>
-                        <p>Join a committee to ensure harmony across campus, develop leadership skills, and contribute to the JEC legacy.</p>
-                        <a href="#" className="btn-cta">Apply for Membership</a>
-                    </div>
-                </div>
+                 {/* redy to section removed */}
 
             </div>
         </div>

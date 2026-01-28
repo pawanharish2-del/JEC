@@ -256,7 +256,7 @@ function About() {
                         <div className="feature-item"><p>High-speed Wi-Fi enabled campus with <strong>110 mbps leased line</strong>.</p></div>
                         <div className="feature-item"><p>Library with <strong>100,000+ books</strong> and access to online journals (IEEE, ASME, J-Gate).</p></div>
                         <div className="feature-item"><p>Separate air-cooled hostels for boys & girls, with attached bathroom.</p></div>
-                        <div className="feature-item"><p>Excellent campus placements, including the <strong>highest package in Rajasthan of Rs. 69 Lakh</strong>.</p></div>
+                        <div className="feature-item"><p>Excellent campus placements, including the <strong>highest package in Rajasthan of 1.56cr</strong>.</p></div>
                         <div className="feature-item"><p>Rajasthan’s <strong>first nodal centre of NITTTR, Chandigarh</strong>.</p></div>
                         <div className="feature-item"><p>Campus Connect Programmes with MNCs like <strong>Infosys, CAD Desk & Oracle</strong>.</p></div>
                         <div className="feature-item"><p>Strong global alumni network exceeding <strong>12,000+ members</strong>.</p></div>

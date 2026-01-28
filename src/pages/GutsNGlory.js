@@ -19,7 +19,7 @@ const GutsNGlory = () => {
             <div className="stat-label">Successful Entrepreneurs</div>
           </div>
           <div className="stat-card">
-            <div className="stat-value">4300+</div>
+            <div className="stat-value">9000+</div>
             <div className="stat-label">Campus Placements</div>
           </div>
           <div className="stat-card">
