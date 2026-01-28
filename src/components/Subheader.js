@@ -44,7 +44,7 @@ const menuData = [
     { name: "Prepare and Present", link: "/Infrastructure/Prepare-and-Present" },
     { name: "Refuel and Relax", link: "/Infrastructure/Refuel-and-Relax" },
     { name: "Convenience and Safety", link: "/Infrastructure/Convenience-and-Safety" },
-    { name: "JEC: Vibrant India", link: "/campus-life/jec-vibrant-india" },
+    
     { name: "Academic Achievers", link: "/campus-life/academic-achievers" },
     { name: "Engineering Projects", link: "/campus-life/engineering-projects" },
     { name: "Games and Sports", link: "/campus-life/games-and-sports" },
@@ -215,7 +215,7 @@ function Subheader() {
                         <li className={`jec-menu-item ${activeDropdown === 'campus' ? 'jec-open' : ''}`}>
                             <a href="#!" className="jec-nav-link jec-toggle-btn" onClick={(e) => toggleDropdown(e, 'campus')}>Campus Life <i className="fas fa-chevron-down"></i></a>
                             <ul className={`jec-dropdown jec-mega jec-cols-3 ${activeDropdown === 'campus' ? 'jec-show' : ''}`}>
-                                <li><a href="/campus-life/jec-vibrant-india" className="jec-dropdown-link">JEC: Vibrant India</a></li>
+                               
                                 <li><a href="/campus-life/academic-achievers" className="jec-dropdown-link">Academic Achievers</a></li>
                                 <li><a href="/campus-life/engineering-projects" className="jec-dropdown-link">Engineering Projects</a></li>
                                 <li><a href="/campus-life/games-and-sports" className="jec-dropdown-link">Games and Sports</a></li>

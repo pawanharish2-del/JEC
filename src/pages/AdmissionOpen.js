@@ -1,5 +1,5 @@
 import React from 'react';
-// useNavigate is no longer needed for the external link, but I'll keep the import if you have other logic
+// useNavigate is no longer needed for the external link, but I'll keep the import as requested
 import { useNavigate } from 'react-router-dom';
 
 function AdmissionOpen() {
@@ -126,6 +126,7 @@ function AdmissionOpen() {
                             <div className="admissions-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" /></div>
                             <div className="admissions-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" /></div>
 
+                            {/* Duplicate for infinite scroll */}
                             <div className="admissions-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Tata_Consultancy_Services_old_logo.svg/1024px-Tata_Consultancy_Services_old_logo.svg.png?20210617123944" alt="TCS" /></div>
                             <div className="admissions-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg" alt="Infosys" /></div>
                             <div className="admissions-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Wipro_Primary_Logo_Color_RGB.svg" alt="Wipro" /></div>
@@ -166,13 +167,9 @@ function AdmissionOpen() {
                             <div className="admissions-expert-name">Mr. Harish Saraogi</div>
                             <span className="admissions-expert-role">Director (Finance) - AIATERF & JEC Group</span>
                             <p className="admissions-expert-bio">Shri Harish Saraogi holds a degree in commerce and has honed technical and managerial skills through advanced training. The credit for the rapid and meteoric rise of the group goes to his astute skills in planning, budgeting, and managing resources.
-
                                 An avid lover of global travel, he brings a wealth of information on innovations taking place worldwide. His dedication and dynamic approach have been a guiding force behind the success of the group, elevating it to international standards.</p>
                         </div>
                     </div>
-
-
-
 
                     <div className="admissions-expert-card">
                         <div className="admissions-expert-img-wrapper">

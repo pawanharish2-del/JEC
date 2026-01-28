@@ -26,7 +26,7 @@ const StudentsCorner = () => {
                         <div className="stat-label">Departments</div>
                     </div>
                     <div className="stat-card">
-                        <div className="stat-value">1200+</div>
+                        <div className="stat-value">1000+ </div>
                         <div className="stat-label">Computers</div>
                     </div>
                     <div className="stat-card">

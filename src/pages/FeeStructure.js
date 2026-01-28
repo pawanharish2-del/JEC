@@ -8,7 +8,7 @@ function FeeStructure() {
       <section className="fee-hero">
         <div className="max-width-container">
             <h1>Fee Structure & Scholarships</h1>
-            <p>Transparent, Government Approved Fees for Academic Session 2025-26.</p>
+            <p>Transparent, Government Approved Fees for Academic Session 2026-27.</p>
         </div>
       </section>
 
@@ -28,7 +28,7 @@ function FeeStructure() {
                 <p>Govt. Scholarships</p>
             </div>
             <div className="fee-stat-item">
-                <h3>36</h3>
+                <h3>13</h3>
                 <p>Courses Offered</p>
             </div>
         </div>
@@ -41,23 +41,23 @@ function FeeStructure() {
                 <p style={{ maxWidth: '800px', margin: '0 auto', color: '#666' }}>Fees are applicable for all students as per rules of Government of Rajasthan / Rajasthan Technical University, Kota. Mode of payments can be Cash, Demand Drafts, or Online Transfer.</p>
             </div>
 
-            <h2 className="fee-section-title">Fee Structure (Session 2025-26)</h2>
+            <h2 className="fee-section-title">Fee Structure (Session 2026-27)</h2>
             
             <div className="fee-pricing-grid">
                 <div className="fee-price-card fee-academic">
                     <div className="fee-price-header">
                         <div className="fee-price-title">Tuition Fee</div>
-                        <div className="fee-price-amount">₹98,400</div>
+                        <div className="fee-price-amount">₹95,500</div>
                         <div className="fee-price-unit">Per Annum</div>
                     </div>
                     <div className="fee-price-body">
                         <ul className="fee-price-list">
-                            <li><span className="fee-label">Tuition Fee</span> <span className="fee-value">₹98,400</span></li>
-                            <li><span className="fee-label">Caution Money</span> <span className="fee-value">₹7,500</span></li>
+                            <li><span className="fee-label">Tuition Fee</span> <span className="fee-value">₹95,500</span></li>
+                            <li><span className="fee-label">Caution Money</span> <span className="fee-value">₹5,000 </span></li>
                             <li><span className="fee-label" style={{ color: '#777', fontSize: '12px' }}>(Refundable One Time)</span></li>
                             <li style={{ borderTop: '2px solid #eee', paddingTop: '15px', marginTop: '10px' }}>
-                                <span className="fee-label" style={{ color: 'var(--fee-logo-blue)' }}>Total First Year</span> 
-                                <span className="fee-value" style={{ fontSize: '20px' }}>₹1,05,900</span>
+                                <span className="fee-label" style={{ color: 'var(--fee-logo-blue)' }}>Total Fees</span> 
+                                <span className="fee-value" style={{ fontSize: '20px' }}>₹1,00,500</span>
                             </li>
                         </ul>
                     </div>
@@ -76,7 +76,7 @@ function FeeStructure() {
                             <li><span className="fee-label">Security Deposit</span> <span className="fee-value">₹10,000</span></li>
                             <li><span className="fee-label" style={{ color: '#777', fontSize: '12px' }}>(Refundable One Time)</span></li>
                             <li style={{ borderTop: '2px solid #eee', paddingTop: '15px', marginTop: '10px' }}>
-                                <span className="fee-label" style={{ color: 'var(--fee-logo-red)' }}>Total First Payment</span> 
+                                <span className="fee-label" style={{ color: 'var(--fee-logo-red)' }}>Total Fees</span> 
                                 <span className="fee-value" style={{ fontSize: '20px' }}>₹1,00,000</span>
                             </li>
                         </ul>
@@ -95,7 +95,7 @@ function FeeStructure() {
                             <li><span className="fee-label">Coverage</span> <span className="fee-value">Jaipur City</span></li>
                             <li><span className="fee-label">Frequency</span> <span className="fee-value">Daily</span></li>
                             <li style={{ borderTop: '2px solid #eee', paddingTop: '15px', marginTop: '10px' }}>
-                                <span className="fee-label" style={{ color: 'var(--fee-logo-black)' }}>Total Cost</span> 
+                                <span className="fee-label" style={{ color: 'var(--fee-logo-black)' }}>Total Fees</span> 
                                 <span className="fee-value" style={{ fontSize: '20px' }}>₹38,000</span>
                             </li>
                         </ul>

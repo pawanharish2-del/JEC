@@ -16,7 +16,7 @@ function CoursesOffered() {
       <div className="max-width-container">
         <div className="courses-stats-bar">
             <div className="courses-stat-item">
-                <h3>36</h3>
+                <h3>13</h3>
                 <p>Courses Offered</p>
             </div>
             <div className="courses-stat-item">
@@ -57,14 +57,14 @@ function CoursesOffered() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Computer Science Engineering</td><td>90</td></tr>
+                    <tr><td>Computer Science Engineering</td><td>180</td></tr>
                   
-                    <tr><td>Computer Science Engineering (AI)</td><td>30</td></tr>
+                    <tr><td>Computer Science Engineering (AI)</td><td>120</td></tr>
                     <tr><td>Electronics & Comm. Engineering</td><td>30</td></tr>
                     <tr><td>Electrical Engineering</td><td>60</td></tr>
-                    <tr><td>Mechanical Engineering</td><td>90</td></tr>
-                    <tr><td>Civil Engineering</td><td>120</td></tr>
-                    <tr><td><strong>Total Intake</strong></td><td><strong>480</strong></td></tr>
+                    <tr><td>Mechanical Engineering</td><td>60</td></tr>
+                    <tr><td>Civil Engineering</td><td>60 </td></tr>
+                    <tr><td><strong>Total Intake</strong></td><td><strong>510 </strong></td></tr>
                 </tbody>
             </table>
         </div>
@@ -142,7 +142,12 @@ function CoursesOffered() {
                 <li>5% seats offered to PwD students under fee waiver.</li>
                 <li>Round-the-year admission based on course duration.</li>
             </ul>
-            <a  style={{ color: 'var(--courses-logo-blue)', fontWeight: 'bold', marginTop: '15px', display: 'inline-block' }}>View 24 KARMA Courses &rarr;</a>
+            <a 
+  href="pages/KarmaCourses.js" 
+  style={{ color: 'var(--courses-logo-blue)', fontWeight: 'bold', marginTop: '15px', display: 'inline-block', textDecoration: 'none' }}
+>
+  View 24 KARMA Courses &rarr;
+</a>
         </div>
 
         <h2 className="courses-section-title" style={{ marginTop: '60px' }}>Career Opportunities</h2>

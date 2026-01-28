@@ -45,10 +45,7 @@ function KarmaCourses() {
               <h3>30</h3>
               <p>Intake Per Course</p>
             </div>
-            <div className="k-stat-card">
-              <h3 className="b-voc-text">B.Voc</h3>
-              <p>Bachelor of Vocation</p>
-            </div>
+            
           </div>
 
           <div className="karma-info-grid">
@@ -80,7 +77,7 @@ function KarmaCourses() {
             </div>
           </div>
 
-          <h3 className="karma-sub-title text-center" style={{ marginTop: '40px' }}>Approved Certificate / Diploma / B.Voc Courses</h3>
+          <h3 className="karma-sub-title text-center" style={{ marginTop: '40px' }}>Approved Certificate</h3>
           <div className="karma-table-container">
             <table className="karma-course-table">
               <thead>
@@ -94,33 +91,30 @@ function KarmaCourses() {
                 </tr>
               </thead>
               <tbody>
-                <tr><td>1</td><td>B.VOC</td><td>Engg & Tech</td><td>Automotive Manufacturing Tech</td><td>10+2 (PCM)</td><td>3 Years</td></tr>
-                <tr><td>2</td><td>B.VOC</td><td>Engg & Tech</td><td>Production Technology</td><td>10+2 (PCM)</td><td>3 Years</td></tr>
-                <tr><td>3</td><td>B.VOC</td><td>IT / ITES</td><td>Software Development</td><td>10+2 (PCM)</td><td>3 Years</td></tr>
-                <tr><td>4</td><td>B.VOC</td><td>Engg & Tech</td><td>Electronic Manufacturing Services</td><td>10+2 (PCM)</td><td>3 Years</td></tr>
-                <tr><td>5</td><td>KARMA 1</td><td>Automobile Engg</td><td>Maintenance Technician-Mech</td><td>ITI / Mech / Fitter</td><td>350 Hrs</td></tr>
-                <tr><td>6</td><td>KARMA 1</td><td>CSE</td><td>Web Designing & Multimedia</td><td>10th</td><td>288 Hrs</td></tr>
-                <tr><td>7</td><td>KARMA 1</td><td>CSE</td><td>CRM Domestic Voice</td><td>10th</td><td>518 Hrs</td></tr>
-                <tr><td>8</td><td>KARMA 1</td><td>CSE</td><td>IT Network Support</td><td>10+2</td><td>120 Hrs</td></tr>
-                <tr><td>9</td><td>KARMA 1</td><td>CSE</td><td>Certified Audio Visual Designer</td><td>10+2</td><td>80 Hrs</td></tr>
-                <tr><td>10</td><td>KARMA 1</td><td>CSE</td><td>3D Animation & Special Effects</td><td>10th</td><td>500 Hrs</td></tr>
-                <tr><td>11</td><td>KARMA 1</td><td>Mechanical</td><td>CNC Operator-Training</td><td>10th</td><td>300 Hrs</td></tr>
-                <tr><td>12</td><td>KARMA 1</td><td>Mechanical</td><td>Fitter-Mechanical Assembly</td><td>10th</td><td>400 Hrs</td></tr>
-                <tr><td>13</td><td>KARMA 1</td><td>Electronics</td><td>Installation Tech-Computing</td><td>10th</td><td>200 Hrs</td></tr>
-                <tr><td>14</td><td>KARMA 2</td><td>CSE</td><td>Adv Diploma - PLC/SCADA/DCS</td><td>B.E./B.Tech/Dip</td><td>480 Hrs</td></tr>
-                <tr><td>15</td><td>KARMA 2</td><td>CSE</td><td>App Developer - Web & Mobile</td><td>Graduate</td><td>440 Hrs</td></tr>
-                <tr><td>16</td><td>KARMA 2</td><td>Mechanical</td><td>Adv Cert. Inspection & QC</td><td>10+2</td><td>780 Hrs</td></tr>
-                <tr><td>17</td><td>KARMA 2</td><td>Electrical</td><td>Elec Assembly Operator</td><td>10th + ITI</td><td>200 Hrs</td></tr>
-                <tr><td>18</td><td>KARMA 2</td><td>CSE</td><td>Associate - DTP</td><td>Graduate</td><td>400 Hrs</td></tr>
-                <tr><td>19</td><td>KARMA 2</td><td>Electronics</td><td>Cert. Course in VLSI Design</td><td>Pursuing Degree</td><td>80 Hrs</td></tr>
-                <tr><td>20</td><td>KARMA 2</td><td>Electrical</td><td>System Admin Using Linux</td><td>B.Sc/BCA/Dip</td><td>80 Hrs</td></tr>
-                <tr><td>21</td><td>KARMA 2</td><td>CSE</td><td>Auto CAD Designer</td><td>10+2</td><td>120 Hrs</td></tr>
-                <tr><td>22</td><td>KARMA 2</td><td>CSE</td><td>Web Developer</td><td>Grad / Diploma</td><td>400 Hrs</td></tr>
-                <tr><td>23</td><td>KARMA 2</td><td>Electrical</td><td>DSP Using MATLAB</td><td>Pursuing Degree</td><td>80 Hrs</td></tr>
-                <tr><td>24</td><td>KARMA 2</td><td>Electronics</td><td>CAD Using CREO</td><td>Pursuing Degree</td><td>100 Hrs</td></tr>
-                <tr><td>25</td><td>KARMA 2</td><td>CSE</td><td>iOS Programming</td><td>Engg/Sci Grad</td><td>320 Hrs</td></tr>
-                <tr><td>26</td><td>KARMA 2</td><td>CSE</td><td>Network Administration</td><td>Engg/Sci Grad</td><td>320 Hrs</td></tr>
-                <tr><td>27</td><td>KARMA 2</td><td>CSE</td><td>IoT Applications</td><td>B.E./B.Tech/Dip</td><td>360 Hrs</td></tr>
+    
+                <tr><td>1</td><td>KARMA 1</td><td>Automobile Engg</td><td>Maintenance Technician-Mech</td><td>ITI / Mech / Fitter</td><td>350 Hrs</td></tr>
+                <tr><td>2</td><td>KARMA 1</td><td>CSE</td><td>Web Designing & Multimedia</td><td>10th</td><td>288 Hrs</td></tr>
+                <tr><td>3</td><td>KARMA 1</td><td>CSE</td><td>CRM Domestic Voice</td><td>10th</td><td>518 Hrs</td></tr>
+                <tr><td>4</td><td>KARMA 1</td><td>CSE</td><td>IT Network Support</td><td>10+2</td><td>120 Hrs</td></tr>
+                <tr><td>5</td><td>KARMA 1</td><td>CSE</td><td>Certified Audio Visual Designer</td><td>10+2</td><td>80 Hrs</td></tr>
+                <tr><td>6</td><td>KARMA 1</td><td>CSE</td><td>3D Animation & Special Effects</td><td>10th</td><td>500 Hrs</td></tr>
+                <tr><td>7</td><td>KARMA 1</td><td>Mechanical</td><td>CNC Operator-Training</td><td>10th</td><td>300 Hrs</td></tr>
+                <tr><td>8</td><td>KARMA 1</td><td>Mechanical</td><td>Fitter-Mechanical Assembly</td><td>10th</td><td>400 Hrs</td></tr>
+                <tr><td>9</td><td>KARMA 1</td><td>Electronics</td><td>Installation Tech-Computing</td><td>10th</td><td>200 Hrs</td></tr>
+                <tr><td>10</td><td>KARMA 2</td><td>CSE</td><td>Adv Diploma - PLC/SCADA/DCS</td><td>B.E./B.Tech/Dip</td><td>480 Hrs</td></tr>
+                <tr><td>11</td><td>KARMA 2</td><td>CSE</td><td>App Developer - Web & Mobile</td><td>Graduate</td><td>440 Hrs</td></tr>
+                <tr><td>12</td><td>KARMA 2</td><td>Mechanical</td><td>Adv Cert. Inspection & QC</td><td>10+2</td><td>780 Hrs</td></tr>
+                <tr><td>13</td><td>KARMA 2</td><td>Electrical</td><td>Elec Assembly Operator</td><td>10th + ITI</td><td>200 Hrs</td></tr>
+                <tr><td>14</td><td>KARMA 2</td><td>CSE</td><td>Associate - DTP</td><td>Graduate</td><td>400 Hrs</td></tr>
+                <tr><td>15</td><td>KARMA 2</td><td>Electronics</td><td>Cert. Course in VLSI Design</td><td>Pursuing Degree</td><td>80 Hrs</td></tr>
+                <tr><td>16</td><td>KARMA 2</td><td>Electrical</td><td>System Admin Using Linux</td><td>B.Sc/BCA/Dip</td><td>80 Hrs</td></tr>
+                <tr><td>17</td><td>KARMA 2</td><td>CSE</td><td>Auto CAD Designer</td><td>10+2</td><td>120 Hrs</td></tr>
+                <tr><td>18</td><td>KARMA 2</td><td>CSE</td><td>Web Developer</td><td>Grad / Diploma</td><td>400 Hrs</td></tr>
+                <tr><td>19</td><td>KARMA 2</td><td>Electrical</td><td>DSP Using MATLAB</td><td>Pursuing Degree</td><td>80 Hrs</td></tr>
+                <tr><td>20</td><td>KARMA 2</td><td>Electronics</td><td>CAD Using CREO</td><td>Pursuing Degree</td><td>100 Hrs</td></tr>
+                <tr><td>21</td><td>KARMA 2</td><td>CSE</td><td>iOS Programming</td><td>Engg/Sci Grad</td><td>320 Hrs</td></tr>
+                <tr><td>22</td><td>KARMA 2</td><td>CSE</td><td>Network Administration</td><td>Engg/Sci Grad</td><td>320 Hrs</td></tr>
+                <tr><td>23</td><td>KARMA 2</td><td>CSE</td><td>IoT Applications</td><td>B.E./B.Tech/Dip</td><td>360 Hrs</td></tr>
               </tbody>
             </table>
           </div>

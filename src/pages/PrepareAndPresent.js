@@ -14,11 +14,11 @@ function PrepareAndPresent() {
       <div className="prepare-stats-container">
         <div className="prepare-stats-grid">
             <div className="prepare-stat-card">
-                <div className="prepare-stat-value">60,000+</div>
+                <div className="prepare-stat-value">1 lac+</div>
                 <div className="prepare-stat-label">Book Volumes</div>
             </div>
             <div className="prepare-stat-card">
-                <div className="prepare-stat-value">5,500+</div>
+                <div className="prepare-stat-value">6000+</div>
                 <div className="prepare-stat-label">Book Titles</div>
             </div>
             <div className="prepare-stat-card">
@@ -26,7 +26,7 @@ function PrepareAndPresent() {
                 <div className="prepare-stat-label">E-Books</div>
             </div>
             <div className="prepare-stat-card">
-                <div className="prepare-stat-value">1,200+</div>
+                <div className="prepare-stat-value">1000+</div>
                 <div className="prepare-stat-label">Computers</div>
             </div>
             <div className="prepare-stat-card">
@@ -56,7 +56,7 @@ function PrepareAndPresent() {
                 
                 <p style={{ marginBottom: '1rem', fontWeight: '600', color: 'var(--prepare-primary)' }}>The Collection Includes:</p>
                 <ul className="prepare-feature-list">
-                    <li>More than <strong>5,500 titles</strong> and <strong>60,000 books</strong> on Engineering, Science, Management and Humanities.</li>
+                    <li>More than <strong>6000+ titles</strong> and <strong>1 lac+ books</strong> on Engineering, Science, Management and Humanities.</li>
                     <li>Subscription of online journals namely <strong>ASTM, J-GATE, ASME, IEEE, Springer, WILEY, McGraw Hill and Elsevier</strong>.</li>
                     <li>A wide collection of 65 International, 101 National print Journals, CD's, back-volumes, and e-books.</li>
                     <li>Text books and study material for students of all semesters under <strong>Book Bank scheme</strong>.</li>
