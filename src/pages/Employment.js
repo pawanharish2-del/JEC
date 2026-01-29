@@ -24,7 +24,7 @@ function Employment() {
                 <div className="highlights-bar">
                     <div className="highlight-item">
                         <i className="fas fa-book-open"></i>
-                        <h4>36 Courses</h4>
+                        <h4>13 Courses</h4>
                         <p>Diverse Academic Options</p>
                     </div>
                     <div className="highlight-item">

@@ -17,7 +17,7 @@ const EngineeringProjects = () => {
                         href="mailto:Examination@jeckukas.org.in"
                         className="hero-apply-btn"
                     >
-                        Apply Now
+                        Email Us ->
                     </a>
                 </div>
             </header>

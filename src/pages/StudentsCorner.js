@@ -49,19 +49,19 @@ const StudentsCorner = () => {
                 <div className="dash-grid" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '20px' }}>
 
                     {/* 1. Pay Fees */}
-                    <a href="/fees" className="dash-card">
+                    <a href="/admission/Fee-Structure" className="dash-card">
                         <div className="dash-icon"><i className="fas fa-rupee-sign"></i></div>
                         <div className="dash-title">Pay Fees</div>
                     </a>
 
                     {/* 2. Mandatory Disclosure */}
-                    <a href="/mandatory-disclosure" className="dash-card">
+                    <a href="/admission/Mandatory-Disclosure" className="dash-card">
                         <div className="dash-icon"><i className="fas fa-file-alt"></i></div>
                         <div className="dash-title">Mandatory Disclosure</div>
                     </a>
 
                     {/* 3. Imp. Questions / FAQ */}
-                    <a href="/faq" className="dash-card">
+                    <a href="/jec/JEC-FAQ" className="dash-card">
                         <div className="dash-icon"><i className="fas fa-question-circle"></i></div>
                         <div className="dash-title">Imp. Questions</div>
                     </a>
@@ -149,8 +149,14 @@ const StudentsCorner = () => {
                         <h3>Student Development Cell (SDC) </h3>
                         <p>"One bee cannot build a hive; one ant cannot build a colony." We believe in empowering students with grit and determination.</p>
                         <p>JEC encourages students to engage in more than <strong>30 co-curricular activities</strong> with <strong>7 established clubs</strong> catering to overall development. Inspired by Maharaja Agrasen’s values, we foster leadership, creativity, and community.</p>
-                        <p>Interested to be a member? Fill the form to join.</p>
-                        <a href="#" className="btn-outline" style={{ borderColor: 'var(--gold)', color: 'var(--gold)', marginTop: '0' }}>Join Student Club</a>
+                        <p>Interested to be a member? </p>
+                        <a
+                            href="mailto:director.marketing@jeckukas.org.in"
+                            className="btn-outline"
+                            style={{ borderColor: 'var(--gold)', color: 'var(--gold)', marginTop: '0' }}
+                        >
+                            Email Us -&gt;
+                        </a>
                     </div>
                     <div className="club-img">
                         <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=800" alt="JEC Student Clubs" />

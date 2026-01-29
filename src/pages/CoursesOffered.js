@@ -26,7 +26,7 @@ const CoursesOffered = () => {
             <div className="max-width-container">
                 <div className="stats-bar">
                     <div className="stat-item">
-                        <h3>36</h3>
+                        <h3>13</h3>
                         <p>Courses Offered</p>
                     </div>
                     <div className="stat-item">
@@ -67,14 +67,14 @@ const CoursesOffered = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td>Computer Science Engineering</td><td>90</td></tr>
-                            <tr><td>Information Technology</td><td>30</td></tr>
-                            <tr><td>Computer Science Engineering (AI)</td><td>30</td></tr>
-                            <tr><td>Electronics & Comm. Engineering</td><td>30</td></tr>
+                            <tr><td>Computer Science Engineering</td><td>180</td></tr>
+                          
+                            <tr><td>Computer Science Engineering (AI)</td><td>120</td></tr>
+                            <tr><td>Electronics & Comm. Engineering</td><td>60</td></tr>
                             <tr><td>Electrical Engineering</td><td>60</td></tr>
-                            <tr><td>Mechanical Engineering</td><td>90</td></tr>
-                            <tr><td>Civil Engineering</td><td>120</td></tr>
-                            <tr><td><strong>Total Intake</strong></td><td><strong>480</strong></td></tr>
+                            <tr><td>Mechanical Engineering</td><td>60</td></tr>
+                            <tr><td>Civil Engineering</td><td>60</td></tr>
+                            <tr><td><strong>Total Intake</strong></td><td><strong>510</strong></td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -117,30 +117,14 @@ const CoursesOffered = () => {
                         <span className="duration">18 Seats</span>
                         <p>Focuses on sustainable development and managing natural resources. Addresses water, air, and waste management challenges.</p>
                     </div>
+                    <div className="course-card mtech">
+                        <h3>Electrical Engineering <span style={{ color: 'var(--logo-red)', marginLeft: '5px' }}>*</span></h3>
+                        <span className="duration">18 Seats</span>
+                        <p>Focuses on the generation, transmission, and efficient use of electrical energy. Addresses challenges in power systems, electronics, automation, and emerging technologies.</p>
+                    </div>
                 </div>
 
-                <h2 className="section-title" style={{ borderColor: 'var(--logo-gold)' }}>4. Bachelor of Vocation (B.Voc)</h2>
-                <div className="text-block">
-                    <p><strong>Duration:</strong> 3 Years / 6 Semesters</p>
-                    <p>Skill-development based higher education with multiple entry/exit options (Certificate, Diploma, Advanced Diploma). Aligned with National Skills Qualifications Framework (NSQF).</p>
-                </div>
-                <div className="table-container">
-                    <table className="data-table">
-                        <thead>
-                            <tr>
-                                <th>Discipline</th>
-                                <th>Seats</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Software Development</td><td>25</td></tr>
-                            <tr><td>Production Technology</td><td>25</td></tr>
-                            <tr><td>Electronic Manufacturing Services</td><td>25</td></tr>
-                            <tr><td>Automotive Manufacturing Technology</td><td>25</td></tr>
-                            <tr><td><strong>Total Seats</strong></td><td><strong>100</strong></td></tr>
-                        </tbody>
-                    </table>
-                </div>
+               
 
                 <div className="karma-section">
                     <h3>5. KARMA Skill Courses (AICTE)</h3>

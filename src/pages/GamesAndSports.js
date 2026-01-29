@@ -49,7 +49,7 @@ const GamesAndSports = () => {
                 <p>It isn't about winning or losing. What matters is the competitive spirit that should never die out because you are not a failure unless you believed that you have failed. At JEC, it has been a constant endeavor to create sporting spirit fervor and the sports fever only seems to be growing with each passing academic session. Hard sweat, high energy, tons of cheering and complete fun, despite the rain and scorching heat, shows the spirit in the players for the game.</p>
             </div>
             <div className="img-block">
-                <img src="/Cycle.png" alt="JEC Sports Team" />
+                      <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2Fbanner-47ab556a-a577-4ff5-98bf-79739f11a0f3?alt=media&token=2fff18e2-078d-4378-bafe-c252409f6a47" alt="JEC Sports Team" />
             </div>
         </div>
 

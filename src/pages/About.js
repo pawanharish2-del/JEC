@@ -36,7 +36,7 @@ function About() {
                         <p>PLACEMENT RATE</p>
                     </div>
                     <div className="milestone-item">
-                        <h3>₹69 Lakh</h3>
+                        <h3>₹1.56 Cr</h3>
                         <p>HIGHEST PACKAGE</p>
                     </div>
                     <div className="milestone-item">

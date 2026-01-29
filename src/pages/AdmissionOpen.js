@@ -1,6 +1,7 @@
 import React from 'react';
 // useNavigate is no longer needed for the external link, but I'll keep the import as requested
 import { useNavigate } from 'react-router-dom';
+import '../styles/Admissionopen.css'
 
 function AdmissionOpen() {
     const navigate = useNavigate();
@@ -39,12 +40,12 @@ function AdmissionOpen() {
 
                     <div className="admissions-stats-container">
                         <div className="admissions-stat-card">
-                            <span className="admissions-stat-number">10k+</span>
+                            <span className="admissions-stat-number">12k+</span>
                             <span className="admissions-stat-label">Alumni</span>
                             <span className="admissions-stat-desc">Glorious and successful</span>
                         </div>
                         <div className="admissions-stat-card">
-                            <span className="admissions-stat-number">15+</span>
+                            <span className="admissions-stat-number">13+</span>
                             <span className="admissions-stat-label">Courses</span>
                             <span className="admissions-stat-desc">Career Centric</span>
                         </div>
@@ -152,7 +153,7 @@ function AdmissionOpen() {
                         </div>
                         <div className="admissions-expert-content">
                             <div className="admissions-expert-name">Mr. Lalit K. Saraogi</div>
-                            <span className="admissions-expert-role">General Secretary AIATERF & Group Director</span>
+                            <span className="admissions-expert-role">Managing Director - AIATERF & JEC Group</span>
                             <p className="admissions-expert-bio">Er. Lalit K. Saraogi plays a key role in defining the vision, mission and strategy for the growth and development of AIATERF and JEC Group of Colleges. He brings in his invaluable experience in managing people at various levels ensuring a smooth and satisfactory relationship.</p>
                         </div>
                     </div>
@@ -214,7 +215,7 @@ function AdmissionOpen() {
 
                         <div className="admissions-t-card">
                             <i className="fas fa-quote-right admissions-t-quote-icon"></i>
-                            <p className="admissions-t-text">"The academic experience with a world class infrastructure and excellent faculty at JEC has endured me with a lifelong career excellence. The exceptional programmes and teaching methodologies backed by practical skills have given me the confidence to pursue my career ahead."</p>
+                            <p className="admissions-t-text">"Academic experience with world-class infrastructure and faculty at JEC has endowed me with excellence. Exceptional programmes and teaching methodologies, backed by practical skills, have given me confidence to pursue my career."</p>
                             <div className="admissions-t-author">
                                 <img src="/images/f3.png" alt="Sunil Sharma" className="admissions-t-avatar" />
                                 <div className="admissions-t-info">

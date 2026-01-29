@@ -22,7 +22,7 @@ function Header() {
                 <div className="jec-top-right">
                     {/* UPDATED LINK */}
                     <a
-                        href="https://admission.jeckukas.org.in/"
+                        href="/admission-enquiry"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

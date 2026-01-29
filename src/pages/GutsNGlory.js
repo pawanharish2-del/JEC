@@ -70,7 +70,7 @@ const GutsNGlory = () => {
         {/* Story 1 */}
         <div className="story-card">
           <div className="story-img">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600" alt="Rupshri Priya" />
+                      <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/Rupshri%20Priya.png?alt=media&token=2030f0f3-bd00-4463-9d3b-521f39e7deea" alt="Rupshri Priya" />
           </div>
           <div className="story-content">
             <div className="story-header">
@@ -101,7 +101,7 @@ const GutsNGlory = () => {
         {/* Story 2 (Reverse) */}
         <div className="story-card reverse">
           <div className="story-img">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600" alt="Hitendra Malviya" />
+                      <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/Hitendra%20Malviya.png?alt=media&token=dffdc016-3a6b-47ed-892d-6b10f8299cc2" alt="Hitendra Malviya" />
           </div>
           <div className="story-content">
             <div className="story-header">
@@ -130,7 +130,7 @@ const GutsNGlory = () => {
         {/* Story 3 */}
         <div className="story-card">
           <div className="story-img">
-            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600" alt="Suresh Kumar" />
+                      <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/Suresh%20Kumar%20Choudhary.png?alt=media&token=cc1feddc-c984-433e-9c34-cb85781253a1" alt="Suresh Kumar" />
           </div>
           <div className="story-content">
             <div className="story-header">
@@ -158,7 +158,7 @@ const GutsNGlory = () => {
         {/* Story 4 (Reverse) */}
         <div className="story-card reverse">
           <div className="story-img">
-            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600" alt="Urooz Khanam" />
+                      <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/Urooz%20Khanam.png?alt=media&token=6c1c3253-6cdb-4a1f-b161-075f1a7be9e5" alt="Urooz Khanam" />
           </div>
           <div className="story-content">
             <div className="story-header">
@@ -187,7 +187,7 @@ const GutsNGlory = () => {
         {/* Story 5 */}
         <div className="story-card">
           <div className="story-img">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600" alt="Sunil Sharma" />
+                      <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/Sunil%20Sharma.png?alt=media&token=30aa52a8-58ec-43db-83dd-62475722d6bb" alt="Sunil Sharma" />
           </div>
           <div className="story-content">
             <div className="story-header">
@@ -228,7 +228,7 @@ const GutsNGlory = () => {
         {/* Story 6 (Reverse) */}
         <div className="story-card reverse">
           <div className="story-img">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600" alt="Shailesh Jha" />
+                      <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/Shailesh%20Jha.png?alt=media&token=4396a51b-07c7-4deb-b2ee-d4d9a99f0ed2" alt="Shailesh Jha" />
           </div>
           <div className="story-content">
             <div className="story-header">
@@ -256,7 +256,7 @@ const GutsNGlory = () => {
         {/* Story 7 */}
         <div className="story-card">
           <div className="story-img">
-            <img src="/Harshita.jpg" alt="Harshita Bhat" />
+                      <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/Harshita%20Bhat.png?alt=media&token=37ef146a-c1ad-44a2-84bf-91a76fd3055f" alt="Harshita Bhat" />
           </div>
           <div className="story-content">
             <div className="story-header">
