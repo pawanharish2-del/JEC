@@ -70,7 +70,7 @@ const CoursesOffered = () => {
                             <tr><td>Computer Science Engineering</td><td>180</td></tr>
                           
                             <tr><td>Computer Science Engineering (AI)</td><td>120</td></tr>
-                            <tr><td>Electronics & Comm. Engineering</td><td>60</td></tr>
+                            <tr><td>Electronics & Comm. Engineering</td><td>30</td></tr>
                             <tr><td>Electrical Engineering</td><td>60</td></tr>
                             <tr><td>Mechanical Engineering</td><td>60</td></tr>
                             <tr><td>Civil Engineering</td><td>60</td></tr>
@@ -118,7 +118,7 @@ const CoursesOffered = () => {
                         <p>Focuses on sustainable development and managing natural resources. Addresses water, air, and waste management challenges.</p>
                     </div>
                     <div className="course-card mtech">
-                        <h3>Electrical Engineering <span style={{ color: 'var(--logo-red)', marginLeft: '5px' }}>*</span></h3>
+                        <h3>Electrical Engineering </h3>
                         <span className="duration">18 Seats</span>
                         <p>Focuses on the generation, transmission, and efficient use of electrical energy. Addresses challenges in power systems, electronics, automation, and emerging technologies.</p>
                     </div>

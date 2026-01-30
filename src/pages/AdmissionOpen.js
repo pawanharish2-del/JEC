@@ -45,7 +45,7 @@ function AdmissionOpen() {
                             <span className="admissions-stat-desc">Glorious and successful</span>
                         </div>
                         <div className="admissions-stat-card">
-                            <span className="admissions-stat-number">13+</span>
+                            <span className="admissions-stat-number">13</span>
                             <span className="admissions-stat-label">Courses</span>
                             <span className="admissions-stat-desc">Career Centric</span>
                         </div>
@@ -154,7 +154,7 @@ function AdmissionOpen() {
                         <div className="admissions-expert-content">
                             <div className="admissions-expert-name">Mr. Lalit K. Saraogi</div>
                             <span className="admissions-expert-role">Managing Director - AIATERF & JEC Group</span>
-                            <p className="admissions-expert-bio">Er. Lalit K. Saraogi plays a key role in defining the vision, mission and strategy for the growth and development of AIATERF and JEC Group of Colleges. He brings in his invaluable experience in managing people at various levels ensuring a smooth and satisfactory relationship.</p>
+                            <p className="admissions-expert-bio">Mr. Lalit K. Saraogi plays a key role in defining the vision, mission and strategy for the growth and development of AIATERF and JEC Group of Colleges. He brings in his invaluable experience in managing people at various levels ensuring a smooth and satisfactory relationship.</p>
                         </div>
                     </div>
 

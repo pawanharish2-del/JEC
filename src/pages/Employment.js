@@ -11,12 +11,13 @@ function Employment() {
                     <p>Bringing People and Opportunities Together to Build a Better World.</p>
 
                     {/* UPDATED BUTTON: Opens external link in new tab */}
-                    <button
+                    <a
+                        href="mailto:director@jeckukas.org.in"
                         className="career-apply-btn"
-                        onClick={() => window.open('https://admission.jeckukas.org.in/', '_blank')}
+                        style={{ textDecoration: 'none', display: 'inline-block' }}
                     >
-                        Apply Now
-                    </button>
+                        Email Us
+                    </a>
                 </div>
             </section>
 
