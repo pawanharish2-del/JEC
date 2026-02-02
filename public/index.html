@@ -46,7 +46,7 @@
                 margin: 8px;
                 border-radius: 50%;
                 border: 6.4px solid currentColor;
-                border-color: red;
+                border-color: currentColor transparent currentColor transparent;
                 animation: lds-dual-ring 1.2s linear infinite;
             }
 
@@ -74,7 +74,7 @@
         (function () {
             // 1. PAGE CHECK: Only run if on Home Page ('/' or '/index.html')
             if (window.location.pathname !== "/" && window.location.pathname !== "/index.html") {
-                return; // Stop here if not on home page
+                return;
             }
 
             // 2. Create the Wrapper Div
@@ -82,14 +82,15 @@
             overlayDiv.id = "admission-overlay";
             overlayDiv.className = "static-popup-overlay";
 
+            // UPDATED: Height set to 650px (Tight fit)
             overlayDiv.innerHTML = `
-                    <div class="static-popup-content">
-                        <button class="static-close-btn" onclick="document.getElementById('admission-overlay').style.display='none'">
-                            &times;
-                        </button>
-                        <div class="npf_wgts" data-height="550px" data-w="c1073fe2350d112d90b129addc24e9ff"></div>
-                    </div>
-                `;
+                        <div class="static-popup-content">
+                            <button class="static-close-btn" onclick="document.getElementById('admission-overlay').style.display='none'">
+                                &times;
+                            </button>
+                            <div class="npf_wgts" data-height="650px" data-w="c1073fe2350d112d90b129addc24e9ff"></div>
+                        </div>
+                    `;
             document.body.appendChild(overlayDiv);
 
             // 3. Load the Script
@@ -112,37 +113,55 @@
             z-index: 10000;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* Aligns to top */
+            overflow-y: auto; /* Allows full page scroll if form is tall */
+            padding-top: 50px;
+            padding-bottom: 50px;
             backdrop-filter: blur(5px);
+            margin-top: 20px;
+            
         }
 
         .static-popup-content {
-            background: #fff;
-            padding: 20px;
+            /* UPDATED: Transparent background to remove "white box" effect */
+            background: transparent;
+            padding: 0; /* Remove padding to tighten the fit */
             border-radius: 12px;
             position: relative;
             width: 90%;
             max-width: 500px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            height: auto;
+            /* Removed shadow from container so it doesn't look like an empty box */
+            box-shadow: none;
             animation: popupFadeIn 0.3s ease-out;
+            margin-bottom: 50px;
         }
 
+        /* UPDATED: Close button made circular and white since background is gone */
         .static-close-btn {
             position: absolute;
-            top: 10px;
-            right: 15px;
-            background: transparent;
+            top: -15px;
+            right: -15px;
+            background: #fff;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
             border: none;
-            font-size: 28px;
+            font-size: 24px;
             font-weight: bold;
             color: #333;
             cursor: pointer;
             z-index: 10;
-            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
 
             .static-close-btn:hover {
                 color: #D62828;
+                transform: scale(1.1);
+                transition: 0.2s;
             }
 
         @keyframes popupFadeIn {
