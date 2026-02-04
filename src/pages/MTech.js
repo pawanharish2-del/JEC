@@ -130,7 +130,7 @@ function MTech() {
                     <div className="course-card">
                         <div className="card-header">
                             <div className="card-icon"><i className="fas fa-leaf"></i></div>
-                            <h3 className="card-title">Environmental Engineering</h3>
+                            <h3 className="card-title">Environmental Engineering*</h3>
                         </div>
                         <div className="card-body">
                             <p className="course-desc">Focuses on sustainable development and managing natural resources. Addresses water, air, and waste management challenges.</p>

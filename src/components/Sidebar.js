@@ -14,7 +14,7 @@ function Sidebar() {
             path: 'tel:+918875071333' // Triggers a standard phone call
         },
         { id: 'brochure', icon: 'fas fa-book-open', label: 'Brochure', path: 'https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/02%20(1)%20(1).pdf?alt=media&token=53ba1100-809c-4815-9db8-01b1cac5071d' },
-        { id: 'admissions', icon: 'fas fa-user-graduate', label: 'Admissions', path: 'admission/btech-admissions' },
+        { id: 'admissions', icon: 'fas fa-user-graduate', label: 'Admissions', path: 'https://admission.jeckukas.org.in/' },
         { id: 'events', icon: 'fas fa-calendar-alt', label: 'Events', path: '/jec/Alumni' },
         {
             id: 'whatsapp',

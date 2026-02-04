@@ -22,7 +22,7 @@ function Header() {
                 <div className="jec-top-right">
                     {/* UPDATED LINK */}
                     <a
-                        href="https://jeckukas.in4.nopaperforms.com/application-form-2025-2026"
+                        href="/admission-enquiry"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

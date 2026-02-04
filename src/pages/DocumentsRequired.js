@@ -176,9 +176,9 @@ function DocumentsRequired() {
                         <i className="fas fa-phone-alt"></i>
                         <span>+91-8875071333</span>
                     </a>
-                    <a href="mailto:admissions.jec@gmail.com" className="contact-pill">
+                          <a href="mailto:admission@jeckukas.org.in" className="contact-pill">
                         <i className="fas fa-envelope"></i>
-                        <span>admission@jeckukas.org.in</span>
+                              <span>admission@jeckukas.org.in</span>
                     </a>
                 </div>
             </div>

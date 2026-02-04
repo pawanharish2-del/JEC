@@ -9,7 +9,7 @@ function AdmissionProcedure() {
         <div className="max-width-container">
             <h1>Admission Procedure</h1>
             <p>Join a dynamic community of learners. We combine rigorous academics with a learning-by-doing approach.</p>
-            <a href="http://www.jeckukas.org.in/admission-enquiry" className="ap-hero-btn">Apply Online</a>
+                  <a href="https://admission.jeckukas.org.in/" className="ap-hero-btn">Apply Online</a>
         </div>
       </section>
 
@@ -96,12 +96,12 @@ function AdmissionProcedure() {
             
             <div className="ap-flow-grid">
                 <div className="ap-flow-img-container">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/hardcode%20images%2F1465974364_1463202244_DSC_2867.jpg?alt=media&token=01f14a04-3855-4180-8e68-d3ae0c8340f6" alt="Online Admission Process Flowchart" />
+                          <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2FOnline%20Admission%20Process.png?alt=media&token=d39fc048-8f7d-4715-8f5d-efaab05dee5f" alt="Online Admission Process Flowchart" />
                     <div className="ap-flow-caption">Online Admission Process</div>
                 </div>
 
                 <div className="ap-flow-img-container">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/hardcode%20images%2F1465974385_1463202267_IMG_6993.jpg?alt=media&token=8a7cb908-de3d-4774-86d2-335a7699d1cc" alt="Offline Admission Process Flowchart" />
+                          <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2FOffline-Admission-Process.png?alt=media&token=a5007069-a41b-48cc-9060-dd233bb315fd" alt="Offline Admission Process Flowchart" />
                     <div className="ap-flow-caption">Offline Admission Process</div>
                 </div>
             </div>
