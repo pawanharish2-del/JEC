@@ -81,7 +81,7 @@ const MoocsNptel = () => {
             <p>In 2011, Peter Norvig and Sebastian Thurn facilitated the Artificial Intelligence MOOC, attracting 160,000 learners from 190 countries. MIT developed MITx web resource which was later incorporated into EdX. The online educational mode is now gradually accepted by many countries including India.</p>
           </div>
           <div className="img-block">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Students Learning Online" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2FNPTL.png?alt=media&token=e31b80d0-8fda-4c33-b56e-1e6dedf79385" alt="Students Learning Online" />
           </div>
         </div>
 
