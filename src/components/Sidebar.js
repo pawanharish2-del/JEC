@@ -20,7 +20,7 @@ function Sidebar() {
             id: 'whatsapp',
             icon: 'fab fa-whatsapp',
             label: 'WhatsApp',
-            path: 'https://wa.me/918875071333' // Opens a WhatsApp chat window
+            path: 'https://wa.me/918058799017' // Opens a WhatsApp chat window
         },
     ];
 
