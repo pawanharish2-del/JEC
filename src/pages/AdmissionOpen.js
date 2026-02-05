@@ -196,7 +196,7 @@ function AdmissionOpen() {
 
                     <div className="admissions-expert-card">
                         <div className="admissions-expert-img-wrapper">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2Fmahto.png?alt=media&token=4ab52ad2-45c2-4fcc-8833-2e6a4774788f" alt="Prof. Dalgobind Mahto" />
+                            <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/mehto4.png?alt=media&token=ef613d73-8294-46e3-a5a1-dfc5c0f6a187" alt="Prof. Dalgobind Mahto" />
                         </div>
                         <div className="admissions-expert-content">
                             <div className="admissions-expert-name">Prof. Dalgobind Mahto</div>

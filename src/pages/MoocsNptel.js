@@ -72,18 +72,18 @@ const MoocsNptel = () => {
 
             <div className="container">
 
-                {/* Intro Section */}
-                <div className="section-split animated-section">
-                    <div className="text-block">
-                        <h3>The Evolution of Online Learning</h3>
-                        <p>MOOCs (Massive Open Online Courses) represent a learning phenomenon where learners access online educational multimedia materials and associate with enormous numbers of other learners via social engagement tools. While the roots trace back to the early 2000s, 2008 is considered the foundation year when Stephen Downes and George Siemens coined the term.</p>
-                        <p>Today, platforms offer pedagogical tools including glossaries, images, videos, and public repositories. Although originated in the US (Stanford, MIT), the mode is now widely accepted in India, bridging the digital divide.</p>
-                        <p>In 2011, Peter Norvig and Sebastian Thurn facilitated the Artificial Intelligence MOOC, attracting 160,000 learners from 190 countries. MIT developed MITx web resource which was later incorporated into EdX. The online educational mode is now gradually accepted by many countries including India.</p>
-                    </div>
-                    <div className="img-block">
-                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Students Learning Online" />
-                    </div>
-                </div>
+        {/* Intro Section */}
+        <div className="section-split animated-section">
+          <div className="text-block">
+            <h3>The Evolution of Online Learning</h3>
+            <p>MOOCs (Massive Open Online Courses) represent a learning phenomenon where learners access online educational multimedia materials and associate with enormous numbers of other learners via social engagement tools. While the roots trace back to the early 2000s, 2008 is considered the foundation year when Stephen Downes and George Siemens coined the term.</p>
+            <p>Today, platforms offer pedagogical tools including glossaries, images, videos, and public repositories. Although originated in the US (Stanford, MIT), the mode is now widely accepted in India, bridging the digital divide.</p>
+            <p>In 2011, Peter Norvig and Sebastian Thurn facilitated the Artificial Intelligence MOOC, attracting 160,000 learners from 190 countries. MIT developed MITx web resource which was later incorporated into EdX. The online educational mode is now gradually accepted by many countries including India.</p>
+          </div>
+          <div className="img-block">
+            <img src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2FNPTL.png?alt=media&token=e31b80d0-8fda-4c33-b56e-1e6dedf79385" alt="Students Learning Online" />
+          </div>
+        </div>
 
                 {/* Providers Tabs */}
                 <div className="section-header animated-section">

@@ -116,7 +116,7 @@ function Management() {
           <div className="leader-card">
             <div className="leader-img-container">
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2Fmahto.png?alt=media&token=4ab52ad2-45c2-4fcc-8833-2e6a4774788f"
+                src="https://firebasestorage.googleapis.com/v0/b/jec-website-55397.firebasestorage.app/o/images%2Fmehto.jpg?alt=media&token=51704c46-5ab6-4605-91b7-59fd26ff7170"
                 alt="Prof. Dr. D.G. Mahto"
                 className="leader-img"
               />
