@@ -47,17 +47,17 @@ function FeeStructure() {
                 <div className="fee-price-card fee-academic">
                     <div className="fee-price-header">
                         <div className="fee-price-title">Tuition Fee</div>
-                        <div className="fee-price-amount">₹95,500</div>
+                        <div className="fee-price-amount">₹95,500*</div>
                         <div className="fee-price-unit">Per Annum</div>
                     </div>
                     <div className="fee-price-body">
                         <ul className="fee-price-list">
-                            <li><span className="fee-label">Tuition Fee</span> <span className="fee-value">₹95,500</span></li>
+                            <li><span className="fee-label">Tuition Fee</span> <span className="fee-value">₹95,500*</span></li>
                             <li><span className="fee-label">Caution Money</span> <span className="fee-value">₹5,000 </span></li>
                             <li><span className="fee-label" style={{ color: '#777', fontSize: '12px' }}>(Refundable One Time)</span></li>
                             <li style={{ borderTop: '2px solid #eee', paddingTop: '15px', marginTop: '10px' }}>
                                 <span className="fee-label" style={{ color: 'var(--fee-logo-blue)' }}>Total Fees</span> 
-                                <span className="fee-value" style={{ fontSize: '20px' }}>₹1,00,500</span>
+                                <span className="fee-value" style={{ fontSize: '20px' }}>₹1,00,500*</span>
                             </li>
                         </ul>
                     </div>
